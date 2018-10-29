@@ -15,7 +15,6 @@ class Graph {
         int edges = Integer.parseInt(scan.nextLine());
         if (edges == 0) {
             System.out.println("No edges");
-            return;
         }
         tokens = scan.nextLine().split(",");
         for(int i = 0; i < edges; i++){
