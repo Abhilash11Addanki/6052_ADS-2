@@ -246,21 +246,23 @@ Your Output:
 Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
+0 vertices, 0 edges
 No edges
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
+0 vertices, 0 edges
 No edges
 ----------------------------------------
 
