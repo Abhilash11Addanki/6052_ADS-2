@@ -29,6 +29,9 @@ class Graph {
         if (vertexOne == vertexTwo) {
             return;
         }
+        if (hasEdge(vertexOne, vertexTwo)) {
+            return;
+        }
         adj[vertexOne].add(vertexTwo);
         adj[vertexTwo].add(vertexOne);
         edges++;
@@ -36,9 +39,12 @@ class Graph {
     public Iterable<Integer> adj(int vertex) {
         return adj[vertex];
     }
-    // public boolean hasEdge(int vertexOne, int vertexTwo) {
-
-    // }
+    public boolean hasEdge(int vertexOne, int vertexTwo) {
+        if (adj[vertexOne].contains(vertexTwo)) {
+            return true;
+        }
+        return false;
+    }
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges" + "\n");

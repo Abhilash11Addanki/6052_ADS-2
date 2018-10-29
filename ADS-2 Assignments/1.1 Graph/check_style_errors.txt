@@ -16,19 +16,22 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:51: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:58:21: Parameter item should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:70: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:75: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:81:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:82: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:84: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:65:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'contains' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'contains' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:65:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:65:29: Parameter item should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:80: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:81: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:85: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:86:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:88: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:88:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:89: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:89:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:91:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:92: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Bag.java:94: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:3:5: Missing a Javadoc comment. [JavadocVariable]
@@ -44,11 +47,28 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:28:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:28:25: Parameter vertexOne should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:28:40: Parameter vertexTwo should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:36:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:36:34: Parameter vertex should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:39:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:39:34: Parameter vertex should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:42:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:42:28: Parameter vertexOne should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:42:43: Parameter vertexTwo should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:48:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 20 errors.
+Starting audit...
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:4:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:5:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:9:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:9:18: Parameter sc should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\GraphMat.java:11: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]

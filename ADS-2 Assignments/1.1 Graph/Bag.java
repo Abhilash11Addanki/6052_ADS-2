@@ -62,6 +62,16 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
+    public boolean contains(Item item) {
+        Node n = first;
+        while (n != null) {
+            if (n.item == item) {
+                return true;
+            }
+            n = n.next;
+        }
+        return false;
+    }
 
 
    /**
