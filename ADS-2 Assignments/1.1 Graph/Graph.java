@@ -4,7 +4,7 @@ class Graph {
     private int edges;
     private Bag<Integer>[] adj;
     private String[] tokens;
-    Graph(){
+    Graph() {
     }
     Graph(Scanner scan) {
         this.vertices = Integer.parseInt(scan.nextLine());
@@ -13,11 +13,8 @@ class Graph {
             adj[i] = new Bag<Integer>();
         }
         int edges = Integer.parseInt(scan.nextLine());
-        if (edges == 0) {
-            System.out.println("No edges");
-        }
         tokens = scan.nextLine().split(",");
-        for(int i = 0; i < edges; i++){
+        for (int i = 0; i < edges; i++) {
             String[] inputs = scan.nextLine().split(" ");
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
@@ -41,13 +38,17 @@ class Graph {
     // }
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices, " + edges + " edges" + "\n");
-        for (int i = 0; i < vertices; i++) {
-            s.append(tokens[i] + ": ");
-            for (int j : adj[i]) {
-                s.append(tokens[j] + " ");
+        if (edges == 0) {
+            s.append("No edges");
+        } else {
+            s.append(vertices + " vertices, " + edges + " edges" + "\n");
+            for (int i = 0; i < vertices; i++) {
+                s.append(tokens[i] + ": ");
+                for (int j : adj[i]) {
+                    s.append(tokens[j] + " ");
+                }
+                s.append("\n");
             }
-            s.append("\n");
         }
         return s.toString();
     }

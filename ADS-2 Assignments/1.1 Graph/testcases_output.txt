@@ -253,7 +253,6 @@ No edges
 
 Your Output: 
 No edges
-0 vertices, 0 edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -263,6 +262,5 @@ No edges
 
 Your Output: 
 No edges
-0 vertices, 0 edges
 ----------------------------------------
 
