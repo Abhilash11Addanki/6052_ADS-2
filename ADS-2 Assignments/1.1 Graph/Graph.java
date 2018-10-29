@@ -1,6 +1,6 @@
 import java.util.*;
 public class Graph {
-	private final int vertices;
+	private int vertices;
 	private int edges;
 	private Bag<Integer>[] adj;
 	private String[] tokens;
@@ -19,10 +19,10 @@ public class Graph {
 			adj[i] = new Bag<Integer>();
 		}
 		int e = sc.nextInt();
+		tokens = sc.nextLine().split(",");
 		for (int i = 0; i < e; i++) {
-			int v = sc.nextInt();
-			int w = sc.nextInt();
-			addEdge(v, w);
+			String[] inputs = sc.nextLine().split(" ");
+			addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
 		}
 	}
 	Graph(Graph g) {

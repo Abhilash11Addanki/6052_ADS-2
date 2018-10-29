@@ -16,12 +16,11 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Andaman"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -43,12 +42,11 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Andaman"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -93,12 +91,11 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Andaman"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -143,12 +140,11 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Andaman"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -158,12 +154,11 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Hyderabad"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -173,12 +168,11 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:23)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Hyderabad"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Graph.<init>(Graph.java:25)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 

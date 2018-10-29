@@ -42,6 +42,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:7:15: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:15:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:15:15: Parameter sc should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:25: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:28:15: Parameter g should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:41:9: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'vertices' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'vertices' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -58,7 +59,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:55:9: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Graph.java:55:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
