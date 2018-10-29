@@ -14,7 +14,7 @@ class Graph {
         }
         int edges = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
-        for (int i = 0; i < vertices; i++) {
+        for (int i = 0; i < edges; i++) {
             String[] inputs = scan.nextLine().split(" ");
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
@@ -26,6 +26,9 @@ class Graph {
         return edges;
     }
     public void addEdge(int vertexOne, int vertexTwo) {
+        if (vertexOne == vertexTwo) {
+            return;
+        }
         adj[vertexOne].add(vertexTwo);
         adj[vertexTwo].add(vertexOne);
         edges++;
