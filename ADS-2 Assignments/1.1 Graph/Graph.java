@@ -25,7 +25,7 @@ public class Graph {
 		}
 	}
 	Graph(Graph g) {
-		Graph(g.vertices());
+		this(g.vertices());
 		edges = g.edges();
 		for (int i = 0; i < g.vertices(); i++) {
 			Stack<Integer> reverse = new Stack<Integer>();

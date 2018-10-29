@@ -16,19 +16,13 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Haryana
-Gujarat
-Goa
-Delhi
-Daman and Diu
-Dadra and Nagar Haveli
-Chhattisgarh
-Chandigarh
-Bihar
-Assam
-Arunachal Pradesh
-Andhra Pradesh
-Andaman and Nicobar
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -49,19 +43,13 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Haryana
-Gujarat
-Goa
-Delhi
-Daman and Diu
-Dadra and Nagar Haveli
-Chhattisgarh
-Chandigarh
-Bihar
-Assam
-Arunachal Pradesh
-Andhra Pradesh
-Andaman and Nicobar
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -105,42 +93,13 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-West Bengal
-Uttarakhand
-Uttar Pradesh
-Tripura
-Telangana
-Tamil Nadu
-Sikkim
-Rajasthan
-Punjab
-Puducherry
-Odisha
-Nagaland
-Mizoram
-Meghalaya
-Manipur
-Maharashtra
-Madhya Pradesh
-Lakshadweep
-Kerala
-Karnataka
-Jharkhand
-Jammu and Kashmir
-Himachal Pradesh
-Haryana
-Gujarat
-Goa
-Delhi
-Daman and Diu
-Dadra and Nagar Haveli
-Chhattisgarh
-Chandigarh
-Bihar
-Assam
-Arunachal Pradesh
-Andhra Pradesh
-Andaman and Nicobar
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -184,42 +143,13 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-West Bengal
-Uttarakhand
-Uttar Pradesh
-Tripura
-Telangana
-Tamil Nadu
-Sikkim
-Rajasthan
-Punjab
-Puducherry
-Odisha
-Nagaland
-Mizoram
-Meghalaya
-Manipur
-Maharashtra
-Madhya Pradesh
-Lakshadweep
-Kerala
-Karnataka
-Jharkhand
-Jammu and Kashmir
-Himachal Pradesh
-Haryana
-Gujarat
-Goa
-Delhi
-Daman and Diu
-Dadra and Nagar Haveli
-Chhattisgarh
-Chandigarh
-Bihar
-Assam
-Arunachal Pradesh
-Andhra Pradesh
-Andaman and Nicobar
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -228,7 +158,13 @@ Expected Output:
 No edges
 
 Your Output: 
-Hyderabad
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -237,7 +173,13 @@ Expected Output:
 No edges
 
 Your Output: 
-Hyderabad
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Graph.<init>(Graph.java:22)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -246,7 +188,7 @@ Expected Output:
 No edges
 
 Your Output: 
-
+Graph@1b0375b3
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -255,6 +197,6 @@ Expected Output:
 No edges
 
 Your Output: 
-
+Graph@1b0375b3
 ----------------------------------------
 
