@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- *the class for solution.
+ * Solution class.
  */
 final class Solution {
     /**
