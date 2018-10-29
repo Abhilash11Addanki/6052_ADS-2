@@ -58,18 +58,24 @@ Audit done.
 Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:3:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:3:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:4:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:4:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:5:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:5:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:6:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:7:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:8:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:10: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:10:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:11:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:11:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\1.1 Graph\Solution.java:11:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 20 errors.

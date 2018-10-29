@@ -16,8 +16,19 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Haryana
+Gujarat
+Goa
+Delhi
+Daman and Diu
+Dadra and Nagar Haveli
+Chhattisgarh
+Chandigarh
+Bihar
+Assam
+Arunachal Pradesh
+Andhra Pradesh
+Andaman and Nicobar
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -38,8 +49,19 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Haryana
+Gujarat
+Goa
+Delhi
+Daman and Diu
+Dadra and Nagar Haveli
+Chhattisgarh
+Chandigarh
+Bihar
+Assam
+Arunachal Pradesh
+Andhra Pradesh
+Andaman and Nicobar
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -83,8 +105,42 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+West Bengal
+Uttarakhand
+Uttar Pradesh
+Tripura
+Telangana
+Tamil Nadu
+Sikkim
+Rajasthan
+Punjab
+Puducherry
+Odisha
+Nagaland
+Mizoram
+Meghalaya
+Manipur
+Maharashtra
+Madhya Pradesh
+Lakshadweep
+Kerala
+Karnataka
+Jharkhand
+Jammu and Kashmir
+Himachal Pradesh
+Haryana
+Gujarat
+Goa
+Delhi
+Daman and Diu
+Dadra and Nagar Haveli
+Chhattisgarh
+Chandigarh
+Bihar
+Assam
+Arunachal Pradesh
+Andhra Pradesh
+Andaman and Nicobar
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -128,8 +184,42 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+West Bengal
+Uttarakhand
+Uttar Pradesh
+Tripura
+Telangana
+Tamil Nadu
+Sikkim
+Rajasthan
+Punjab
+Puducherry
+Odisha
+Nagaland
+Mizoram
+Meghalaya
+Manipur
+Maharashtra
+Madhya Pradesh
+Lakshadweep
+Kerala
+Karnataka
+Jharkhand
+Jammu and Kashmir
+Himachal Pradesh
+Haryana
+Gujarat
+Goa
+Delhi
+Daman and Diu
+Dadra and Nagar Haveli
+Chhattisgarh
+Chandigarh
+Bihar
+Assam
+Arunachal Pradesh
+Andhra Pradesh
+Andaman and Nicobar
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -138,8 +228,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Hyderabad
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -148,8 +237,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Hyderabad
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -158,8 +246,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -168,7 +255,6 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
