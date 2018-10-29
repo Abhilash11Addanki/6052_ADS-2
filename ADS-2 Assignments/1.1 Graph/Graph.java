@@ -1,113 +1,138 @@
-import java.util.*;
-public class Graph {
-    private int V;
-    private int E;
+import java.util.Scanner;
+/**
+ *the class is to maintain the.
+ *list representation of matrix.
+ */
+class Graph {
+    /**
+     *the variable to store number.
+     *of vertices.
+     */
+    private int vertices;
+    /**
+    *the variable to store number.
+    *of edges.
+    */
+    private int edges;
+    /**
+     *the array to store bag of arrays.
+     */
     private Bag<Integer>[] adj;
     /**
-     * Initializes an empty graph with {@code V} vertices and 0 edges.
-     * param V the number of vertices
-     *
-     * @param  V number of vertices
+     *the variable to store all keys.
      */
-    Graph(int V) {
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+    private String[] tokens;
+    /**
+     *an empty constructor.
+     */
+    Graph() {
+    }
+    /**
+     *the constructor is to initialize the input given.
+     *for the graph.
+     *
+     * @param      scan  The scan
+     */
+    Graph(final Scanner scan) {
+        vertices = Integer.parseInt(scan.nextLine());
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
+        }
+        int edge = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        for (int i = 0; i < edge; i++) {
+            String[] inputs = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
     /**
-     * Initializes a graph from the specified input stream.
-     * The format is the number of vertices <em>V</em>,
-     * followed by the number of edges <em>E</em>,
-     * followed by <em>E</em> pairs of vertices, with each entry separated by whitespace.
+     *returns the vertices of graph.
      *
-     * @param  in the input stream
-     * @throws IllegalArgumentException if the endpoints of any edge are not in prescribed range
-     * @throws IllegalArgumentException if the number of vertices or edges is negative
-     * @throws IllegalArgumentException if the input stream is in the wrong format
+     * @return vertices of graph
      */
-    Graph(final Scanner sc) {
-        try {
-            this.V = sc.nextInt();
-            if (V < 0) throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
-            adj = (Bag<Integer>[]) new Bag[V];
-            for (int v = 0; v < V; v++) {
-                adj[v] = new Bag<Integer>();
-            }
-            int E = sc.nextInt();
-            if (E <= 0) throw new IllegalArgumentException("No edges");
-            String[] data = sc.nextLine().split(",");
-            for (int i = 0; i < E; i++) {
-                String[] inp = sc.nextLine().split(" ");
-                addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
-            }
-        } catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Graph constructor", e);
+    public int vertices() {
+        return vertices;
+    }
+    /**
+     *returns the edges of graph.
+     *
+     * @return edges of graph
+     */
+    public int edges() {
+        return edges;
+    }
+    /**
+     *the method is to add an edge between.
+     *two vertices.
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     * the time complexity is O(E)
+     * E denotes the number of edges we have in graph.
+     * because we use has next method.
+     */
+    public void addEdge(final int vertexOne,
+        final int vertexTwo) {
+        if (vertexOne == vertexTwo) {
+            return;
         }
+        if (!hasEdge(vertexOne, vertexTwo)) {
+            edges++;
+        }
+        adj[vertexOne].add(vertexTwo);
+        adj[vertexTwo].add(vertexOne);
     }
     /**
-     * Returns the number of vertices in this graph.
-     * @return the number of vertices in this graph
-     */
-    public int V() {
-        return V;
-    }
-    /**
-     * Returns the number of edges in this graph.
-     * @return the number of edges in this graph
-     */
-    public int E() {
-        return E;
-    }
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
-    }
-    /**
-     * Adds the undirected edge v-w to this graph.
+     *the method is to maintian a iteratable for.
+     *bag
+     *returns an interator.
+     * @param      vertex  The vertex
      *
-     * @param  v one vertex in the edge
-     * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @return  iterator.
      */
-    public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
-        E++;
-        adj[v].add(w);
-        adj[w].add(v);
+    public Iterable<Integer> adj(final int vertex) {
+        return adj[vertex];
     }
-    public boolean hasEdge(int v, int w) {
-        if (adj[v].contains(w)) {
-            return true;
+    /**
+     *the method is check whether there is a.
+     *connection between two given vertices.
+     *the time complexity is O(E)
+     *E is the number of edges in graph.
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int vertexOne,
+        final int vertexTwo) {
+        for (int each : adj(vertexOne))  {
+            if (each == vertexTwo) {
+                return true;
+            }
         }
         return false;
     }
     /**
-     * Returns the vertices adjacent to vertex {@code v}.
-     *
-     * @param  v the vertex
-     * @return the vertices adjacent to vertex {@code v}, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     *the method is to print the string format.
+     *of graph.
+     *the time complexity will be O(N^2)
+     *@return string format.
      */
-    public Iterable<Integer> adj(int v) {
-        validateVertex(v);
-        return adj[v];
-    }
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + "\n");
-        for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
-                s.append(w + " ");
+        StringBuilder str = new StringBuilder();
+        str.append(vertices + " vertices, " + edges + " edges" + "\n");
+        if (edges > 0) {
+            for (int i = 0; i < vertices; i++) {
+                str.append(tokens[i] + ": ");
+                for (int j : adj[i]) {
+                    str.append(tokens[j] + " ");
+                }
+                str.append("\n");
             }
-            s.append("\n");
+            return str.toString();
+        } else {
+            str.append("No edges");
+            return str.toString();
         }
-        return s.toString();
     }
-
 }

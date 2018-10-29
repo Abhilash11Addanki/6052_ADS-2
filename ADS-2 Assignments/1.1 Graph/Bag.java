@@ -77,14 +77,4 @@ public class Bag<Item> implements Iterable<Item> {
             return item;
         }
     }
-    public boolean contains(Item item) {
-    	Node n = first;
-    	while (n != null) {
-    		if (n.item == item) {
-    			return true;
-    		}
-    		n = n.next;
-    	}
-    	return false;
-    }
 }
