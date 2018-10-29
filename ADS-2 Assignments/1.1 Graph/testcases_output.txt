@@ -21,7 +21,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -48,7 +48,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -98,7 +98,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -148,7 +148,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -163,7 +163,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -178,7 +178,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Graph.<init>(Graph.java:22)
+	at Graph.<init>(Graph.java:23)
 	at Solution.main(Solution.java:7)
 ----------------------------------------
 
@@ -188,7 +188,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Graph@1b0375b3
+0 vertices, 0 edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -197,6 +197,6 @@ Expected Output:
 No edges
 
 Your Output: 
-Graph@1b0375b3
+0 vertices, 0 edges
 ----------------------------------------
 

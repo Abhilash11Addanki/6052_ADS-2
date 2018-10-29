@@ -3,6 +3,7 @@ public class Graph {
 	private final int vertices;
 	private int edges;
 	private Bag<Integer>[] adj;
+	private String[] tokens;
 	Graph(int v) {
 		vertices = v;
 		edges = 0;
@@ -50,5 +51,17 @@ public class Graph {
 	}
 	public Iterable<Integer> adj(int v) {
 		return adj[v];
+	}
+	public String toString() {
+		StringBuilder s = new StringBuilder();
+		s.append(vertices + " vertices, " + edges + " edges" + "\n");
+		for (int i = 0; i < vertices; i++) {
+			s.append(tokens[i] + ": ");
+			for (int j : adj[i]) {
+				s.append(tokens[j] + " ");
+			}
+			s.append("\n");
+		}
+		return s.toString();
 	}
 }
