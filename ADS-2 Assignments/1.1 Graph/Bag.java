@@ -23,13 +23,11 @@ import java.util.NoSuchElementException;
 public class Bag<Item> implements Iterable<Item> {
     private int N;         // number of elements in bag
     private Node first;    // beginning of bag
-
     // helper linked list class
     private class Node {
         private Item item;
         private Node next;
     }
-
    /**
      * Create an empty stack.
      */
@@ -37,21 +35,18 @@ public class Bag<Item> implements Iterable<Item> {
         first = null;
         N = 0;
     }
-
    /**
      * Is the BAG empty?
      */
     public boolean isEmpty() {
         return first == null;
     }
-
    /**
      * Return the number of items in the bag.
      */
     public int size() {
         return N;
     }
-
    /**
      * Add the item to the bag.
      */
@@ -62,25 +57,12 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
-    public boolean contains(Item item) {
-        Node n = first;
-        while (n != null) {
-            if (n.item == item) {
-                return true;
-            }
-            n = n.next;
-        }
-        return false;
-    }
-
-
    /**
      * Return an iterator that iterates over the items in the bag.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
     }
-
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
@@ -95,5 +77,14 @@ public class Bag<Item> implements Iterable<Item> {
             return item;
         }
     }
-
+    public boolean contains(Item item) {
+    	Node n = first;
+    	while (n != null) {
+    		if (n.item == item) {
+    			return true;
+    		}
+    		n = n.next;
+    	}
+    	return false;
+    }
 }
