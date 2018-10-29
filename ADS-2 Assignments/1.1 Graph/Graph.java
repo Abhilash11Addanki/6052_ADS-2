@@ -27,6 +27,7 @@ class Graph {
     }
     public void addEdge(int vertexOne, int vertexTwo) {
         if (vertexOne == vertexTwo) {
+            edges--;
             return;
         }
         adj[vertexOne].add(vertexTwo);

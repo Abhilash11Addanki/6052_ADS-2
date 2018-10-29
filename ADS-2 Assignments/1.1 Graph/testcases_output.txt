@@ -226,24 +226,24 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
-1 vertices, 0 edges
-No edges
+1 vertices, -1 edges
+Hyderabad:
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
-1 vertices, 0 edges
-No edges
+1 vertices, -1 edges
+Hyderabad:
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
