@@ -1,34 +1,30 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
-
 /**
  * Class for bag.
- *
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * { var_description }.
+     * number of elements in bag.
      */
-    private int n;     // number of elements in bag
+    private int n;
     /**
-     * { var_description }.
+     * beginning of bag.
      */
-    private Node first;    // beginning of bag
+    private Node first;
     /**
      * Class for node.
      */
     private class Node {
         /**
-         * { var_description }.
+         * item of type Item.
          */
         private Item item;
         /**
-         * { var_description }.
+         * next of type Node.
          */
         private Node next;
     }
-
     /**
       * Create an empty stack.
       */
@@ -38,13 +34,11 @@ public class Bag<Item> implements Iterable<Item> {
     }
     /**
      * Determines if empty.
-     *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
       * Return the number of items in the bag.
       * @return size.
@@ -52,10 +46,8 @@ public class Bag<Item> implements Iterable<Item> {
     public int size() {
         return n;
     }
-
     /**
-     * { function_description }.
-     *
+     * add method which adds the item to the bag.
      * @param      item  The item
      */
     public void add(final Item item) {
@@ -65,8 +57,6 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-
     /**
       * Return an iterator that iterates over the items in the bag.
       * @return list iterator.
@@ -74,38 +64,27 @@ public class Bag<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
-
     /**
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * current of type Node.
          */
         private Node current = first;
         /**
          * Determines if it has next.
-         *
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**
-         * { function_description }.
-         */
-        public void remove() {
-            throw new UnsupportedOperationException();
-        }
-        /**
-         * { function_description }.
-         *
-         * @return     { description_of_the_return_value }
+         * next method that returns the next item of the
+         * current item.
+         * @return     Item.
          */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;
