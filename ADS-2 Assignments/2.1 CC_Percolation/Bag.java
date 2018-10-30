@@ -35,6 +35,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * add method which adds the item to the bag.
      * @param      item  The item
+     * Time complexity for this method is O(1).
      */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -61,6 +62,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Determines if it has next.
          * @return     True if has next, False otherwise.
+         * Time complexity for this method is O(1).
          */
         public boolean hasNext() {
             return current != null;
@@ -69,6 +71,7 @@ public class Bag<Item> implements Iterable<Item> {
          * next method that returns the next item of the
          * current item.
          * @return     Item.
+         * Time complexity for this method is O(1).
          */
         public Item next() {
             Item item = current.item;

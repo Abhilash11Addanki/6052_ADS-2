@@ -24,7 +24,6 @@ class Percolation {
     private CC cc;
     /**
      * Constructs the object.
-     *
      * @param      n  The size
      */
     Percolation(final int n) {
@@ -36,9 +35,9 @@ class Percolation {
     }
     /**
      * function to check whether the element has to be connected or not.
-     *
      * @param      row   The value of row
      * @param      col   The value of column
+     * Time complexity for this method is O(1).
      */
     void open(final int row, final int col) {
         grid[row][col] = 1;
@@ -67,49 +66,46 @@ class Percolation {
     }
     /**
      * to get the component at the particular row and column.
-     *
      * @param      i     row index is given.
      * @param      j     column index is given
-     *
      * @return     return type is int
+     * Time complexity for this method is O(1).
      */
     int component(final int i, final int j) {
         return (i) * size + j;
     }
     /**
      * Determines if open.
-     *
      * @param      row   The row
      * @param      col   The col
-     *
      * @return     True if open, False otherwise.
+     * Time complexity for this method is O(1).
      */
     boolean isOpen(final int row, final int col) {
         return grid[row][col] == 1;
     }
     /**
      * Determines if full.
-     *
      * @param      row   The row
      * @param      col   The col
-     *
      * @return     True if full, False otherwise.
+     * Time complexity for this method is O(1).
      */
     boolean isFull(final int row, final int col) {
         return grid[row][col] == 0;
     }
     /**
      * to get the number of open sites.
-     *
      * @return     integer is returned.
+     * Time complexity for this method is O(1).
      */
     int numberofopensites() {
         return cnt;
     }
     /**
      * function to check if the grid percolates or not.
-     *
      * @return     True if percolates, False otherwise.
+     * Time complexity for this method is O(1).
      */
     boolean percolates() {
         cc = new CC(cd);

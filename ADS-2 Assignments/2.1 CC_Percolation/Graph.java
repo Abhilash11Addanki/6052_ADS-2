@@ -5,7 +5,7 @@ class Graph {
     /**
      * integer variable vertices.
      */
-    private  int vertices;
+    private int vertices;
     /**
      * integer variable edges.
      */
@@ -22,20 +22,20 @@ class Graph {
     }
     /**
      * Constructs the object.
-     * Time complexity : O(n).
-     * @param      vertix     integer variable.
+     * Time complexity is O(n).
+     * @param      vertex     integer variable.
      */
-    Graph(final int vertix) {
-        this.vertices = vertix;
-        this.edges = 0;
-        adj = (Bag<Integer>[]) new Bag[vertix];
-        for (int i = 0; i < vertix; i++) {
+    Graph(final int vertex) {
+        vertices = vertex;
+        edges = 0;
+        adj = (Bag<Integer>[]) new Bag[vertex];
+        for (int i = 0; i < vertex; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
     /**
      * returns vertices.
-     * Time complexity O(1).
+     * Time complexity is O(1).
      * @return  vertices.
      */
     public int ve() {
@@ -43,7 +43,7 @@ class Graph {
     }
     /**
      * returns edges.
-     * Time complexity : O(1).
+     * Time complexity is O(1).
      * @return edges.
      */
     public int e() {
@@ -51,7 +51,7 @@ class Graph {
     }
     /**
      * Adds an edge.
-     * Time complexity O(1)
+     * Time complexity is O(1)
      * @param      v     integer variable.
      * @param      w     integer variable.
      */
@@ -67,10 +67,9 @@ class Graph {
     }
     /**
      * Determines if it has edge.
-     *
      * @param      v     integer variable.
      * @param      w     integer variable.
-     * Time complexity O(v)
+     * Time complexity is O(v)
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
@@ -86,9 +85,8 @@ class Graph {
     }
     /**
      * iterable function.
-     *
      * @param      v integer variable.
-     * Time complexity : O(v)
+     * Time complexity is O(v)
      * @return   array.
      */
     public Iterable<Integer> adj(final int v) {
@@ -96,7 +94,7 @@ class Graph {
     }
     /**
      * matrix method.
-     * Time complexity : O(1)
+     * Time complexity is O(1)
      * @return   array.
      */
     public Bag[] matrix() {
@@ -104,7 +102,7 @@ class Graph {
     }
     /**
      * list method.
-     * Time complexity : O(1)
+     * Time complexity is O(1)
      * @return  array.
      */
     public Bag[] list() {

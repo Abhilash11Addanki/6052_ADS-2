@@ -38,6 +38,7 @@ public class CC {
      * depth-first search for a Graph.
      * @param      g     G of type Graph.
      * @param      v     v of type int.
+     * Time complexity for this method is O(N^2).
      */
     private void dfs(final Graph g, final int v) {
         marked[v] = true;
@@ -49,13 +50,13 @@ public class CC {
             }
         }
     }
-
     /**
      * Returns the component id of the connected
      * component containing vertex {@code v}.
      * @param  v the vertex
      * @return the component id of the connected
      * component containing vertex {@code v}
+     * Time complexity for this method is O(1).
      */
     public int id(final int v) {
         return id[v];
@@ -67,6 +68,7 @@ public class CC {
      * @param  w the other vertex
      * @return {@code true} if vertices {@code v} and {@code w} are in the same
      *         connected component; {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean connected(final int v, final int w) {
         return id(v) == id(w);
