@@ -1,14 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:26:27: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:42:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:54: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:56: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\CC.java:58:19: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...

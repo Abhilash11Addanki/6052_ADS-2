@@ -2,9 +2,9 @@
  * Class for cc.
  */
 public class CC {
-	/**
-	 * marked[v] = has vertex v been marked?.
-	 */
+    /**
+     * marked[v] = has vertex v been marked?.
+     */
     private boolean[] marked;
     /**
      * id[v] = id of connected component containing v.
@@ -21,41 +21,43 @@ public class CC {
 
     /**
      * Computes the connected components of the undirected graph {@code G}.
-     * @param G the undirected graph
+     * @param g the undirected graph
      */
-    public CC(final Graph G) {
-        marked = new boolean[G.ve()];
-        id = new int[G.ve()];
-        size = new int[G.ve()];
-        for (int v = 0; v < G.ve(); v++) {
+    public CC(final Graph g) {
+        marked = new boolean[g.ve()];
+        id = new int[g.ve()];
+        size = new int[g.ve()];
+        for (int v = 0; v < g.ve(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
                 count++;
             }
         }
     }
     /**
      * depth-first search for a Graph.
-     * @param      G     G of type Graph.
+     * @param      g     G of type Graph.
      * @param      v     v of type int.
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }
 
     /**
-     * Returns the component id of the connected component containing vertex {@code v}.
+     * Returns the component id of the connected
+     * component containing vertex {@code v}.
      * @param  v the vertex
-     * @return the component id of the connected component containing vertex {@code v}
+     * @return the component id of the connected
+     * component containing vertex {@code v}
      */
-    public int id(int v) {
+    public int id(final int v) {
         return id[v];
     }
     /**

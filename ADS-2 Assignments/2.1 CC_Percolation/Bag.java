@@ -33,20 +33,6 @@ public class Bag<Item> implements Iterable<Item> {
         n = 0;
     }
     /**
-     * Determines if empty.
-     * @return     True if empty, False otherwise.
-     */
-    public boolean isEmpty() {
-        return first == null;
-    }
-    /**
-      * Return the number of items in the bag.
-      * @return size.
-      */
-    public int size() {
-        return n;
-    }
-    /**
      * add method which adds the item to the bag.
      * @param      item  The item
      */
