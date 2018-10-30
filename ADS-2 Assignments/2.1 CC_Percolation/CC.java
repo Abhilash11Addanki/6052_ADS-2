@@ -10,10 +10,10 @@ public class CC {
      * @param G the undirected graph
      */
     public CC(Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+        marked = new boolean[G.ve()];
+        id = new int[G.ve()];
+        size = new int[G.ve()];
+        for (int v = 0; v < G.ve(); v++) {
             if (!marked[v]) {
                 dfs(G, v);
                 count++;
@@ -32,6 +32,7 @@ public class CC {
             }
         }
     }
+
     /**
      * Returns the component id of the connected component containing vertex {@code v}.
      *
@@ -81,26 +82,6 @@ public class CC {
         validateVertex(w);
         return id(v) == id(w);
     }
-
-    /**
-     * Returns true if vertices {@code v} and {@code w} are in the same
-     * connected component.
-     *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @return {@code true} if vertices {@code v} and {@code w} are in the same
-     *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
-     * @deprecated Replaced by {@link #connected(int, int)}.
-     */
-    @Deprecated
-    public boolean areConnected(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
-        return id(v) == id(w);
-    }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
         int V = marked.length;
