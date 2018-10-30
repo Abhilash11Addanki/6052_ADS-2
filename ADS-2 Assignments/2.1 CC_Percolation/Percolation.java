@@ -1,31 +1,37 @@
-class Percolation {
 /**
- * variable to keep count value.
+ * Class for percolation.
  */
+class Percolation {
+    /**
+     * variable to keep count value.
+     */
     private int cnt;
     /**
      * to take 2 dimentional array.
      */
     private int[][] grid;
     /**
-     * { to keep size }.
+     * to keep size.
      */
     private int size;
     /**
      * object for weighted addEdge class.
      */
     private Graph cd;
-    private CC cc; 
-/**
- * Constructs the object.
- *
- * @param      n  The size
- */
+    /**
+     * cc of type CC.
+     */
+    private CC cc;
+    /**
+     * Constructs the object.
+     *
+     * @param      n  The size
+     */
     Percolation(final int n) {
         grid = new int[n][n];
         cnt = 0;
         cd = new Graph((n * n) + 2);
-    	cc = new CC(cd);
+        cc = new CC(cd);
         this.size = n;
     }
     /**
@@ -44,19 +50,19 @@ class Percolation {
             cd.addEdge((size * size) + 1, component(row, col));
         }
         if (row + 1 < size && grid[row][col] == 1) {
-                cd.addEdge(
-                    component(row + 1, col), component(row, col));
-            }
+            cd.addEdge(
+                component(row + 1, col), component(row, col));
+        }
         if (row - 1 >= 0 && grid[row - 1][col] == 1) {
-                cd.addEdge(
-                    component(row - 1, col), component(row, col));
+            cd.addEdge(
+                component(row - 1, col), component(row, col));
         }
         if (col - 1 >= 0 && grid[row][col - 1] == 1) {
-                cd.addEdge(component(row, col - 1), component(row, col));
+            cd.addEdge(component(row, col - 1), component(row, col));
         }
         if (col + 1 < size && grid[row][col + 1] == 1) {
-                cd.addEdge(
-                    component(row, col + 1), component(row, col));
+            cd.addEdge(
+                component(row, col + 1), component(row, col));
         }
     }
     /**
@@ -106,7 +112,7 @@ class Percolation {
      * @return     True if percolates, False otherwise.
      */
     boolean percolates() {
-    	cc = new CC(cd);
+        cc = new CC(cd);
         return cc.connected(0, (size * size) + 1);
     }
 }

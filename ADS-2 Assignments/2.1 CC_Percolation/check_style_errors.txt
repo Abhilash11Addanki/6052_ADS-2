@@ -12,12 +12,7 @@ Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Percolation.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Percolation.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Percolation.java:18:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Percolation.java:28:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\2.1 CC_Percolation\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
