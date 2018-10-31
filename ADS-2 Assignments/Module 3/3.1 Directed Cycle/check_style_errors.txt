@@ -54,10 +54,8 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Digraph.java:60:34: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Digraph.java:68: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Digraph.java:71:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Digraph.java:77: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Digraph.java:77: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\DirectedCycle.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\DirectedCycle.java:2:5: Missing a Javadoc comment. [JavadocVariable]
