@@ -33,22 +33,9 @@ public class Stack<Item> implements Iterable<Item> {
         n = 0;
     }
     /**
-     * Determines if empty.
-     * @return     True if empty, False otherwise.
-     */
-    public boolean isEmpty() {
-        return first == null;
-    }
-    /**
-     * returns the size.
-     * @return     size.
-     */
-    public int size() {
-        return n;
-    }
-    /**
      * adds the item to the stack.
      * @param      item  The item
+     * Time complexity for this method is O(1).
      */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -63,6 +50,7 @@ public class Stack<Item> implements Iterable<Item> {
      * Throw an exception if no such item
      * exists because the stack is empty.
      * @return     Item.
+     * Time complexity for this method is O(1).
      */
     public Item pop() {
         Item item = first.item;        // save item to return
@@ -75,6 +63,7 @@ public class Stack<Item> implements Iterable<Item> {
      * Throw an exception if no such item
      * exists because the stack is empty.
      * @return    Item.
+     * Time complexity for this method is O(1).
      */
     public Item peek() {
         return first.item;
@@ -82,6 +71,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of the object.
      * @return     String representation of the object.
+     * Time complexity for this method is O(N).
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -109,6 +99,7 @@ public class Stack<Item> implements Iterable<Item> {
         /**
          * Determines if it has next.
          * @return     True if has next, False otherwise.
+         * Time complexity for this method is O(1).
          */
         public boolean hasNext() {
             return current != null;
@@ -116,6 +107,7 @@ public class Stack<Item> implements Iterable<Item> {
         /**
          * returns the next item of the current item.
          * @return     Item.
+         * Time complexity for this method is O(1).
          */
         public Item next() {
             Item item = current.item;
@@ -124,4 +116,3 @@ public class Stack<Item> implements Iterable<Item> {
         }
     }
 }
-
