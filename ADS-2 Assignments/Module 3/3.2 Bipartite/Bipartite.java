@@ -45,6 +45,8 @@ public class Bipartite {
      * the topological order or finds a directed cycle.
      * @param      g     g of type Digraph.
      * @param      v     v of type int.
+     * Time complexity for this method is O(E) where E
+     * is edges.
      */
     private void dfs(final Graph g, final int v) {
         marked[v] = true;
@@ -73,6 +75,7 @@ public class Bipartite {
      * Returns true if the graph is bipartite.
      * @return {@code true} if the graph
      * is bipartite; {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean isBipartite() {
         return isBipartite;
@@ -84,6 +87,7 @@ public class Bipartite {
      * vertex {@code v} is on; two vertices
      * are in the same side of the bipartition
      * if and only if they have the same color
+     * Time complexity for this method is O(1).
      */
     public boolean color(final int v) {
         return color[v];
@@ -94,6 +98,7 @@ public class Bipartite {
      * @return an odd-length cycle if the graph is not bipartite
      *         (and hence has an odd-length cycle), and {@code null}
      *         otherwise
+     * Time complexity for this method is O(1).
      */
     public Iterable<Integer> oddCycle() {
         return cycle;
