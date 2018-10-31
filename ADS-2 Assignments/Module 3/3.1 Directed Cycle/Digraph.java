@@ -34,6 +34,7 @@ public class Digraph {
     /**
      * Returns the number of vertices in this digraph.
      * @return the number of vertices in this digraph
+     * Time complexity is O(1).
      */
     public int vertices() {
         return vertices;
@@ -41,6 +42,7 @@ public class Digraph {
     /**
      * Returns the number of edges in this digraph.
      * @return the number of edges in this digraph
+     * Time complexity is O(1).
      */
     public int edges() {
         return edges;
@@ -49,6 +51,7 @@ public class Digraph {
      * Adds the directed edge v→w to this digraph.
      * @param  v the tail vertex
      * @param  w the head vertex
+     * Time complexity is O(1).
      */
     public void addEdge(final int v, final int w) {
         adj[v].add(w);
@@ -61,6 +64,7 @@ public class Digraph {
      * @param  v the vertex
      * @return the vertices adjacent from vertex
      * {@code v} in this digraph, as an iterable
+     * Time complexity is O(v).
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
@@ -72,6 +76,7 @@ public class Digraph {
      * of vertex {@code v}.
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
+     * Time complexity is O(1).
      */
     public int indegree(final int v) {
         return indegree[v];
