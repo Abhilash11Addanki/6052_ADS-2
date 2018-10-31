@@ -1,22 +1,15 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:31:22: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:42: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:42:22: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:42:31: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:47: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:54: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:60: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:77: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:82: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:83: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:86:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:98: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:43: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:43:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:58: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:68: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:77: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:78: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Bipartite.java:92: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.2 Bipartite\Graph.java:2: Line has trailing spaces. [RegexpSingleline]

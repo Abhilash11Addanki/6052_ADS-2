@@ -24,11 +24,12 @@ public class Bipartite {
     private Stack<Integer> cycle;
 
     /**
-     * Determines whether an undirected graph is bipartite and finds either a
+     * Determines whether an undirected graph
+     * is bipartite and finds either a
      * bipartition or an odd-length cycle.
      * @param  g the graph
      */
-    public Bipartite(Graph g) {
+    public Bipartite(final Graph g) {
         isBipartite = true;
         color  = new boolean[g.V()];
         marked = new boolean[g.V()];
@@ -39,22 +40,19 @@ public class Bipartite {
             }
         }
     }
-    private void dfs(Graph g, int v) { 
+    private void dfs(final Graph g, final int v) { 
         marked[v] = true;
         for (int w : g.adj(v)) {
-
             // short circuit if odd-length cycle found
-            if (cycle != null) return;
-
+            if (cycle != null) {
+                return;
+            }
             // found uncolored vertex, so recur
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
                 dfs(g, w);
-            } 
-
-            // if v-w create an odd-length cycle, find it
-            else if (color[w] == color[v]) {
+            } else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
                 cycle.push(w);  // don't need this unless you want to include start vertex twice
@@ -65,31 +63,27 @@ public class Bipartite {
             }
         }
     }
-
     /**
      * Returns true if the graph is bipartite.
-     *
-     * @return {@code true} if the graph is bipartite; {@code false} otherwise
+     * @return {@code true} if the graph 
+     * is bipartite; {@code false} otherwise
      */
     public boolean isBipartite() {
         return isBipartite;
     }
- 
     /**
      * Returns the side of the bipartite that vertex {@code v} is on.
-     *
      * @param  v the vertex
      * @return the side of the bipartition that vertex {@code v} is on; two vertices
      *         are in the same side of the bipartition if and only if they have the
      *         same color
      */
-    public boolean color(int v) {
+    public boolean color(final int v) {
         return color[v];
     }
     /**
      * Returns an odd-length cycle if the graph is not bipartite, and
      * {@code null} otherwise.
-     *
      * @return an odd-length cycle if the graph is not bipartite
      *         (and hence has an odd-length cycle), and {@code null}
      *         otherwise
