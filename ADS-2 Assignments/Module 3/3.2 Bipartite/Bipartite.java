@@ -6,33 +6,42 @@ public class Bipartite {
      * is the graph bipartite?.
      */
     private boolean isBipartite;
-    private boolean[] color;       // color[v] gives vertices on one side of bipartition
-    private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
-    private int[] edgeTo;          // edgeTo[v] = last edge on path to v
-    private Stack<Integer> cycle;  // odd-length cycle
+    /**
+     * color[v] gives vertices on one side of bipartition.
+     */
+    private boolean[] color;
+    /**
+     * marked[v] = true iff v has been visited in DFS.
+     */
+    private boolean[] marked;
+    /**
+     * edgeTo[v] = last edge on path to v.
+     */
+    private int[] edgeTo;
+    /**
+     * odd-length cycle.
+     */
+    private Stack<Integer> cycle;
 
     /**
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
-     *
-     * @param  G the graph
+     * @param  g the graph
      */
-    public Bipartite(Graph G) {
+    public Bipartite(Graph g) {
         isBipartite = true;
-        color  = new boolean[G.V()];
-        marked = new boolean[G.V()];
-        edgeTo = new int[G.V()];
-
-        for (int v = 0; v < G.V(); v++) {
+        color  = new boolean[g.V()];
+        marked = new boolean[g.V()];
+        edgeTo = new int[g.V()];
+        for (int v = 0; v < g.V(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
             }
         }
     }
-
-    private void dfs(Graph G, int v) { 
+    private void dfs(Graph g, int v) { 
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
 
             // short circuit if odd-length cycle found
             if (cycle != null) return;
@@ -41,7 +50,7 @@ public class Bipartite {
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
-                dfs(G, w);
+                dfs(g, w);
             } 
 
             // if v-w create an odd-length cycle, find it
