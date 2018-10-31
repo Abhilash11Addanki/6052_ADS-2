@@ -113,12 +113,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 23 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 3\3.1 Directed Cycle\Solution.java:10: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...
