@@ -2,9 +2,9 @@
  * Class for digraph.
  */
 public class Digraph {
-	/**
-	 * number of vertices in this digraph.
-	 */
+    /**
+     * number of vertices in this digraph.
+     */
     private final int V;
     /**
      * number of edges in this digraph.
@@ -56,16 +56,20 @@ public class Digraph {
         E++;
     }
     /**
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     * Returns the vertices adjacent from
+     * vertex {@code v} in this digraph.
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+     * @return the vertices adjacent from vertex
+     * {@code v} in this digraph, as an iterable
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
     /**
-     * Returns the number of directed edges incident to vertex {@code v}.
-     * This is known as the <em>indegree</em> of vertex {@code v}.
+     * Returns the number of directed edges
+     * incident to vertex {@code v}.
+     * This is known as the <em>indegree</em>
+     * of vertex {@code v}.
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
      */
