@@ -40,7 +40,6 @@ public class DirectedCycle {
      * the topological order or finds a directed cycle.
      * @param      g     g of type Digraph.
      * @param      v     v of type int.
-     * 
      */
     private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
@@ -63,10 +62,10 @@ public class DirectedCycle {
         onStack[v] = false;
     }
     /**
-     * Does the digraph have a directed cycle?
+     * Does the digraph have a directed cycle?.
      * @return {@code true} if the digraph has
      * a directed cycle, {@code false} otherwise
-     * Time complexity 
+     * Time complexity for this method is O(1).
      */
     public boolean hasCycle() {
         return cycle != null;
