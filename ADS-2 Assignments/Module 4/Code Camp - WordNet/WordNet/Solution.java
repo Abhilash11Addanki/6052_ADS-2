@@ -4,7 +4,7 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String synsets = sc.nextLine();
-		File file = new File("Files/" + synsets);
+		File file = new File("Files\\" + synsets);
 		try {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
