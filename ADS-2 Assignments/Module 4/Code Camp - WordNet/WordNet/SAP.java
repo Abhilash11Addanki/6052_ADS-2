@@ -22,7 +22,7 @@ public class SAP {
                 BreadthFirstDirectedPaths b2 = new BreadthFirstDirectedPaths(dg, w.get(j));
                 for (int k = 0; k < dg.V(); k++) {
                     if (b1.hasPathTo(k) && b2.hasPathTo(k)) {
-                        int sum = b1.distTo[k] + b2.distTo[k];
+                        int sum = b1.distTo(k) + b2.distTo(k);
                         if (sum < min) {
                             min = sum;
                             temp = k;
