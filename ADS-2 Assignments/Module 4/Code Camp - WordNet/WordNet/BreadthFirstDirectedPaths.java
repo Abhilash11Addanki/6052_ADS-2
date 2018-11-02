@@ -2,9 +2,9 @@
  * Class for breadth first directed paths.
  */
 public class BreadthFirstDirectedPaths {
-	/**
-	 * infinity value of type int.
-	 */
+    /**
+     * infinity value of type int.
+     */
     private static final int infinity = Integer.MAX_VALUE;
     /**
      * marked[v] = is there an s->v path?
@@ -28,8 +28,9 @@ public class BreadthFirstDirectedPaths {
         marked = new boolean[g.V()];
         distTo = new int[g.V()];
         edgeTo = new int[g.V()];
-        for (int v = 0; v < g.V(); v++)
+        for (int v = 0; v < g.V(); v++) {
             distTo[v] = infinity;
+        }
         bfs(g, s);
     }
     /**
@@ -42,12 +43,13 @@ public class BreadthFirstDirectedPaths {
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final Digraph g,
-    	final Iterable<Integer> sources) {
+                                     final Iterable<Integer> sources) {
         marked = new boolean[g.V()];
         distTo = new int[g.V()];
         edgeTo = new int[g.V()];
-        for (int v = 0; v < g.V(); v++)
+        for (int v = 0; v < g.V(); v++) {
             distTo[v] = infinity;
+        }
         validateVertices(sources);
         bfs(g, sources);
     }
@@ -102,10 +104,8 @@ public class BreadthFirstDirectedPaths {
      * {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
      * @return {@code true} if there is a directed path, {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public boolean hasPathTo(final int v) {
-        validateVertex(v);
         return marked[v];
     }
     /**
@@ -125,7 +125,7 @@ public class BreadthFirstDirectedPaths {
      */
     public Iterable<Integer> pathTo(final int v) {
         if (!hasPathTo(v)) {
-        	return null;
+            return null;
         }
         Stack<Integer> path = new Stack<Integer>();
         int x;
@@ -140,21 +140,22 @@ public class BreadthFirstDirectedPaths {
      * @param      v     int.
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
+        int v1 = marked.length;
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException("vertex " + v
-            	+ " is not between 0 and " + (V-1));
+                + " is not between 0 and " + (v1 - 1));
+        }
     }
     /**
      * throw an IllegalArgumentException unless {@code 0 <= v < V}.
      * @param      vertices  The vertices
      */
     private void validateVertices(final Iterable<Integer> vertices) {
-        int V = marked.length;
+        int v1 = marked.length;
         for (int v : vertices) {
-            if (v < 0 || v >= V) {
+            if (v < 0 || v >= v1) {
                 throw new IllegalArgumentException("vertex " + v
-                	+ " is not between 0 and " + (V-1));
+                    + " is not between 0 and " + (v1 - 1));
             }
         }
     }
