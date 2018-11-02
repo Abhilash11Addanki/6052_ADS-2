@@ -3,6 +3,7 @@ import java.io.*;
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		// Taking synsets file name as input.
 		String synsets = sc.nextLine();
 		File file = new File("Files\\" + synsets);
 		HashMap<Integer, ArrayList<String>> synsetshm = new HashMap<Integer, ArrayList<String>>();
@@ -27,21 +28,41 @@ class Solution {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+		// Taking hypernyms file name as input.
 		String hypernyms = sc.nextLine();
+		// Taking the type of testcase as input.
 		String type = sc.nextLine();
 		File file2 = new File("Files\\" + hypernyms);
 		HashMap<Integer, Integer> hypernymshm = new HashMap<Integer, Integer>();
 		int vertices = synsetshm.size();
 		Digraph d = new Digraph(vertices);
-		try {
-			Scanner scan1 = new Scanner(file2);
-			while (scan1.hasNextLine()) {
-				String[] inp = scan1.nextLine().split(",");
-				d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
+		switch (type) {
+		case "Graph":
+			try {
+				Scanner scan1 = new Scanner(file2);
+				while (scan1.hasNextLine()) {
+					String[] inp = scan1.nextLine().split(",");
+					d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
+				}
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
 			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println(d);
+			break;
+		case "Queries":
+			while (sc.hasNext()) {
+				int cnt = 0;
+				String[] inp = sc.nextLine().split(" ");
+				for (int i = 0; i < d.V(); i++) {
+					if (d.outdegree(i) == 0) {
+						cnt++;
+					}
+				}
+				if (cnt > 1) {
+					System.out.println("Multiple Roots");
+					break;
+				}
+			}
 		}
-		System.out.println(d);
 	}
 }
