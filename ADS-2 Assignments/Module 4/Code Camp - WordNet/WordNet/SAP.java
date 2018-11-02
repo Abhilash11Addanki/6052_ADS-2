@@ -20,7 +20,8 @@ public class SAP {
      * @param      w     ArrayList.
      * @return     integer array.
      */
-    public int[] length(final ArrayList<Integer> v, final ArrayList<Integer> w) {
+    public int[] length(final ArrayList<Integer> v,
+        final ArrayList<Integer> w) {
         int min = dg.V();
         int temp = 0;
         for (int i = 0; i < v.size(); i++) {
