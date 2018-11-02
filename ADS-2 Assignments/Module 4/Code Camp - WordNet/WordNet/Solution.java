@@ -42,7 +42,9 @@ class Solution {
 				Scanner scan1 = new Scanner(file2);
 				while (scan1.hasNextLine()) {
 					String[] inp = scan1.nextLine().split(",");
-					d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
+					for (int i = 1; i <= inp.length; i++) {
+						d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[i]));
+					}
 				}
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
