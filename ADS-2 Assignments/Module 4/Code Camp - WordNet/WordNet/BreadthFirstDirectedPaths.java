@@ -5,7 +5,7 @@ public class BreadthFirstDirectedPaths {
 	/**
 	 * infinity value of type int.
 	 */
-    private static final int INFINITY = Integer.MAX_VALUE;
+    private static final int infinity = Integer.MAX_VALUE;
     /**
      * marked[v] = is there an s->v path?
      */
@@ -19,36 +19,36 @@ public class BreadthFirstDirectedPaths {
      */
     private int[] distTo;
     /**
-     * Computes the shortest path from {@code s} and every other vertex in graph {@code G}.
-     * @param G the digraph
+     * Computes the shortest path from {@code s} and
+     * every other vertex in graph {@code G}.
+     * @param g the digraph
      * @param s the source vertex
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(Digraph G, int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            distTo[v] = INFINITY;
-        validateVertex(s);
-        bfs(G, s);
+    public BreadthFirstDirectedPaths(Digraph g, int s) {
+        marked = new boolean[g.V()];
+        distTo = new int[g.V()];
+        edgeTo = new int[g.V()];
+        for (int v = 0; v < g.V(); v++)
+            distTo[v] = infinity;
+        bfs(g, s);
     }
     /**
-     * Computes the shortest path from any one of the source vertices in {@code sources}
+     * Computes the shortest path from any one of the
+     * source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
      * @param G the digraph
      * @param sources the source vertices
      * @throws IllegalArgumentException unless each vertex {@code v} in
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(Digraph G, Iterable<Integer> sources) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            distTo[v] = INFINITY;
+    public BreadthFirstDirectedPaths(Digraph g, Iterable<Integer> sources) {
+        marked = new boolean[g.V()];
+        distTo = new int[g.V()];
+        edgeTo = new int[g.V()];
+        for (int v = 0; v < g.V(); v++)
+            distTo[v] = infinity;
         validateVertices(sources);
-        bfs(G, sources);
+        bfs(g, sources);
     }
 
     // BFS from single source
