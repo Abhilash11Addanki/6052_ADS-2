@@ -73,7 +73,25 @@ class Solution {
 					System.out.println("IllegalArgumentException");
 					break;
 				}
+				SAP s = new SAP(d);
+				ArrayList<Integer> a1 = revsynsetshm.get(inp[0]);
+				ArrayList<Integer> a2 = revsynsetshm.get(inp[1]);
+				int[] arr = s.length(a1, a2);
+				ArrayList<String> res = synsetshm.get(arr[1]);
+				String temp = res.get(0);
+				System.out.print("distance = " + arr[0] + "ancestor = ");
+				for (int k = 0; k < res.size(); k++) {
+					if (k != res.size() - 1) {
+						System.out.print(res.get(k) + " ");
+					} else {
+						System.out.print(res.get(k));
+					}
+				}
+				System.out.println();
 			}
+			break;
+		default:
+			break;
 		}
 	}
 }

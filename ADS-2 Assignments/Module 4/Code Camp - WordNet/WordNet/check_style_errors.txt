@@ -31,6 +31,51 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:8: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:13:38: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:13:46: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:13:49: Parameter s should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:17: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:24: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:31:38: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:31:46: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:31:49: Parameter sources should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:35: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:22: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:33: Parameter s should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:22: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:33: Parameter sources should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:82: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:87:30: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:99:23: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:111:37: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:114: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:117: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:124:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:124:33: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:125:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:126: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:131:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:131:35: Parameter vertices should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:135:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:97: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:98: '-' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 42 errors.
+Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Digraph.java:14: Line has trailing spaces. [RegexpSingleline]
@@ -286,13 +331,21 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:9: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:5:16: Parameter g should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:47: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:21: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:22: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:38: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:2: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:3: Missing a Javadoc comment. [JavadocType]
@@ -304,12 +357,15 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:10: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:15: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:36: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:39: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:44: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:46: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:73: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:77: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:78: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:82: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:85: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
