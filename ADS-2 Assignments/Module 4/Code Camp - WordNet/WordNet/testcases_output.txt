@@ -58,9 +58,10 @@ distance = 1, ancestor = animal_oil
 Your Output: 
 distance = 500, ancestor = ABO_antibodies
 distance = 500, ancestor = ABO_antibodies
-Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:20)
-	at Solution.main(Solution.java:79)
+distance = 500, ancestor = ABO_antibodies
+distance = 500, ancestor = ABO_antibodies
+distance = 500, ancestor = ABO_antibodies
+distance = 500, ancestor = ABO_antibodies
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -70,9 +71,9 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:20)
-	at Solution.main(Solution.java:79)
+distance = 1000, ancestor = ABO_antibodies
+distance = 1000, ancestor = ABO_antibodies
+distance = 1000, ancestor = ABO_antibodies
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -242,9 +243,21 @@ distance = 8, ancestor = abstraction abstract_entity
 Your Output: 
 distance = 82192, ancestor = 'hood
 distance = 82192, ancestor = 'hood
-Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:19)
-	at Solution.main(Solution.java:79)
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 82192, ancestor = 'hood
+distance = 0, ancestor = era epoch
+distance = 82192, ancestor = 'hood
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

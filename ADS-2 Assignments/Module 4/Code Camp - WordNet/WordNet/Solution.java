@@ -12,18 +12,26 @@ class Solution {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
 				ArrayList<String> al = new ArrayList<String>();
-				ArrayList<Integer> al2 = new ArrayList<Integer>();
 				String[] inp = scan.nextLine().split(",");
 				String[] tokens = inp[1].split(" ");
-				String[] tokens1 = inp[0].split(" ");
 				for (String s : tokens) {
 					al.add(s);
 				}
-				for (String i : tokens1) {
-					al2.add(Integer.parseInt(i));
-				}
 				synsetshm.put(Integer.parseInt(inp[0]), al);
-				revsynsetshm.put(inp[1], al2);
+			}
+			for (Integer i : synsetshm.keySet()) {
+				ArrayList<String> value = synsetshm.get(i);
+				for (String str : value) {
+					if (revsynsetshm.containsKey(str)) {
+						ArrayList<Integer> it = revsynsetshm.get(str);
+						it.add(i);
+						revsynsetshm.put(str, it);
+					} else {
+						ArrayList<Integer> t = new ArrayList<Integer>();
+						t.add(i);
+						revsynsetshm.put(str, t);
+					}
+				}
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
