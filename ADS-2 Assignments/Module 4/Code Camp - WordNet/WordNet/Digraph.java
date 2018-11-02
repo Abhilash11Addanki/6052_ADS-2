@@ -52,8 +52,6 @@ import java.util.NoSuchElementException;
  */
 
 public class Digraph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
     private final int V;           // number of vertices in this digraph
     private int E;                 // number of edges in this digraph
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
@@ -198,13 +196,13 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
+        s.append(V + " vertices, " + E + " edges " + "\n");
         for (int v = 0; v < V; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
             }
-            s.append(NEWLINE);
+            s.append("\n");
         }
         return s.toString();
     }
