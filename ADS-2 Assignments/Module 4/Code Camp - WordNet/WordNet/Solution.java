@@ -53,6 +53,7 @@ class Solution {
 			while (sc.hasNext()) {
 				int cnt = 0;
 				String[] inp = sc.nextLine().split(" ");
+				DirectedCycle dc = new DirectedCycle(d);
 				for (int i = 0; i < d.V(); i++) {
 					if (d.outdegree(i) == 0) {
 						cnt++;
@@ -60,6 +61,10 @@ class Solution {
 				}
 				if (cnt > 1) {
 					System.out.println("Multiple Roots");
+					break;
+				}
+				if (dc.hasCycle()) {
+					System.out.println("Cycle occured");
 					break;
 				}
 			}
