@@ -47,26 +47,26 @@ class Solution {
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
+			DirectedCycle dc = new DirectedCycle(d);
+			int cnt = 0;
+			for (int i = 0; i < d.V(); i++) {
+				if (d.outdegree(i) == 0) {
+					cnt++;
+				}
+			}
+			if (cnt > 1) {
+				System.out.println("Multiple Roots");
+				break;
+			}
+			if (dc.hasCycle()) {
+				System.out.println("Cycle occured");
+				break;
+			}
 			System.out.println(d);
 			break;
 		case "Queries":
 			while (sc.hasNext()) {
-				int cnt = 0;
 				String[] inp = sc.nextLine().split(" ");
-				DirectedCycle dc = new DirectedCycle(d);
-				for (int i = 0; i < d.V(); i++) {
-					if (d.outdegree(i) == 0) {
-						cnt++;
-					}
-				}
-				if (cnt > 1) {
-					System.out.println("Multiple Roots");
-					break;
-				}
-				if (dc.hasCycle()) {
-					System.out.println("Cycle occured");
-					break;
-				}
 			}
 		}
 	}
