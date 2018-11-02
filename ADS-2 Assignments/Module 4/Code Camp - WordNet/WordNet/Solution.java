@@ -44,19 +44,19 @@ class Solution {
 		HashMap<Integer, Integer> hypernymshm = new HashMap<Integer, Integer>();
 		int vertices = synsetshm.size();
 		Digraph d = new Digraph(vertices);
+		try {
+			Scanner scan1 = new Scanner(file2);
+			while (scan1.hasNextLine()) {
+				String[] inp = scan1.nextLine().split(",");
+				for (int i = 1; i < inp.length; i++) {
+					d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[i]));
+				}
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		switch (type) {
 		case "Graph":
-			try {
-				Scanner scan1 = new Scanner(file2);
-				while (scan1.hasNextLine()) {
-					String[] inp = scan1.nextLine().split(",");
-					for (int i = 1; i < inp.length; i++) {
-						d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[i]));
-					}
-				}
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
 			DirectedCycle dc = new DirectedCycle(d);
 			int cnt = 0;
 			for (int i = 0; i < d.V(); i++) {
@@ -70,9 +70,9 @@ class Solution {
 			}
 			if (dc.hasCycle()) {
 				System.out.println("Cycle detected");
-				break;
+			} else {
+				System.out.println(d);
 			}
-			System.out.println(d);
 			break;
 		case "Queries":
 			while (sc.hasNext()) {

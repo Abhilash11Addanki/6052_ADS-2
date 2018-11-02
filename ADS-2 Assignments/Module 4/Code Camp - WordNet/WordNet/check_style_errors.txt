@@ -359,15 +359,14 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:44: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:52: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:54: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:52: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:81: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:85: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:86: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:90: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Solution.java:93: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
