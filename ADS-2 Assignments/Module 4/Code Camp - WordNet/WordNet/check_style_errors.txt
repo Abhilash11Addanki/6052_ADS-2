@@ -100,20 +100,9 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:5:16: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:16:47: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:21: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:22: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:38: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\SAP.java:23: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
