@@ -55,11 +55,11 @@ class Solution {
 				}
 			}
 			if (cnt > 1) {
-				System.out.println("Multiple Roots");
+				System.out.println("Multiple roots");
 				break;
 			}
 			if (dc.hasCycle()) {
-				System.out.println("Cycle occured");
+				System.out.println("Cycle detected");
 				break;
 			}
 			System.out.println(d);
