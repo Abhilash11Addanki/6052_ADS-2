@@ -5,7 +5,7 @@ public class BreadthFirstDirectedPaths {
     /**
      * infinity value of type int.
      */
-    private static final int infinity = Integer.MAX_VALUE;
+    private static final int INFINITY = Integer.MAX_VALUE;
     /**
      * marked[v] = is there an s->v path?
      */
@@ -29,7 +29,7 @@ public class BreadthFirstDirectedPaths {
         distTo = new int[g.V()];
         edgeTo = new int[g.V()];
         for (int v = 0; v < g.V(); v++) {
-            distTo[v] = infinity;
+            distTo[v] = INFINITY;
         }
         bfs(g, s);
     }
@@ -37,7 +37,7 @@ public class BreadthFirstDirectedPaths {
      * Computes the shortest path from any one of the
      * source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
-     * @param G the digraph
+     * @param g the digraph
      * @param sources the source vertices
      * @throws IllegalArgumentException unless each vertex {@code v} in
      *         {@code sources} satisfies {@code 0 <= v < V}
@@ -48,7 +48,7 @@ public class BreadthFirstDirectedPaths {
         distTo = new int[g.V()];
         edgeTo = new int[g.V()];
         for (int v = 0; v < g.V(); v++) {
-            distTo[v] = infinity;
+            distTo[v] = INFINITY;
         }
         validateVertices(sources);
         bfs(g, sources);
