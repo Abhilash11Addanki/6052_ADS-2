@@ -67,6 +67,10 @@ class Solution {
 		case "Queries":
 			while (sc.hasNext()) {
 				String[] inp = sc.nextLine().split(" ");
+				if (inp[0].equals("null")) {
+					System.out.println("IllegalArgumentException");
+					break;
+				}
 			}
 		}
 	}
