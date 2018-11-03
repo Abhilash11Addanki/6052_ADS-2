@@ -52,8 +52,6 @@ import java.util.NoSuchElementException;
  */
 
 public class Digraph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
     private final int V;           // number of vertices in this digraph
     private int E;                 // number of edges in this digraph
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
@@ -75,40 +73,6 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-
-    /**  
-     * Initializes a digraph from the specified input stream.
-     * The format is the number of vertices <em>V</em>,
-     * followed by the number of edges <em>E</em>,
-     * followed by <em>E</em> pairs of vertices, with each entry separated by whitespace.
-     *
-     * @param  in the input stream
-     * @throws IllegalArgumentException if the endpoints of any edge are not in prescribed range
-     * @throws IllegalArgumentException if the number of vertices or edges is negative
-     * @throws IllegalArgumentException if the input stream is in the wrong format
-     */
-    public Digraph(In in) {
-        try {
-            this.V = in.readInt();
-            if (V < 0) throw new IllegalArgumentException("number of vertices in a Digraph must be nonnegative");
-            indegree = new int[V];
-            adj = (Bag<Integer>[]) new Bag[V];
-            for (int v = 0; v < V; v++) {
-                adj[v] = new Bag<Integer>();
-            }
-            int E = in.readInt();
-            if (E < 0) throw new IllegalArgumentException("number of edges in a Digraph must be nonnegative");
-            for (int i = 0; i < E; i++) {
-                int v = in.readInt();
-                int w = in.readInt();
-                addEdge(v, w); 
-            }
-        }
-        catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Digraph constructor", e);
-        }
-    }
-
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
@@ -232,13 +196,13 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
+        s.append(V + " vertices, " + E + " edges " + "\n");
         for (int v = 0; v < V; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
             }
-            s.append(NEWLINE);
+            s.append("\n");
         }
         return s.toString();
     }
