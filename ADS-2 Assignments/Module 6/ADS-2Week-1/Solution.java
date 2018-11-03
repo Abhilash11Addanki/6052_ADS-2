@@ -8,8 +8,10 @@ class PageRank {
 	}
 	double getPR(int v) {
 		pagerank = 0;
-		for (Integer i : dg.adj(v)) {
-			pagerank += getPR(i) / dg.outdegree(v);
+		for (int i = 0; i < 1000; i++) {
+			for (Integer j : dg.adj(v)) {
+				pagerank += getPR(j) / dg.outdegree(j);
+			}
 		}
 		return pagerank;
 	}
