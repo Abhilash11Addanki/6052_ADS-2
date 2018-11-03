@@ -186,9 +186,10 @@ Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:34:24: '0.25' is a magic number. [MagicNumber]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:40:29: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...

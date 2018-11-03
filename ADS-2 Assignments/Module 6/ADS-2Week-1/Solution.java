@@ -31,7 +31,7 @@ class PageRank {
     PageRank(final Digraph d) {
         dg = d;
         pagerank = new double[dg.V()];
-        initpagerank = 1 / dg.V();
+        initpagerank = 0.25;
         temppagerank = new double[dg.V()];
         for (k = 0; k < dg.V(); k++) {
             this.pagerank[k] = initpagerank;
