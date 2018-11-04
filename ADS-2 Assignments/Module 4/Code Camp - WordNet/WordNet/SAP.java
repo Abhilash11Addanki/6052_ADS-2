@@ -19,6 +19,8 @@ public class SAP {
      * @param      v     ArrayList.
      * @param      w     ArrayList.
      * @return     integer array.
+     * Time complexity for this method is O(v*w*V) where v is length of
+     * array list and w is length of array list and V is no of vertices.
      */
     public int[] length(final ArrayList<Integer> v,
         final ArrayList<Integer> w) {

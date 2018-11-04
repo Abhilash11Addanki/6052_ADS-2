@@ -42,6 +42,7 @@ public class Queue<Item> implements Iterable<Item> {
      * Returns true if this queue is empty.
      * @return {@code true} if this queue
      * is empty; {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean isEmpty() {
         return first == null;
@@ -49,6 +50,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Returns the number of items in this queue.
      * @return the number of items in this queue
+     * Time complexity for this method is O(1).
      */
     public int size() {
         return n;
@@ -56,6 +58,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Returns the item least recently added to this queue.
      * @return the item least recently added to this queue
+     * Time complexity for this method is O(1).
      */
     public Item peek() {
         return first.item;
@@ -63,6 +66,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Adds the item to this queue.
      * @param  item the item to add
+     * Time complexity for this method is O(1).
      */
     public void enqueue(final Item item) {
         Node<Item> oldlast = last;
@@ -80,6 +84,7 @@ public class Queue<Item> implements Iterable<Item> {
      * Removes and returns the item on this queue
      * that was least recently added.
      * @return the item on this queue that was least recently added
+     * Time complexity for this method is O(1).
      */
     public Item dequeue() {
         Item item = first.item;
@@ -94,6 +99,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of this queue.
      * @return the sequence of items in FIFO order, separated by spaces
+     * Time complexity for this method is O(N).
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -131,6 +137,7 @@ public class Queue<Item> implements Iterable<Item> {
         /**
          * Determines if it has next.
          * @return     True if has next, False otherwise.
+         * Time complexity for this method is O(1).
          */
         public boolean hasNext() {
             return current != null;
@@ -144,6 +151,7 @@ public class Queue<Item> implements Iterable<Item> {
         /**
          * returns the next item of the current item.
          * @return     item.
+         * Time complexity for this method is O(1).
          */
         public Item next() {
             Item item = current.item;
