@@ -37,6 +37,15 @@ class PageRank {
 		for (int i = 0; i < dg.vertices(); i++) {
 			pagerank[i] = initpr;
 		}
+		for (int i = 0; i < dg.vertices(); i++) {
+			if (dg.outdegree(i) == 0) {
+				for (int j = 0; j < dg.vertices(); j++) {
+					if (i != j) {
+						dg.addEdge(i, j);
+					}
+				}
+			}
+		}
 		for (int iter = 0; iter < 1000; iter++) {
 			for (int i = 0; i < dg.vertices(); i++) {
 				temppagerank[i] = pagerank[i];
@@ -44,9 +53,6 @@ class PageRank {
 			}
 			for (int j = 0; j < dg.vertices(); j++) {
 				for (Integer k : revdg.adj(j)) {
-					if (dg.outdegree(k) == 0) {
-						dg.addEdge(k, j);
-					}
 					pagerank[j] += temppagerank[k]
 					               / (double)dg.outdegree(k);
 				}
