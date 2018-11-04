@@ -5,8 +5,8 @@ import java.util.Arrays;
  */
 class PageRank {
 	/**
-	 * graph as g.
-	 */
+	* graph as g.
+	*/
 	private Digraph dg;
 	/**
 	 * reverse of the given graph as revG.
@@ -20,7 +20,6 @@ class PageRank {
 	 * array to store the pageRanks.
 	 */
 	private Double[] pagerank;
-	private Double[] temppagerank;
 	/**
 	 * constructor.
 	 *
@@ -44,12 +43,13 @@ class PageRank {
 			}
 		}
 		final int thousand = 1000;
-		for (int iter = 1; iter < thousand; iter++) {
-			temppagerank = new Double[vertices];
+		for (int k = 1; k < thousand; k++) {
+			Double[] temppagerank = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				Double newpr = 0.0;
-				for (Integer ele : revdg.adj(i)) {
-					newpr = newpr + pagerank[ele] / dg.outdegree(ele);
+				for (int ele : revdg.adj(i)) {
+					newpr = newpr
+					        + pagerank[ele] / dg.outdegree(ele);
 				}
 				temppagerank[i] = newpr;
 			}

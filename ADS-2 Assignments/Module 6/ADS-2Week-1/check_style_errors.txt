@@ -190,16 +190,15 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:23:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:27:12: Unused @param tag for 'gph'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:29:32: Expected @param tag for 'd'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:52: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:26:12: Unused @param tag for 'gph'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:28:32: Expected @param tag for 'd'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:52: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:69:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:98: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:112: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:122: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.
 Starting audit...
