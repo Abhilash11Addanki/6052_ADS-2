@@ -62,41 +62,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:41:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:42:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:43:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:46: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:47:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:48:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:94:25: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:99: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:100: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:111: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:131: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:134: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:136: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:139: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:143: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:144:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:146:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:146:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:146:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:146:40: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:150: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:150:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:151: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:151:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:153:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:154: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:156: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:88: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:126:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 4\Code Camp - WordNet\WordNet\Queue.java:126:46: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
