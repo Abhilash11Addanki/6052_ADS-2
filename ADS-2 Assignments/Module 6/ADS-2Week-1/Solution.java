@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
 /**
  * Class for page rank.
  */
@@ -9,11 +10,56 @@ class PageRank {
 	 */
 	private Digraph dg;
 	/**
+	 * reversedg of type Digraph.
+	 */
+	private Digraph revdg;
+	/**
+	 * initpr of type double.
+	 */
+	private double initpr;
+	/**
+	 * pagerank array of type double.
+	 */
+	private double pagerank[];
+	/**
+	 * temppagerank array of type double.
+	 */
+	private double temppagerank[];
+	/**
 	 * Constructs the object.
 	 * @param      d     Digraph.
 	 */
 	PageRank(final Digraph d) {
 		dg = d;
+		revdg = dg.reverse();
+		initpr = 1 / (double)dg.vertices();
+		pagerank = new double[dg.vertices()];
+		temppagerank = new double[dg.vertices()];
+		for (int i = 0; i < dg.vertices(); i++) {
+			pagerank[i] = initpr;
+		}
+		for (int i = 0; i < 1000; i++) {
+			temppagerank[i] = pagerank[i];
+			pagerank[i] = 0;
+		}
+		for (int j = 0; j < dg.vertices(); j++) {
+			for (Integer k : revdg.adj(j)) {
+				pagerank[j] += temppagerank[k]
+				               / (double)revdg.outdegree(k);
+			}
+		}
+	}
+	double getPR(int v) {
+		return pagerank[v];
+	}
+	public String toString() {
+		StringBuilder s = new StringBuilder();
+		for (int v = 0; v < dg.vertices(); v++) {
+			s.append(String.format("%d - ", v));
+			s.append(String.format("%f", getPR(v)));
+			s.append("\n");
+		}
+		return s.toString();
 	}
 }
 /**
@@ -52,7 +98,9 @@ public final class Solution {
 		}
 		System.out.println(d);
 		// Create page rank object and pass the graph object to the constructor
+		PageRank p = new PageRank(d);
 		// print the page rank object
+		System.out.println(p);
 		// This part is only for the final test case
 
 		// File path to the web content

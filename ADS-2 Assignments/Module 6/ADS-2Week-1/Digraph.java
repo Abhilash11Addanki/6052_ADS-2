@@ -81,4 +81,45 @@ public class Digraph {
     public int indegree(final int v) {
         return indegree[v];
     }
+    /**
+     * Returns the number of directed edges incident from vertex {@code v}.
+     * This is known as the <em>outdegree</em> of vertex {@code v}.
+     *
+     * @param  v the vertex
+     * @return the outdegree of vertex {@code v}
+     */
+    public int outdegree(int v) {
+        return adj[v].size();
+    }
+    /**
+     * Returns the reverse of the digraph.
+     * @return the reverse of the digraph
+     */
+    public Digraph reverse() {
+        Digraph reverse = new Digraph(vertices);
+        for (int v = 0; v < vertices; v++) {
+            for (int w : adj(v)) {
+                reverse.addEdge(w, v);
+            }
+        }
+        return reverse;
+    }
+    /**
+     * Returns a string representation of the graph.
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,  
+     * followed by the <em>V</em> adjacency lists
+     */
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(vertices + " vertices, " + edges + " edges " + "\n");
+        for (int v = 0; v < vertices; v++) {
+            s.append(String.format("%d: ", v));
+            for (int w : adj[v]) {
+                s.append(String.format("%d ", w));
+            }
+            s.append("\n");
+        }
+        return s.toString();
+    }
 }
