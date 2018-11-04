@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
  * Class for page rank.
  */
 class PageRank {
-	private static DecimalFormat df = new DecimalFormat(".##");
+	private static DecimalFormat df = new DecimalFormat("0.##");
 	/**
 	 * dg of type Digraph.
 	 */
