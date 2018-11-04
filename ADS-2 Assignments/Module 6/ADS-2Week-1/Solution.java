@@ -47,7 +47,7 @@ class PageRank {
 			Double[] temppagerank = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				Double newpr = 0.0;
-				for (int ele : revdg.adj(i)) {
+				for (int ele : dg.reverse().adj(i)) {
 					newpr = newpr
 					        + pagerank[ele] / dg.outdegree(ele);
 				}
