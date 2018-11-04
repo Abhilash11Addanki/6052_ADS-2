@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 /**
  * Stack class.
  * @param      <Item>  The item
@@ -111,10 +110,10 @@ public class Stack<Item> implements Iterable<Item> {
         private Node<Item> current;
         /**
          * Constructs the object.
-         * @param      first  The first
+         * @param      f  The first
          */
-        public ListIterator(final Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> f) {
+            current = f;
         }
         /**
          * Determines if it has next.
@@ -135,8 +134,9 @@ public class Stack<Item> implements Iterable<Item> {
          */
         public Item next() {
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
 }
+
