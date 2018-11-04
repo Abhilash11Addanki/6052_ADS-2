@@ -5,9 +5,9 @@ import java.util.Arrays;
  */
 class PageRank {
 	/**
-	* graph as g.
-	*/
-	private Digraph dg;
+	 * graph as g.
+	 */
+	private Digraph gr;
 	/**
 	 * reverse of the given graph as revG.
 	 */
@@ -19,41 +19,48 @@ class PageRank {
 	/**
 	 * array to store the pageRanks.
 	 */
-	private Double[] pagerank;
+	private Double[] pr;
 	/**
 	 * constructor.
 	 *
 	 * @param      gph    The graphics
 	 */
-	PageRank(final Digraph d) {
-		dg = d;
-		revdg = dg.reverse();
-		vertices = dg.vertices();
-		pagerank = new Double[vertices];
+	PageRank(final Digraph gr) {
+		this.gr = gr;
+		this.revdg = gr.reverse();
+		this.vertices = gr.vertices();
+		pr = new Double[vertices];
+		int ver = gr.vertices();
 		for (int i = 0; i < vertices; i++) {
-			pagerank[i] = 1.0 / vertices;
+			pr[i] = 1.0 / ver;
 		}
+		prCalculation();
+	}
+	/**.
+	 * method to calculate the page Rank
+	 */
+	public void prCalculation() {
 		for (int i = 0; i < vertices; i++) {
-			if (dg.outdegree(i) == 0) {
+			if (gr.outdegree(i) == 0) {
 				for (int j = 0; j < vertices; j++) {
 					if (i != j) {
-						dg.addEdge(i, j);
+						gr.addEdge(i, j);
 					}
 				}
 			}
 		}
 		final int thousand = 1000;
 		for (int k = 1; k < thousand; k++) {
-			Double[] temppagerank = new Double[vertices];
+			Double[] temppr = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				Double newpr = 0.0;
-				for (int ele : revdg.adj(i)) {
+				for (int ele : gr.reverse().adj(i)) {
 					newpr = newpr
-					        + pagerank[ele] / dg.outdegree(ele);
+					        + pr[ele] / gr.outdegree(ele);
 				}
-				temppagerank[i] = newpr;
+				temppr[i] = newpr;
 			}
-			pagerank = temppagerank;
+			pr = temppr;
 		}
 	}
 	/**.
@@ -63,13 +70,16 @@ class PageRank {
 	 *
 	 * @return     The page rank.
 	 */
-	public Double getPR(final int v) {
-		return pagerank[v];
+	public Double getPageRank(final int v) {
+		return pr[v];
 	}
+	/**.
+	 * method to printer
+	 */
 	public String toString() {
 		String s = "";
-		for (int i = 0; i < dg.vertices(); i++) {
-			s += i + " - " + pagerank[i] + "\n";
+		for (int i = 0; i < vertices; i++) {
+			s += i + " - " + pr[i] + "\n";
 		}
 		return s;
 	}
