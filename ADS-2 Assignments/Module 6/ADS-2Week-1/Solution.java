@@ -1,11 +1,9 @@
 import java.util.Scanner;
 import java.util.Arrays;
-import java.text.DecimalFormat;
 /**
  * Class for page rank.
  */
 class PageRank {
-	private static DecimalFormat df = new DecimalFormat("0.##");
 	/**
 	 * dg of type Digraph.
 	 */
@@ -34,19 +32,21 @@ class PageRank {
 		dg = d;
 		revdg = dg.reverse();
 		initpr = 1 / (double)dg.vertices();
-		pagerank = new double[1000];
-		temppagerank = new double[1000];
+		pagerank = new double[dg.vertices()];
+		temppagerank = new double[dg.vertices()];
 		for (int i = 0; i < dg.vertices(); i++) {
 			pagerank[i] = initpr;
 		}
-		for (int i = 0; i < 1000; i++) {
-			temppagerank[i] = pagerank[i];
-			pagerank[i] = 0;
-		}
-		for (int j = 0; j < dg.vertices(); j++) {
-			for (Integer k : revdg.adj(j)) {
-				pagerank[j] += temppagerank[k]
-				               / (double)revdg.outdegree(k);
+		for (int iter = 0; iter < 1000; iter++) {
+			for (int i = 0; i < dg.vertices(); i++) {
+				temppagerank[i] = pagerank[i];
+				pagerank[i] = 0;
+			}
+			for (int j = 0; j < dg.vertices(); j++) {
+				for (Integer k : revdg.adj(j)) {
+					pagerank[j] += temppagerank[k]
+					               / (double)revdg.outdegree(k);
+				}
 			}
 		}
 	}
@@ -57,7 +57,7 @@ class PageRank {
 		StringBuilder s = new StringBuilder();
 		for (int v = 0; v < dg.vertices(); v++) {
 			s.append(String.format("%d - ", v));
-			s.append(String.format("%s", df.format(getPR(v))));
+			s.append(String.format("%f", getPR(v)));
 			s.append("\n");
 		}
 		return s.toString();

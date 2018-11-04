@@ -189,15 +189,13 @@ Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:24:32: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:28:36: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:36:38: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:37:39: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:38:43: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:42:37: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:49:58: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:22:32: Array brackets at illegal position. [ArrayTypeStyle]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:26:36: Array brackets at illegal position. [ArrayTypeStyle]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:34:38: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:40:43: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:48: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:48:66: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:53:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:53:22: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:56:9: Missing a Javadoc comment. [JavadocMethod]
@@ -205,7 +203,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:111: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 Audit done.
 Starting audit...
