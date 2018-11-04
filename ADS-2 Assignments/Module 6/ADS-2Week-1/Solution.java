@@ -33,7 +33,6 @@ class PageRank {
 		revdg = dg.reverse();
 		initpr = 1 / (double)dg.vertices();
 		pagerank = new double[dg.vertices()];
-		temppagerank = new double[dg.vertices()];
 		for (int i = 0; i < dg.vertices(); i++) {
 			pagerank[i] = initpr;
 		}
@@ -47,16 +46,15 @@ class PageRank {
 			}
 		}
 		for (int iter = 0; iter < 1000; iter++) {
+			temppagerank = new double[dg.vertices()];
 			for (int i = 0; i < dg.vertices(); i++) {
-				temppagerank[i] = pagerank[i];
-				pagerank[i] = 0;
-			}
-			for (int j = 0; j < dg.vertices(); j++) {
-				for (Integer k : revdg.adj(j)) {
-					pagerank[j] += temppagerank[k]
-					               / (double)dg.outdegree(k);
+				Double newpr = 0.0;
+				for (Integer j : revdg.adj(i)) {
+					newpr = newpr + pagerank[i] / dg.outdegree(j);
 				}
+				temppagerank[i] = newpr;
 			}
+			pagerank = temppagerank;
 		}
 	}
 	double getPR(int v) {
