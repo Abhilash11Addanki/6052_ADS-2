@@ -45,16 +45,16 @@ class PageRank {
             }
         }
         final int thousand = 1000;
-        for (int k = 1; k < thousand; k++) {
+        for (int iter = 1; iter < thousand; iter++) {
             for (int i = 0; i < vertices; i++) {
-                Double newpr = 0.0;
-                for (int ele : revdg.adj(i)) {
-                    newpr = newpr
-                    + pagerank[ele] / dg.outdegree(ele);
-                }
-                temppagerank[i] = newpr;
+                temppagerank[i] = pagerank[i];
+                pagerank[i] = 0.0;
             }
-            pagerank = temppagerank;
+            for (int j = 0; j < vertices; j++) {
+            	for (Integer ele : revdg.adj(j)) {
+            		pagerank[j] += temppagerank[ele] / dg.outdegree(ele);
+            	}
+            }
         }
     }
     /**.
