@@ -27,7 +27,6 @@ class PageRank {
 	 */
 	PageRank(final Digraph d) {
 		dg = d;
-		revdg = dg.reverse();
 		vertices = dg.vertices();
 		pagerank = new Double[vertices];
 		for (int i = 0; i < vertices; i++) {
