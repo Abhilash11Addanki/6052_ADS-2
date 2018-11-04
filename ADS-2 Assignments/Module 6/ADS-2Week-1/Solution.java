@@ -45,7 +45,7 @@ class PageRank {
 			for (int j = 0; j < dg.vertices(); j++) {
 				for (Integer k : revdg.adj(j)) {
 					pagerank[j] += temppagerank[k]
-					               / (double)revdg.outdegree(k);
+					               / (double)dg.outdegree(k);
 				}
 			}
 		}
