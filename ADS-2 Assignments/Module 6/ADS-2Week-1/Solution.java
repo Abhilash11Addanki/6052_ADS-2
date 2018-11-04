@@ -1,10 +1,11 @@
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.text.DecimalFormat;
 /**
  * Class for page rank.
  */
 class PageRank {
+	private static DecimalFormat df = new DecimalFormat(".##");
 	/**
 	 * dg of type Digraph.
 	 */
@@ -56,7 +57,7 @@ class PageRank {
 		StringBuilder s = new StringBuilder();
 		for (int v = 0; v < dg.vertices(); v++) {
 			s.append(String.format("%d - ", v));
-			s.append(String.format("%2f", getPR(v)));
+			s.append(String.format("%s", df.format(getPR(v))));
 			s.append("\n");
 		}
 		return s.toString();
