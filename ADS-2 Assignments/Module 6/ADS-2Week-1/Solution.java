@@ -5,64 +5,77 @@ import java.util.Arrays;
  */
 class PageRank {
 	/**
-	 * dg of type Digraph.
-	 */
-	private Digraph dg;
-	/**
-	 * reversedg of type Digraph.
-	 */
-	private Digraph revdg;
-	/**
-	 * initpr of type double.
-	 */
-	private double initpr;
-	/**
-	 * pagerank array of type double.
-	 */
-	private double pagerank[];
-	/**
-	 * temppagerank array of type double.
-	 */
-	private double temppagerank[];
-	/**
-	 * Constructs the object.
-	 * @param      d     Digraph.
-	 */
-	PageRank(final Digraph d) {
-		dg = d;
-		revdg = dg.reverse();
-		initpr = 1 / (double)dg.vertices();
-		pagerank = new double[dg.vertices()];
-		for (int i = 0; i < dg.vertices(); i++) {
-			pagerank[i] = initpr;
-		}
-		for (int i = 0; i < dg.vertices(); i++) {
-			if (dg.outdegree(i) == 0) {
-				for (int j = 0; j < dg.vertices(); j++) {
-					if (i != j) {
-						dg.addEdge(i, j);
-					}
-				}
-			}
-		}
-		for (int iter = 0; iter < 1000; iter++) {
-			temppagerank = new double[dg.vertices()];
-			for (int i = 0; i < dg.vertices(); i++) {
-				Double newpr = 0.0;
-				for (Integer j : revdg.adj(i)) {
-					newpr = newpr + pagerank[i] / dg.outdegree(j);
-				}
-				temppagerank[i] = newpr;
-			}
-			pagerank = temppagerank;
-		}
-	}
-	double getPR(int v) {
-		return pagerank[v];
-	}
+     * graph as g.
+     */
+    private Digraph gr;
+    /**
+     * reverse of the given graph as revG.
+     */
+    private Digraph revdg;
+    /**
+     * variable for vertices.
+     */
+    private int vertices;
+    /**
+     * array to store the pageRanks.
+     */
+    private Double[] pr;
+    /**
+     * constructor.
+     *
+     * @param      gph    The graphics
+     */
+    PageRank(final Digraph gr) {
+        this.gr = gr;
+        this.revdg = gr.reverse();
+        this.vertices = gr.vertices();
+        pr = new Double[vertices];
+        int ver = gr.vertices();
+        for (int i = 0; i < vertices; i++) {
+            pr[i] = 1.0 / ver;
+        }
+        prCalculation();
+    }
+    /**.
+     * method to calculate the page Rank
+     */
+    public void prCalculation() {
+        for (int i = 0; i < vertices; i++) {
+            if (gr.outdegree(i) == 0) {
+                for (int j = 0; j < vertices; j++) {
+                    if (i != j) {
+                        gr.addEdge(i, j);
+                    }
+                }
+            }
+        }
+        final int thousand = 1000;
+        for (int k = 1; k < thousand; k++) {
+            Double[] temppr = new Double[vertices];
+            for (int i = 0; i < vertices; i++) {
+                Double newpr = 0.0;
+                for (int ele : gr.reverse().adj(i)) {
+                    newpr = newpr
+                    + pr[ele] / gr.outdegree(ele);
+                }
+                temppr[i] = newpr;
+            }
+            pr = temppr;
+        }
+    }
+    /**.
+     * method to get the page rank for the given page rank
+     *
+     * @param      v     { vertices of type int }
+     *
+     * @return     The page rank.
+     */
+    public Double getPR(final int v) {
+        return pr[v];
+    }
 	public String toString() {
 		StringBuilder s = new StringBuilder();
-		for (int v = 0; v < dg.vertices(); v++) {
+		for (int v = 0; v < gr.vertices(); v++) {
 			s.append(String.format("%d - ", v));
 			s.append(String.format("%f", getPR(v)));
 			s.append("\n");
