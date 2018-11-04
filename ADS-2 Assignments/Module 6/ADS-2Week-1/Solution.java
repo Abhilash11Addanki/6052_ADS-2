@@ -56,7 +56,7 @@ class PageRank {
 		StringBuilder s = new StringBuilder();
 		for (int v = 0; v < dg.vertices(); v++) {
 			s.append(String.format("%d - ", v));
-			s.append(String.format("%f", getPR(v)));
+			s.append(String.format("%0.2f", getPR(v)));
 			s.append("\n");
 		}
 		return s.toString();

@@ -18,10 +18,18 @@ Your Output:
 2: 0 
 3: 2 
 
-0 - 0.083333
-1 - 0.250000
-2 - Infinity
-3 - 0.000000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -44,10 +52,18 @@ Your Output:
 2: 3 0 
 3: 0 
 
-0 - 0.750000
-1 - 0.083333
-2 - 0.250000
-3 - 0.250000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -70,10 +86,18 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-0 - 0.500000
-1 - 0.208333
-2 - 0.375000
-3 - 0.125000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -108,14 +132,18 @@ Your Output:
 6: 0 
 7: 0 
 
-0 - 0.875000
-1 - 0.017857
-2 - 0.017857
-3 - 0.017857
-4 - 0.125000
-5 - 0.125000
-6 - 0.125000
-7 - 0.125000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -144,12 +172,18 @@ Your Output:
 4: 0 
 5: 
 
-0 - Infinity
-1 - 0.041667
-2 - 0.041667
-3 - 0.041667
-4 - 0.000000
-5 - 0.166667
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -184,14 +218,18 @@ Your Output:
 6: 
 7: 
 
-0 - 0.375000
-1 - 0.041667
-2 - 0.041667
-3 - 0.041667
-4 - 0.125000
-5 - 0.125000
-6 - 0.125000
-7 - 0.125000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -214,10 +252,18 @@ Your Output:
 2: 3 
 3: 0 
 
-0 - 0.250000
-1 - 0.250000
-2 - 0.250000
-3 - 0.250000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -246,12 +292,18 @@ Your Output:
 4: 0 
 5: 
 
-0 - Infinity
-1 - 0.083333
-2 - 0.166667
-3 - 0.166667
-4 - 0.000000
-5 - 0.166667
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -274,10 +326,18 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-0 - 0.250000
-1 - 0.250000
-2 - 0.250000
-3 - 0.250000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -306,12 +366,18 @@ Your Output:
 4: 0 
 5: 
 
-0 - Infinity
-1 - 0.152778
-2 - 0.152778
-3 - 0.152778
-4 - 0.000000
-5 - 0.055556
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -328,8 +394,18 @@ Your Output:
 0: 1 
 1: 0 
 
-0 - 0.500000
-1 - 0.500000
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -381,17 +457,17 @@ Your Output:
 10: 0 
 11: 0 
 
-0 - 0.916667
-1 - 0.007576
-2 - 0.007576
-3 - 0.007576
-4 - 0.083333
-5 - 0.083333
-6 - 0.083333
-7 - 0.083333
-8 - 0.083333
-9 - 0.083333
-10 - 0.083333
-11 - 0.083333
+Exception in thread "main" java.util.MissingFormatWidthException: %0.2f
+	at java.base/java.util.Formatter$FormatSpecifier.checkNumeric(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.checkFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
+	at java.base/java.util.Formatter.parse(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.util.Formatter.format(Unknown Source)
+	at java.base/java.lang.String.format(Unknown Source)
+	at PageRank.toString(Solution.java:59)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:103)
 ----------------------------------------
 
