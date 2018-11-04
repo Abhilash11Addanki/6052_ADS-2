@@ -33,8 +33,8 @@ class PageRank {
 		dg = d;
 		revdg = dg.reverse();
 		initpr = 1 / (double)dg.vertices();
-		pagerank = new double[dg.vertices()];
-		temppagerank = new double[dg.vertices()];
+		pagerank = new double[1000];
+		temppagerank = new double[1000];
 		for (int i = 0; i < dg.vertices(); i++) {
 			pagerank[i] = initpr;
 		}
