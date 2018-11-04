@@ -31,7 +31,6 @@ class PageRank {
         revdg = dg.reverse();
         vertices = dg.vertices();
         pagerank = new Double[vertices];
-        temppagerank = new Double[vertices];
         for (int i = 0; i < vertices; i++) {
             pagerank[i] = 1.0 / vertices;
         }
@@ -46,6 +45,7 @@ class PageRank {
         }
         final int thousand = 1000;
         for (int iter = 1; iter < thousand; iter++) {
+        	temppagerank = new Double[vertices];
             for (int i = 0; i < vertices; i++) {
                 temppagerank[i] = pagerank[i];
                 pagerank[i] = 0.0;
