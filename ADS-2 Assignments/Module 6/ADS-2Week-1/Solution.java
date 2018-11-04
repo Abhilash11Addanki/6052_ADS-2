@@ -7,7 +7,7 @@ class PageRank {
 	/**
      * graph as g.
      */
-    private Digraph gr;
+    private Digraph dg;
     /**
      * reverse of the given graph as revG.
      */
@@ -19,48 +19,42 @@ class PageRank {
     /**
      * array to store the pageRanks.
      */
-    private Double[] pr;
+    private Double[] pagerank;
+    private Double[] temppagerank;
     /**
      * constructor.
      *
      * @param      gph    The graphics
      */
-    PageRank(final Digraph gr) {
-        this.gr = gr;
-        this.revdg = gr.reverse();
-        this.vertices = gr.vertices();
-        pr = new Double[vertices];
-        int ver = gr.vertices();
+    PageRank(final Digraph d) {
+        dg = d;
+        revdg = dg.reverse();
+        vertices = dg.vertices();
+        pagerank = new Double[vertices];
+        temppagerank = new Double[vertices];
         for (int i = 0; i < vertices; i++) {
-            pr[i] = 1.0 / ver;
+            pagerank[i] = 1.0 / vertices;
         }
-        prCalculation();
-    }
-    /**.
-     * method to calculate the page Rank
-     */
-    public void prCalculation() {
         for (int i = 0; i < vertices; i++) {
-            if (gr.outdegree(i) == 0) {
+            if (dg.outdegree(i) == 0) {
                 for (int j = 0; j < vertices; j++) {
                     if (i != j) {
-                        gr.addEdge(i, j);
+                        dg.addEdge(i, j);
                     }
                 }
             }
         }
         final int thousand = 1000;
         for (int k = 1; k < thousand; k++) {
-            Double[] temppr = new Double[vertices];
             for (int i = 0; i < vertices; i++) {
                 Double newpr = 0.0;
-                for (int ele : gr.reverse().adj(i)) {
+                for (int ele : revdg.adj(i)) {
                     newpr = newpr
-                    + pr[ele] / gr.outdegree(ele);
+                    + pagerank[ele] / dg.outdegree(ele);
                 }
-                temppr[i] = newpr;
+                temppagerank[i] = newpr;
             }
-            pr = temppr;
+            pagerank = temppagerank;
         }
     }
     /**.
@@ -71,16 +65,14 @@ class PageRank {
      * @return     The page rank.
      */
     public Double getPR(final int v) {
-        return pr[v];
+        return pagerank[v];
     }
 	public String toString() {
-		StringBuilder s = new StringBuilder();
-		for (int v = 0; v < gr.vertices(); v++) {
-			s.append(String.format("%d - ", v));
-			s.append(String.format("%f", getPR(v)));
-			s.append("\n");
+		String s = "";
+		for (int i = 0; i < dg.vertices(); i++) {
+			s += i + " - " + pagerank[i] + "\n";
 		}
-		return s.toString();
+		return s;
 	}
 }
 /**
