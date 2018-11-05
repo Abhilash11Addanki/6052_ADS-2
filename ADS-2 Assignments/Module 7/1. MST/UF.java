@@ -41,11 +41,12 @@ public class UF {
      * representing one site.
      */
     public int find(final int p) {
-        while (p != parent[p]) {
-            parent[p] = parent[parent[p]];
-            p = parent[p];
+    	int p1 = p;
+        while (p1 != parent[p1]) {
+            parent[p1] = parent[parent[p1]];
+            p1 = parent[p1];
         }
-        return p;
+        return p1;
     }
 
     /**
