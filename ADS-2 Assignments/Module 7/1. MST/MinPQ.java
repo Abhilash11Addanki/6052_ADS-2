@@ -45,7 +45,6 @@ public class MinPQ<Key> {
      * Returns true if this priority queue is empty.
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
-     * Time complexity for this method is O(1).
      */
     public boolean isEmpty() {
         return n == 0;
