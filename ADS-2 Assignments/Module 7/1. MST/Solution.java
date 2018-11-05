@@ -12,7 +12,6 @@ class Solution {
 			wg.addEdge(e);
 		}
 		KruskalMST k = new KruskalMST(wg);
-		double res = k.weight();
-		System.out.format("%.5f", res);
+		System.out.format("%.5f", k.weight());
 	}
 }
