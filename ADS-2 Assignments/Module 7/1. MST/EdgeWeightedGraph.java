@@ -22,7 +22,7 @@ public class EdgeWeightedGraph {
      */
     public EdgeWeightedGraph(final int v1) {
         if (v1 < 0) throw new IllegalArgumentException(
-            "Number of vertices must be nonnegative");
+                "Number of vertices must be nonnegative");
         this.v = v1;
         this.e = 0;
         adj = (Bag<Edge>[]) new Bag[v1];
@@ -137,9 +137,9 @@ public class EdgeWeightedGraph {
             for (Edge ed : adj(i)) {
                 if (ed.other(i) > i) {
                     list.add(ed);
-                } else if (ed.other(i) == i) {  // add only one 
-                // copy of each self loop
-                //(self loops will be consecutive)
+                } else if (ed.other(i) == i) {  // add only one
+                    // copy of each self loop
+                    //(self loops will be consecutive)
                     if (selfLoops % 2 == 0) {
                         list.add(ed);
                     }
