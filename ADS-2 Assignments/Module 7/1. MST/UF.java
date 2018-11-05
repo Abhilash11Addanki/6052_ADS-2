@@ -45,12 +45,13 @@ public class UF {
      * Time complexity for this method is O(p).
      */
     public int find(final int p) {
-        validate(p);
-        while (p != parent[p]) {
-            parent[p] = parent[parent[p]];    // path compression by halving
-            p = parent[p];
+    	int p1 = p;
+        validate(p1);
+        while (p1 != parent[p1]) {
+            parent[p1] = parent[parent[p1]];    // path compression by halving
+            p1 = parent[p1];
         }
-        return p;
+        return p1;
     }
 
     /**

@@ -1,14 +1,25 @@
+/**
+ * Class for kruskal mst.
+ */
 public class KruskalMST {
+	/**
+	 * epsilon value.
+	 */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private double weight;                        // weight of MST
+    /**
+     * weight of MST.
+     */
+    private double weight;
+    /**
+     * edges in MST.
+     */
     private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public KruskalMST(EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph G) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
         for (Edge e : G.noedges()) {
@@ -58,7 +69,8 @@ public class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", total, weight());
+            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+            	total, weight());
             return false;
         }
 
