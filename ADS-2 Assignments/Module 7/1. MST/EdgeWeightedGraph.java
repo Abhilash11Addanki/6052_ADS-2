@@ -45,14 +45,14 @@ public class EdgeWeightedGraph {
     public EdgeWeightedGraph(final EdgeWeightedGraph gp) {
         this(gp.vertices());
         this.e = gp.edges();
-        for (int v = 0; v < gp.vertices(); v++) {
+        for (int v1 = 0; v1 < gp.vertices(); v1++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : gp.adj[v]) {
+            for (Edge e : gp.adj[v1]) {
                 reverse.push(e);
             }
             for (Edge e : reverse) {
-                adj[v].add(e);
+                adj[v1].add(e);
             }
         }
     }
@@ -77,7 +77,7 @@ public class EdgeWeightedGraph {
     }
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**
-    * validate vertex
+    * validate vertex.
     * @param v the vertex.
     *
     **/
