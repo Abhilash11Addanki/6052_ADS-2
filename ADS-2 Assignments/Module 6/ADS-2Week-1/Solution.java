@@ -58,6 +58,7 @@ class PageRank {
      * Gets the page rank.
      * @param      v     vertex.
      * @return     The page rank.
+     * Time complexity for this method is O(1).
      */
     public Double getPageRank(final int v) {
         return pagerank[v];
@@ -65,6 +66,8 @@ class PageRank {
     /**
      * Returns a string representation of the object.
      * @return     String representation of the object.
+     * Time complexity for this method is O(v) where v
+     * is vertices.
      */
     public String toString() {
         String s = "";
@@ -92,6 +95,7 @@ public final class Solution {
     /**
      * main method that drives the program.
      * @param      args  The arguments
+     * Time complexity for this method is O(N).
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);

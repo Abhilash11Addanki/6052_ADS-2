@@ -87,6 +87,7 @@ public class Digraph {
      *
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}
+     * Time complexity for this method is O(1).
      */
     public int outdegree(final int v) {
         return adj[v].size();
@@ -94,6 +95,7 @@ public class Digraph {
     /**
      * Returns the reverse of the digraph.
      * @return the reverse of the digraph
+     * Time complexity for this method is O(v) where v is no of vertices.
      */
     public Digraph reverse() {
         Digraph reverse = new Digraph(vertices);
@@ -109,6 +111,7 @@ public class Digraph {
      * @return the number of vertices <em>V</em>,
      * followed by the number of edges <em>E</em>,
      * followed by the <em>V</em> adjacency lists
+     * Time complexity for this method is O(v) where v is no of vertices.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
