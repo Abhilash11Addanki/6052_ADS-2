@@ -95,25 +95,21 @@ public class EdgeWeightedGraph {
     /**
      * Returns the edges incident on vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  v1 the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(final int v) {
-        validateVertex(v);
-        return adj[v];
+    public Iterable<Edge> adj(final int v1) {
+        return adj[v1];
     }
 
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  v1 the vertex
      * @return the degree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(final int v) {
-        validateVertex(v);
-        return adj[v].size();
+    public int degree(final int v1) {
+        return adj[v1].size();
     }
 
     /**
