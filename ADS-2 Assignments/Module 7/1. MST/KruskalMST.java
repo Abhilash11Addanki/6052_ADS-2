@@ -1,5 +1,6 @@
 /**
  * Class for kruskal mst.
+ * Time complexity for this method is O(E log E).
  */
 public class KruskalMST {
     /**
@@ -18,18 +19,18 @@ public class KruskalMST {
     /**
      * Compute a minimum spanning tree (or forest)
      * of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * @param g the edge-weighted graph
      */
-    public KruskalMST(final EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph g) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.noedges()) {
+        for (Edge e : g.noedges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(G.vertices());
-        while (!pq.isEmpty() && mst.size() < G.vertices() - 1) {
+        UF uf = new UF(g.vertices());
+        while (!pq.isEmpty() && mst.size() < g.vertices() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -40,7 +41,7 @@ public class KruskalMST {
             }
         }
         // check optimality conditions
-        assert check(G);
+        assert check(g);
     }
 
     /**
