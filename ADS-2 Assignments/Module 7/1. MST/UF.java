@@ -40,7 +40,7 @@ public class UF {
      * Time complexity for this method is O(p) where p is integer
      * representing one site.
      */
-    public int find(int p) {
+    public int find(final int p) {
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];
             p = parent[p];
