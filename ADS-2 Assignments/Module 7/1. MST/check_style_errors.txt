@@ -3,28 +3,21 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:9: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:15: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:32:18: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:35:23: 'e' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:38:23: 'e' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:63: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:65:7: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:68:43: Expected @param tag for 'v1'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:78:8: Unused @param tag for 'e'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:82:36: Expected @param tag for 'e1'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:83:13: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:99:41: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:111:33: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:131: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:22: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:28: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:45:18: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:48:23: 'e' hides a field. [HiddenField]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:51:23: 'e' hides a field. [HiddenField]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:76: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:78:7: Unused @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:81:43: Expected @param tag for 'v1'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:91:8: Unused @param tag for 'e'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:95:36: Expected @param tag for 'e1'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:96:13: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:112:41: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:124:33: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -1,10 +1,23 @@
+/**
+ * Class for edge weighted graph.
+ */
 public class EdgeWeightedGraph {
+    /**
+     * newline of type String.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * no of vertices.
+     */
     private final int v;
+    /**
+     * no of edges.
+     */
     private int e;
+    /**
+     * adj of type Bag array.
+     */
     private Bag<Edge>[] adj;
-    
     /**
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
      *
@@ -13,7 +26,7 @@ public class EdgeWeightedGraph {
      */
     public EdgeWeightedGraph(final int v1) {
         if (v1 < 0) throw new IllegalArgumentException(
-            "Number of vertices must be nonnegative");
+                "Number of vertices must be nonnegative");
         this.v = v1;
         this.e = 0;
         adj = (Bag<Edge>[]) new Bag[v1];
@@ -128,9 +141,9 @@ public class EdgeWeightedGraph {
             for (Edge ed : adj(i)) {
                 if (ed.other(i) > i) {
                     list.add(ed);
-                } else if (ed.other(i) == i) {  // add only one 
-                // copy of each self loop
-                //(self loops will be consecutive)
+                } else if (ed.other(i) == i) {  // add only one
+                    // copy of each self loop
+                    //(self loops will be consecutive)
                     if (selfLoops % 2 == 0) {
                         list.add(ed);
                     }
