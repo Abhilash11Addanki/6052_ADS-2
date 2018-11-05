@@ -64,11 +64,11 @@ public class KruskalMST {
         return weight;
     }
     /**
-     * check optimality conditions (takes time proportional to E V lg* V)
+     * check optimality conditions (takes time proportional to E V lg* V).
      * @param      g     graph.
      * @return     true or false.
      */
-    private boolean check(EdgeWeightedGraph g) {
+    private boolean check(final EdgeWeightedGraph g) {
 
         // check total weight
         double total = 0.0;
@@ -76,7 +76,8 @@ public class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+            System.err.printf(
+                "Weight of edges does not equal weight(): %f vs. %f\n",
                               total, weight());
             return false;
         }
