@@ -19,14 +19,17 @@ public class EdgeWeightedGraph {
      */
     private Bag<Edge>[] adj;
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted graph with
+     * {@code V} vertices and 0 edges.
      *
      * @param  v1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int v1) {
-        if (v1 < 0) throw new IllegalArgumentException(
+        if (v1 < 0) {
+            throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
+        }
         this.v = v1;
         this.e = 0;
         adj = (Bag<Edge>[]) new Bag[v1];
