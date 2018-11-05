@@ -9,7 +9,7 @@ public class UF {
     /**
      * rank array.
      */
-    private byte[] rank;   // rank[i] = rank of subtree rooted at i (never more than 31)
+    private byte[] rank;
     /**
      * count.
      */
@@ -17,7 +17,7 @@ public class UF {
 
     /**
      * Initializes an empty union–find data structure with {@code n} sites
-     * {@code 0} through {@code n-1}. Each site is initially in its own 
+     * {@code 0} through {@code n-1}. Each site is initially in its own
      * component.
      *
      * @param  n the number of sites
@@ -32,13 +32,15 @@ public class UF {
         }
     }
     /**
-     * Returns the component identifier for the component containing site {@code p}.
+     * Returns the component identifier for the
+     * component containing site {@code p}.
      * @param  p the integer representing one site
-     * @return the component identifier for the component containing site {@code p}
+     * @return the component identifier for the
+     * component containing site {@code p}
      */
     public int find(final int p) {
         while (p != parent[p]) {
-            parent[p] = parent[parent[p]];    // path compression by halving
+            parent[p] = parent[parent[p]];
             p = parent[p];
         }
         return p;
@@ -52,7 +54,7 @@ public class UF {
     public int count() {
         return count;
     }
-  
+
     /**
      * Returns true if the the two sites are in the same component.
      *
@@ -61,31 +63,30 @@ public class UF {
      * @return {@code true} if the two sites {@code p} and {@code q}
      * are in the same component;
      *         {@code false} otherwise
-     * @throws IllegalArgumentException unless
-     *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
     public boolean connected(final int p, final int q) {
         return find(p) == find(q);
     }
-  
+
     /**
-     * Merges the component containing site {@code p} with the 
+     * Merges the component containing site {@code p} with the
      * the component containing site {@code q}.
      *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
-     * @throws IllegalArgumentException unless
-     *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
     public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
-        if (rootP == rootQ) return;
-
+        if (rootP == rootQ) {
+            return;
+        }
         // make root of smaller rank point to root of larger rank
-        if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
-        else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
-        else {
+        if (rank[rootP] < rank[rootQ]) {
+            parent[rootP] = rootQ;
+        } else if (rank[rootP] > rank[rootQ]) {
+            parent[rootQ] = rootP;
+        } else {
             parent[rootQ] = rootP;
             rank[rootP]++;
         }

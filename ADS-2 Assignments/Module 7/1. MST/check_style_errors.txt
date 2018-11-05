@@ -44,15 +44,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:12: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:35: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:37: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:55: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:72: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:83: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:86: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\UF.java:87: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 10 errors.
