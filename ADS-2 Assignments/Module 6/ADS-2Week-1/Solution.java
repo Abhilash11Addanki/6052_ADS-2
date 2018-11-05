@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for page rank.
  */
@@ -22,8 +21,7 @@ class PageRank {
     private Double[] temppagerank;
     /**
      * constructor.
-     *
-     * @param      gph    The graphics
+     * @param      d    d of type Digraph
      */
     PageRank(final Digraph d) {
         dg = d;
@@ -130,3 +128,4 @@ public final class Solution {
 
     }
 }
+
