@@ -15,14 +15,11 @@ public class EdgeWeightedGraph {
      */
     private Bag<Edge>[] adj;
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
-     *
+     * Initializes an empty edge-weighted graph
+     * with {@code V} vertices and 0 edges.
      * @param  v1 the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int v1) {
-        if (v1 < 0) throw new IllegalArgumentException(
-                "Number of vertices must be nonnegative");
         this.v = v1;
         this.e = 0;
         adj = (Bag<Edge>[]) new Bag[v1];
@@ -38,14 +35,14 @@ public class EdgeWeightedGraph {
     public EdgeWeightedGraph(final EdgeWeightedGraph gp) {
         this(gp.vertices());
         this.e = gp.edges();
-        for (int v = 0; v < gp.vertices(); v++) {
+        for (int v1 = 0; v1 < gp.vertices(); v1++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : gp.adj[v]) {
-                reverse.push(e);
+            for (Edge e1 : gp.adj[v1]) {
+                reverse.push(e1);
             }
-            for (Edge e : reverse) {
-                adj[v].add(e);
+            for (Edge e1 : reverse) {
+                adj[v1].add(e1);
             }
         }
     }
