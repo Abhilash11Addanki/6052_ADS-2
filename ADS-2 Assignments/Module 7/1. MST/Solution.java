@@ -5,7 +5,7 @@ class Solution {
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
 		EdgeWeightedGraph wg = new EdgeWeightedGraph(vertices);
-		for (int i = 0; i < vertices; i++) {
+		while (sc.hasNextLine()) {
 			String[] line = sc.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(line[0]), Integer.parseInt(line[1]),
 				Double.parseDouble(line[2]));
