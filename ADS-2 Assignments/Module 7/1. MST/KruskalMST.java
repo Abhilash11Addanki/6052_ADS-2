@@ -63,9 +63,12 @@ public class KruskalMST {
     public double weight() {
         return weight;
     }
-    
-    // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph G) {
+    /**
+     * check optimality conditions (takes time proportional to E V lg* V)
+     * @param      g     graph.
+     * @return     true or false.
+     */
+    private boolean check(EdgeWeightedGraph g) {
 
         // check total weight
         double total = 0.0;
@@ -74,12 +77,12 @@ public class KruskalMST {
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
             System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
-                total, weight());
+                              total, weight());
             return false;
         }
 
         // check that it is acyclic
-        UF uf = new UF(G.vertices());
+        UF uf = new UF(g.vertices());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -90,7 +93,7 @@ public class KruskalMST {
         }
 
         // check that it is a spanning forest
-        for (Edge e : G.noedges()) {
+        for (Edge e : g.noedges()) {
             int v = e.either(), w = e.other(v);
             if (!uf.connected(v, w)) {
                 System.err.println("Not a spanning forest");
@@ -102,19 +105,19 @@ public class KruskalMST {
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(G.vertices());
+            uf = new UF(g.vertices());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }
-            
+
             // check that e is min weight edge in crossing cut
-            for (Edge f : G.noedges()) {
+            for (Edge f : g.noedges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println("Edge " + f
-                            + " violates cut optimality conditions");
+                         + " violates cut optimality conditions");
                         return false;
                     }
                 }
