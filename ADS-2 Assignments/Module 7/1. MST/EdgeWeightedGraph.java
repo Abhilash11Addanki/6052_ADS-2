@@ -1,10 +1,19 @@
+/**
+ * Class for edge weighted graph.
+ */
 public class EdgeWeightedGraph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * no of vertices.
+     */
     private final int v;
+    /**
+     * no of edges.
+     */
     private int e;
+    /**
+     * adj of type Bag array.
+     */
     private Bag<Edge>[] adj;
-    
     /**
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
      *
