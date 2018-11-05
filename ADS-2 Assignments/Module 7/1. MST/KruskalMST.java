@@ -2,9 +2,9 @@
  * Class for kruskal mst.
  */
 public class KruskalMST {
-	/**
-	 * epsilon value.
-	 */
+    /**
+     * epsilon value.
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
     /**
      * weight of MST.
@@ -13,10 +13,11 @@ public class KruskalMST {
     /**
      * edges in MST.
      */
-    private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
+    private Queue<Edge> mst = new Queue<Edge>();
 
     /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
+     * Compute a minimum spanning tree (or forest)
+     * of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
     public KruskalMST(final EdgeWeightedGraph G) {
@@ -38,7 +39,6 @@ public class KruskalMST {
                 weight += e.weight();
             }
         }
-
         // check optimality conditions
         assert check(G);
     }
@@ -53,8 +53,11 @@ public class KruskalMST {
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights in a
+     * minimum spanning tree (or forest).
+     * @return the sum of the edge weights in a
+     * minimum spanning tree (or forest)
+     * Time complexity for this method is O(1).
      */
     public double weight() {
         return weight;
@@ -70,7 +73,7 @@ public class KruskalMST {
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
             System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
-            	total, weight());
+                total, weight());
             return false;
         }
 
@@ -109,7 +112,8 @@ public class KruskalMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " + f
+                            + " violates cut optimality conditions");
                         return false;
                     }
                 }
