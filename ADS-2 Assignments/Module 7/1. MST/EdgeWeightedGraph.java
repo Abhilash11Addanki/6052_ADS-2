@@ -48,11 +48,11 @@ public class EdgeWeightedGraph {
         for (int v1 = 0; v1 < gp.vertices(); v1++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : gp.adj[v1]) {
-                reverse.push(e);
+            for (Edge e1 : gp.adj[v1]) {
+                reverse.push(e1);
             }
-            for (Edge e : reverse) {
-                adj[v1].add(e);
+            for (Edge e2 : reverse) {
+                adj[v1].add(e2);
             }
         }
     }
