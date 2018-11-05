@@ -78,7 +78,7 @@ public class EdgeWeightedGraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**
     * validate vertex.
-    * @param v the vertex.
+    * @param v1 the vertex.
     *
     **/
     private void validateVertex(final int v1) {
@@ -91,16 +91,16 @@ public class EdgeWeightedGraph {
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
-     * @param  e the edge
+     * @param  e1 the edge
      * @throws IllegalArgumentException unless both
      * endpoints are between {@code 0} and {@code V-1}
      */
     public void addEdge(final Edge e1) {
-        int v = e1.either();
-        int w = e1.other(v);
-        validateVertex(v);
+        int v1 = e1.either();
+        int w = e1.other(v1);
+        validateVertex(v1);
         validateVertex(w);
-        adj[v].add(e1);
+        adj[v1].add(e1);
         adj[w].add(e1);
         e++;
     }
@@ -108,25 +108,25 @@ public class EdgeWeightedGraph {
     /**
      * Returns the edges incident on vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  v1 the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(final int v) {
-        validateVertex(v);
-        return adj[v];
+    public Iterable<Edge> adj(final int v1) {
+        validateVertex(v1);
+        return adj[v1];
     }
 
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  v1 the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(final int v) {
-        validateVertex(v);
-        return adj[v].size();
+    public int degree(final int v1) {
+        validateVertex(v1);
+        return adj[v1].size();
     }
 
     /**

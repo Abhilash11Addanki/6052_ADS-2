@@ -3,15 +3,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:81:7: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:84:43: Expected @param tag for 'v1'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:94:8: Unused @param tag for 'e'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:98:36: Expected @param tag for 'e1'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:99:13: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:115:41: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\EdgeWeightedGraph.java:127:33: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...
