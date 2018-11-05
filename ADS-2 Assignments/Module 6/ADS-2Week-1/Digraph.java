@@ -88,7 +88,7 @@ public class Digraph {
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         return adj[v].size();
     }
     /**
@@ -107,7 +107,7 @@ public class Digraph {
     /**
      * Returns a string representation of the graph.
      * @return the number of vertices <em>V</em>,
-     * followed by the number of edges <em>E</em>,  
+     * followed by the number of edges <em>E</em>,
      * followed by the <em>V</em> adjacency lists
      */
     public String toString() {
