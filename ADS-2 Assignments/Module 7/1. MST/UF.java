@@ -92,12 +92,15 @@ public class UF {
     public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
-        if (rootP == rootQ) return;
-
+        if (rootP == rootQ) {
+            return;
+        }
         // make root of smaller rank point to root of larger rank
-        if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
-        else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
-        else {
+        if (rank[rootP] < rank[rootQ]) {
+            parent[rootP] = rootQ;
+        } else if (rank[rootP] > rank[rootQ]) {
+            parent[rootQ] = rootP;
+        } else {
             parent[rootQ] = rootP;
             rank[rootP]++;
         }
