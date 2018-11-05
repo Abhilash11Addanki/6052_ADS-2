@@ -20,6 +20,7 @@ class PageRank {
 	 * array to store the pageRanks.
 	 */
 	private Double[] pagerank;
+	private Double[] temppagerank;
 	/**
 	 * constructor.
 	 *
@@ -29,6 +30,7 @@ class PageRank {
 		dg = d;
 		vertices = dg.vertices();
 		pagerank = new Double[vertices];
+		temppagerank = new Double[vertices];
 		for (int i = 0; i < vertices; i++) {
 			pagerank[i] = 1.0 / vertices;
 		}
@@ -43,16 +45,15 @@ class PageRank {
 		}
 		final int thousand = 1000;
 		for (int k = 1; k < thousand; k++) {
-			Double[] temppagerank = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
-				Double newpr = 0.0;
-				for (int ele : dg.reverse().adj(i)) {
-					newpr = newpr
-					        + pagerank[ele] / dg.outdegree(ele);
-				}
-				temppagerank[i] = newpr;
+				temppagerank[i] = pagerank[i];
+				pagerank[i] = 0.0;
 			}
-			pagerank = temppagerank;
+			for (int j = 0; j < vertices; j++) {
+				for (int ele : dg.reverse().adj(j)) {
+					pagerank[j] += temppagerank[ele] / dg.outdegree(ele);
+				}
+			}
 		}
 	}
 	/**.
