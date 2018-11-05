@@ -37,19 +37,23 @@ public class UF {
      * @param  p the integer representing one site
      * @return the component identifier for the
      * component containing site {@code p}
+     * Time complexity for this method is O(p) where p is integer
+     * representing one site.
      */
     public int find(final int p) {
-        while (p != parent[p]) {
-            parent[p] = parent[parent[p]];
-            p = parent[p];
+    	int p1 = p;
+        while (p1 != parent[p1]) {
+            parent[p1] = parent[parent[p1]];
+            p1 = parent[p1];
         }
-        return p;
+        return p1;
     }
 
     /**
      * Returns the number of components.
      *
      * @return the number of components (between {@code 1} and {@code n})
+     * Time complexity for this method is O(1).
      */
     public int count() {
         return count;
@@ -63,6 +67,7 @@ public class UF {
      * @return {@code true} if the two sites {@code p} and {@code q}
      * are in the same component;
      *         {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean connected(final int p, final int q) {
         return find(p) == find(q);
@@ -74,6 +79,7 @@ public class UF {
      *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
+     * Time complexity for this method is log(E).
      */
     public void union(final int p, final int q) {
         int rootP = find(p);

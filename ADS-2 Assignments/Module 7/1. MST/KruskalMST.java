@@ -1,5 +1,6 @@
 /**
  * Class for kruskal mst.
+ * Time complexity for this method is O(ElogE).
  */
 public class KruskalMST {
     /**
@@ -50,6 +51,7 @@ public class KruskalMST {
      * minimum spanning tree (or forest).
      * @return the sum of the edge weights in a
      * minimum spanning tree (or forest)
+     * Time complexity for this method is O(1).
      */
     public double weight() {
         return weight;
