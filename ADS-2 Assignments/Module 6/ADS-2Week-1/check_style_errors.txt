@@ -45,15 +45,9 @@ Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:26:12: Unused @param tag for 'gph'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:28:32: Expected @param tag for 'd'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:53: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:71: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:100: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:114: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:124: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:26:8: Unused @param tag for 'gph'. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 6\ADS-2Week-1\Solution.java:28:28: Expected @param tag for 'd'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
