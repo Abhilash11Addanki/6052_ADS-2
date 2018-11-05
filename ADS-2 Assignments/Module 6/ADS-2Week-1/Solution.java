@@ -22,6 +22,7 @@ class PageRank {
     /**
      * constructor.
      * @param      d    d of type Digraph
+     * Time complexity for this method is V*(V + E).
      */
     PageRank(final Digraph d) {
         dg = d;
