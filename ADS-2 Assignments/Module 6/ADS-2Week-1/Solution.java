@@ -95,7 +95,8 @@ public final class Solution {
     /**
      * main method that drives the program.
      * @param      args  The arguments
-     * Time complexity for this method is O(N).
+     * Time complexity for this method is O(N * i) where N is the no of vertices
+     * and i is the length of inp array.
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
