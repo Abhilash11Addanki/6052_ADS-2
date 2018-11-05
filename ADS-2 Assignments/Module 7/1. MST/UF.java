@@ -23,7 +23,9 @@ public class UF {
      * @throws IllegalArgumentException if {@code n < 0}
      */
     public UF(final int n) {
-        if (n < 0) throw new IllegalArgumentException();
+        if (n < 0) {
+            throw new IllegalArgumentException();
+        }
         count = n;
         parent = new int[n];
         rank = new byte[n];
@@ -42,7 +44,7 @@ public class UF {
      * @throws IllegalArgumentException unless {@code 0 <= p < n}
      * Time complexity for this method is O(p).
      */
-    public int find(int p) {
+    public int find(final int p) {
         validate(p);
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];    // path compression by halving
