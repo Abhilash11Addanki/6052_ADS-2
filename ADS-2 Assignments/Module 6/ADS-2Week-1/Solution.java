@@ -9,10 +9,6 @@ class PageRank {
 	 */
 	private Digraph dg;
 	/**
-	 * reverse of the given graph as revG.
-	 */
-	private Digraph revdg;
-	/**
 	 * variable for vertices.
 	 */
 	private int vertices;
@@ -20,6 +16,9 @@ class PageRank {
 	 * array to store the pageRanks.
 	 */
 	private Double[] pagerank;
+	/**
+	 * temp array to store the page ranks.
+	 */
 	private Double[] temppagerank;
 	/**
 	 * constructor.
