@@ -62,6 +62,7 @@ public class EdgeWeightedGraph {
      * Returns the number of vertices in this edge-weighted graph.
      *
      * @return the number of vertices in this edge-weighted graph
+     * Time complexity for this method is O(1).
      */
     public int vertices() {
         return v;
@@ -71,6 +72,7 @@ public class EdgeWeightedGraph {
      * Returns the number of edges in this edge-weighted graph.
      *
      * @return the number of edges in this edge-weighted graph
+     * Time complexity for this method is O(1).
      */
     public int edges() {
         return e;
@@ -94,6 +96,7 @@ public class EdgeWeightedGraph {
      * @param  e1 the edge
      * @throws IllegalArgumentException unless both
      * endpoints are between {@code 0} and {@code V-1}
+     * Time complexity for this method is O(1).
      */
     public void addEdge(final Edge e1) {
         int v1 = e1.either();
@@ -123,6 +126,7 @@ public class EdgeWeightedGraph {
      * @param  v1 the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * Time complexity for this method is O(1).
      */
     public int degree(final int v1) {
         validateVertex(v1);
