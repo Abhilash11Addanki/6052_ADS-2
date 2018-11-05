@@ -65,10 +65,9 @@ public class EdgeWeightedGraph {
     public int edges() {
         return e;
     }
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**
-    * validate vertex
-    * @param v the vertex.
+    * validate vertex.
+    * @param v1 the vertex.
     *
     **/
     private void validateVertex(final int v1) {
@@ -81,16 +80,14 @@ public class EdgeWeightedGraph {
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
-     * @param  e the edge
+     * @param  e1 the edge
      * @throws IllegalArgumentException unless both
      * endpoints are between {@code 0} and {@code V-1}
      */
     public void addEdge(final Edge e1) {
-        int v = e1.either();
-        int w = e1.other(v);
-        validateVertex(v);
-        validateVertex(w);
-        adj[v].add(e1);
+        int v1 = e1.either();
+        int w = e1.other(v1);
+        adj[v1].add(e1);
         adj[w].add(e1);
         e++;
     }
