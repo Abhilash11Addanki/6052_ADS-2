@@ -1,27 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac Edge.java
- *  Execution:    java Edge
- *  Dependencies: StdOut.java
- *
- *  Immutable weighted edge.
- *
- ******************************************************************************/
-
-/**
- *  The {@code Edge} class represents a weighted edge in an
- *  {@link EdgeWeightedGraph}. Each edge consists of two integers
- *  (naming the two vertices) and a real-value weight. The data type
- *  provides methods for accessing the two endpoints of the edge and
- *  the weight. The natural order for this data type is by
- *  ascending order of weight.
- *  <p>
- *  For additional documentation, see <a href="https://
- *  algs4.cs.princeton.edu/43mst">Section 4.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
 /**
  * Class for edge.
  */
@@ -71,7 +47,6 @@ public class Edge implements Comparable<Edge> {
      * Returns the weight of this edge.
      *
      * @return the weight of this edge
-     * Time complexity for this method is O(1).
      */
     public double weight() {
         return weight;
@@ -81,7 +56,6 @@ public class Edge implements Comparable<Edge> {
      * Returns either endpoint of this edge.
      *
      * @return either endpoint of this edge
-     * Time complexity for this method is O(1).
      */
     public int either() {
         return v;
@@ -95,7 +69,6 @@ public class Edge implements Comparable<Edge> {
      * @return the other endpoint of this edge
      * @throws IllegalArgumentException if the vertex is not one of the
      *         endpoints of this edge
-     * Time complexity for this method is O(1).
      */
     public int other(final int vertex) {
         if (vertex == v) {
@@ -117,7 +90,6 @@ public class Edge implements Comparable<Edge> {
      * integer depending on whether
      *         the weight of this is less than, equal to, or greater than the
      *         argument edge
-     * Time complexity for this method is O(1).
      */
     @Override
     public int compareTo(final Edge that) {

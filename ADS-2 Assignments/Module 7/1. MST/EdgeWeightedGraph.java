@@ -1,25 +1,19 @@
-/**
- * Class for edge weighted graph.
- */
 public class EdgeWeightedGraph {
-    /**
-     * no of vertices.
-     */
+    private static final String NEWLINE = System.getProperty("line.separator");
+
     private final int v;
-    /**
-     * no of edges.
-     */
     private int e;
-    /**
-     * adj of type Bag array.
-     */
     private Bag<Edge>[] adj;
+    
     /**
-     * Initializes an empty edge-weighted graph
-     * with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     *
      * @param  v1 the number of vertices
+     * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int v1) {
+        if (v1 < 0) throw new IllegalArgumentException(
+            "Number of vertices must be nonnegative");
         this.v = v1;
         this.e = 0;
         adj = (Bag<Edge>[]) new Bag[v1];
@@ -35,14 +29,14 @@ public class EdgeWeightedGraph {
     public EdgeWeightedGraph(final EdgeWeightedGraph gp) {
         this(gp.vertices());
         this.e = gp.edges();
-        for (int v1 = 0; v1 < gp.vertices(); v1++) {
+        for (int v = 0; v < gp.vertices(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e1 : gp.adj[v1]) {
-                reverse.push(e1);
+            for (Edge e : gp.adj[v]) {
+                reverse.push(e);
             }
-            for (Edge e1 : reverse) {
-                adj[v1].add(e1);
+            for (Edge e : reverse) {
+                adj[v].add(e);
             }
         }
     }
@@ -52,7 +46,6 @@ public class EdgeWeightedGraph {
      * Returns the number of vertices in this edge-weighted graph.
      *
      * @return the number of vertices in this edge-weighted graph
-     * Time complexity for this method is O(1).
      */
     public int vertices() {
         return v;
@@ -62,14 +55,14 @@ public class EdgeWeightedGraph {
      * Returns the number of edges in this edge-weighted graph.
      *
      * @return the number of edges in this edge-weighted graph
-     * Time complexity for this method is O(1).
      */
     public int edges() {
         return e;
     }
+    // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**
-    * validate vertex.
-    * @param v1 the vertex.
+    * validate vertex
+    * @param v the vertex.
     *
     **/
     private void validateVertex(final int v1) {
@@ -82,15 +75,16 @@ public class EdgeWeightedGraph {
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
-     * @param  e1 the edge
+     * @param  e the edge
      * @throws IllegalArgumentException unless both
      * endpoints are between {@code 0} and {@code V-1}
-     * Time complexity for this method is O(1).
      */
     public void addEdge(final Edge e1) {
-        int v1 = e1.either();
-        int w = e1.other(v1);
-        adj[v1].add(e1);
+        int v = e1.either();
+        int w = e1.other(v);
+        validateVertex(v);
+        validateVertex(w);
+        adj[v].add(e1);
         adj[w].add(e1);
         e++;
     }
@@ -98,23 +92,25 @@ public class EdgeWeightedGraph {
     /**
      * Returns the edges incident on vertex {@code v}.
      *
-     * @param  v1 the vertex
+     * @param  v the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
-     * Time complexity for this method is O(1).
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(final int v1) {
-        return adj[v1];
+    public Iterable<Edge> adj(final int v) {
+        validateVertex(v);
+        return adj[v];
     }
 
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v1 the vertex
+     * @param  v the vertex
      * @return the degree of vertex {@code v}
-     * Time complexity for this method is O(1).
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(final int v1) {
-        return adj[v1].size();
+    public int degree(final int v) {
+        validateVertex(v);
+        return adj[v].size();
     }
 
     /**
@@ -124,8 +120,6 @@ public class EdgeWeightedGraph {
      * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
-     * Time complexity for this method is O(v) where v is no of
-     * vertices.
      */
     public Iterable<Edge> noedges() {
         Bag<Edge> list = new Bag<Edge>();
@@ -134,9 +128,9 @@ public class EdgeWeightedGraph {
             for (Edge ed : adj(i)) {
                 if (ed.other(i) > i) {
                     list.add(ed);
-                } else if (ed.other(i) == i) {  // add only one
-                    // copy of each self loop
-                    //(self loops will be consecutive)
+                } else if (ed.other(i) == i) {  // add only one 
+                // copy of each self loop
+                //(self loops will be consecutive)
                     if (selfLoops % 2 == 0) {
                         list.add(ed);
                     }
