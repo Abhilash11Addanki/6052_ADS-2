@@ -41,7 +41,7 @@ class PageRank {
             }
         }
         final int thousand = 1000;
-        for (int k = 1; k < thousand; k++) {
+        for (int k = 0; k < thousand; k++) {
             for (int i = 0; i < vertices; i++) {
                 temppagerank[i] = pagerank[i];
                 pagerank[i] = 0.0;
