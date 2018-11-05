@@ -101,15 +101,15 @@ public class KruskalMST {
                 return false;
             }
         }
-
-        // check that it is a minimal spanning forest (cut optimality conditions)
         for (Edge e : edges()) {
 
             // all edges in MST except e
             uf = new UF(g.vertices());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
-                if (f != e) uf.union(x, y);
+                if (f != e) {
+                    uf.union(x, y);
+                }
             }
 
             // check that e is min weight edge in crossing cut
