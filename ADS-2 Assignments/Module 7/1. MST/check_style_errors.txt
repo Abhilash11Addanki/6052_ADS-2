@@ -34,27 +34,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:12: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:43: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:51: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:65:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:67:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:68:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:74:23: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:74:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:108: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:109: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:114: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:116:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:116:27: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:116:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:124: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:148: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:155: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:157: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:163: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:21:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:49: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 7\1. MST\KruskalMST.java:50: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
