@@ -5,7 +5,8 @@ import java.util.NoSuchElementException;
  *
  * @param      <priv>  The priv
  */
-public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
+public class IndexMinPQ<Key extends Comparable<Key>>
+    implements Iterable<Integer> {
     /**
      * maximum number of elements on PQ.
      */
@@ -27,9 +28,11 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      */
     private Key[] keys;
     /**
-     * Initializes an empty indexed priority queue with indices between {@code 0}
+     * Initializes an empty indexed priority queue with
+     * indices between {@code 0}
      * and {@code maxN - 1}.
-     * @param  max the keys on this priority queue are index from {@code 0}
+     * @param  max the keys on this priority queue are
+     * index from {@code 0}
      *         {@code maxN - 1}
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
@@ -37,11 +40,12 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         if (max < 0) throw new IllegalArgumentException();
         this.max = max;
         n = 0;
-        keys = (Key[]) new Comparable[max + 1];    // make this of length maxN??
+        keys = (Key[]) new Comparable[max + 1];
         pq   = new int[max + 1];
-        qp   = new int[max + 1];                   // make this of length maxN??
-        for (int i = 0; i <= max; i++)
+        qp   = new int[max + 1];
+        for (int i = 0; i <= max; i++) {
             qp[i] = -1;
+        }
     }
     /**
      * Returns true if this priority queue is empty.
@@ -61,7 +65,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      */
     public boolean contains(final int i) {
-        if (i < 0 || i >= maxN) throw new IllegalArgumentException();
+        if (i < 0 || i >= maxN) {
+            throw new IllegalArgumentException();
+        }
         return qp[i] != -1;
     }
 
@@ -98,7 +104,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException if this priority queue is empty
      */
     public int minIndex() {
-        if (n == 0) throw new NoSuchElementException("Priority queue underflow");
+        if (n == 0) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         return pq[1];
     }
 
@@ -109,7 +117,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key minKey() {
-        if (n == 0) throw new NoSuchElementException("Priority queue underflow");
+        if (n == 0) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         return keys[pq[1]];
     }
 
@@ -119,7 +129,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException if this priority queue is empty
      */
     public int delMin() {
-        if (n == 0) throw new NoSuchElementException("Priority queue underflow");
+        if (n == 0) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         int min = pq[1];
         exch(1, n--);
         sink(1);
@@ -139,8 +151,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException no key is associated with index {@code i}
      */
     public Key keyOf(final int i) {
-        if (i < 0 || i >= maxN) throw new IllegalArgumentException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
         else return keys[i];
     }
 
@@ -153,8 +163,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @throws NoSuchElementException no key is associated with index {@code i}
      */
     public void changeKey(final int i, final Key key) {
-        if (i < 0 || i >= maxN) throw new IllegalArgumentException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
         keys[i] = key;
         swim(qp[i]);
         sink(qp[i]);

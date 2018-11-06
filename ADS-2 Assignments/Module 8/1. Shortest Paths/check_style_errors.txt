@@ -7,37 +7,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:6:4: Unused @param tag for '<priv>'. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:8: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:8: Type Javadoc comment is missing @param <Key> tag. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:30: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:43: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:101: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:101: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:112: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:112: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:122: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:122: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:142: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:143: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:143: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:144: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:156: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:157: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:157: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:215: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:216: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:216:39: Expected @param tag for 'i'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:216:52: Expected @param tag for 'j'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:234: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:235:33: Expected @param tag for 'k'. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:281:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:283: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 8\1. Shortest Paths\IndexMinPQ.java:304: 'if' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
