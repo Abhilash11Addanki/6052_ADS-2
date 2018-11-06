@@ -3,10 +3,10 @@ import java.util.NoSuchElementException;
 /**
  * Class for index minimum pq.
  *
- * @param      <priv>  The priv
+ * @param      <Key>   Key.
  */
 public class IndexMinPQ<Key extends Comparable<Key>>
-    implements Iterable<Integer> {
+implements Iterable<Integer> {
     /**
      * maximum number of elements on PQ.
      */
@@ -37,7 +37,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
     public IndexMinPQ(final int max) {
-        if (max < 0) throw new IllegalArgumentException();
+        if (max < 0) {
+            throw new IllegalArgumentException();
+        }
         this.max = max;
         n = 0;
         keys = (Key[]) new Comparable[max + 1];
@@ -151,7 +153,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * @throws NoSuchElementException no key is associated with index {@code i}
      */
     public Key keyOf(final int i) {
-        else return keys[i];
+        return keys[i];
     }
 
     /**
@@ -216,11 +218,14 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         keys[i] = null;
         qp[i] = -1;
     }
-
-
-    /***************************************************************************
-     * General helper functions.
-     ***************************************************************************/
+    /**
+     * greater method.
+     *
+     * @param      i     index.
+     * @param      j     index.
+     *
+     * @return     true or false.
+     */
     private boolean greater(final int i, final int j) {
         return keys[pq[i]].compareTo(keys[pq[j]]) > 0;
     }
@@ -236,10 +241,11 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         qp[pq[i]] = i;
         qp[pq[j]] = j;
     }
-
-    /***************************************************************************
-     * Heap helper functions.
-     ***************************************************************************/
+    /**
+     * swim method.
+     *
+     * @param      k     value.
+     */
     private void swim(final int k) {
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
@@ -286,10 +292,11 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
+        HeapIterator() {
             copy = new IndexMinPQ<Key>(pq.length - 1);
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i], keys[pq[i]]);
+            }
         }
         /**
          * Determines if it has next.
@@ -309,7 +316,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
          * @return     Integer.
          */
         public Integer next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             return copy.delMin();
         }
     }
