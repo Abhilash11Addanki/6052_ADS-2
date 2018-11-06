@@ -34,6 +34,7 @@ class Edge {
      *this method returns the weight of edge.
      *
      * @return  weight of edge
+     * Time complexity is O(1).
      */
     public double weight() {
         return this.weight;
@@ -42,6 +43,7 @@ class Edge {
      *this method returns one vertex.
      *
      * @return  one end of edge.
+     * Time complexity is O(1).
      */
     public int either() {
         return vertexOne;
@@ -52,6 +54,7 @@ class Edge {
      * @param      v already connected vertex
      *
      * @return another vertex
+     * Time complexity is O(1).
      */
     public int other(final int v) {
         if (v == vertexOne) {

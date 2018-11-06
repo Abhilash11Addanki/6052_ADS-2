@@ -27,6 +27,7 @@ class EdgeWeightedGraph {
      *this method returns the vertices count.
      *
      * @return  number of vertices.
+     * Time complexity is O(1).
      */
     public int vertices() {
         return this.vertices;
@@ -35,6 +36,7 @@ class EdgeWeightedGraph {
      *this method is to build the graph.
      *
      * @param      edge  The edge
+     * Time complexity is O(1).
      */
     public void addEdge(final Edge edge) {
         int vertexOne = edge.either();

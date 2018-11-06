@@ -71,6 +71,7 @@ class DijkstraSP {
      * @param      v  vertex
      *
      * @return distance between two vertices.
+     * Time complexity is O(1).
      */
     public double distTo(final int v) {
         return distTo[v];
@@ -81,6 +82,7 @@ class DijkstraSP {
      * @param      v another vertex.
      *
      * @return     True if has path to, False otherwise.
+     * Time complexity is O(1).
      */
     public boolean hasPathTo(final int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;
