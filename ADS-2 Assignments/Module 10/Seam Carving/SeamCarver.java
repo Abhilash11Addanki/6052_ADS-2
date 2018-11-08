@@ -33,14 +33,14 @@ public class SeamCarver {
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
 		int w = height(), h = width();
-		computeEnergy(w, h, 0);
+		computeEnergy(w, h, 1);
 		return computePath(w, h);
 	}
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
 		int w = width(), h = height();
-		computeEnergy(w, h, 1);
+		computeEnergy(w, h, 0);
 		return computePath(w, h);
 	}
 
