@@ -1,4 +1,4 @@
-
+import java.awt.Color;
 public class SeamCarver {
 	private Picture pic;
 	private double[] energy;
@@ -86,7 +86,7 @@ public class SeamCarver {
 		energy = null;
 		pathTo = null;
 	}
-	private double gradient(java.awt.Color x, java.awt.Color y) {
+	private double gradient(Color x, Color y) {
 		double r = x.getRed() - y.getRed();
 		double g = x.getGreen() - y.getGreen();
 		double b = x.getBlue() - y.getBlue();
