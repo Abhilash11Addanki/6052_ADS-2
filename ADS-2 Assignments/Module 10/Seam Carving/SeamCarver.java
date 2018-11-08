@@ -97,7 +97,7 @@ public class SeamCarver {
 	}
 	private void computeEnergy(int w, int h, int flag) {
 		energy = new double[w * h];
-		for (int r = 0; r < h; r++) {
+		for (int r = 1; r < h; r++) {
 			for (int c = 0; c < w; c++) {
 				energy[r * w + c] = energy(c, r, flag);
 			}
