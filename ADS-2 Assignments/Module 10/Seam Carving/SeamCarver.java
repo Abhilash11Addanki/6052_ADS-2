@@ -27,7 +27,7 @@ public class SeamCarver {
 		if (x < 0 || x >= width() || y < 0 || y >= height())
 			throw new IndexOutOfBoundsException();
 		if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1)
-			return 195075;
+			return 1000;
 		return gradient(pic.get(x - 1, y), pic.get(x + 1, y)) + gradient(pic.get(x, y - 1), pic.get(x, y + 1));
 	}
 

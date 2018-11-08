@@ -242,7 +242,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:26:37: Parameter y should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:27: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:29: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:30:32: '195075' is a magic number. [MagicNumber]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:30:32: '1000' is a magic number. [MagicNumber]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:31: Line is longer than 80 characters (found 119). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:35:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:35:9: Missing a Javadoc comment. [JavadocMethod]
