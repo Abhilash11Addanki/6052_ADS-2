@@ -107,7 +107,7 @@ public class SeamCarver {
 	private int[] computePath(int w, int h) {
 		pathTo = new int[w * h];
 		for (int i = 0; i < w; i++)
-			pathTo[i] = 0;
+			pathTo[i] = -1;
 		for (int r = 1, i = w; r < h; r++) {
 			if (energy[i - w] <= energy[i - w + 1]) pathTo[i] = i - w;
 			else pathTo[i] = i - w + 1;
