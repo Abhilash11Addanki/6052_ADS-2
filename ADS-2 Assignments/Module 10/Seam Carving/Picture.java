@@ -114,7 +114,7 @@ public final class Picture implements ActionListener {
      * @throws IllegalArgumentException if {@code picture} is {@code null}
      */
     public Picture(Picture picture) {
-        if (picture == null) throw new IllegalArgumentException("constructor argument is null");
+        if (picture == null) throw new IllegalArgumentException("picture is null");
 
         width  = picture.width();
         height = picture.height();
@@ -134,7 +134,7 @@ public final class Picture implements ActionListener {
      * @throws IllegalArgumentException if {@code filename} is {@code null}
      */
     public Picture(String filename) {
-        if (filename == null) throw new IllegalArgumentException("picture is null");
+        if (filename == null) throw new IllegalArgumentException("constructor argument is null");
 
         this.filename = filename;
         try {
