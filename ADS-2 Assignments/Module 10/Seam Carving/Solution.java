@@ -13,7 +13,7 @@ public class Solution {
 
         for (int row = 0; row < sc.height(); row++) {
             for (int col = 0; col < sc.width(); col++)
-                StdOut.printf("%9.0f ", sc.energy(col, row));
+                StdOut.printf("%9.0f ", Math.sqrt(sc.energy(col, row)));
             StdOut.println();
         }
     }
