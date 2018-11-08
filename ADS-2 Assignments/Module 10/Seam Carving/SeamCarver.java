@@ -123,7 +123,7 @@ public class SeamCarver {
 				energy[i] += energy[pathTo[i]];
 			}
 			if (energy[i - w - 1] <= energy[i - w]) pathTo[i] = i - w - 1;
-			else pathTo[i] = i - w;
+			else pathTo[i] = i - w + 1;
 			energy[i] += energy[pathTo[i]]; i++;
 		}
 
