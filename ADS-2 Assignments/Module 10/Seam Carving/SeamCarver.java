@@ -93,7 +93,7 @@ public class SeamCarver {
 		double r = x.getRed() - y.getRed();
 		double g = x.getGreen() - y.getGreen();
 		double b = x.getBlue() - y.getBlue();
-		return r * r + g * g + b * b;
+		return Math.sqrt(r * r + g * g + b * b);
 	}
 	private void computeEnergy(int w, int h, int flag) {
 		energy = new double[w * h];
