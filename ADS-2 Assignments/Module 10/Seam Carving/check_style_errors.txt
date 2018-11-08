@@ -281,7 +281,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:112: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:113: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:117: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:117: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:117: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:118: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:120: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:120: Line is longer than 80 characters (found 98). [LineLength]
