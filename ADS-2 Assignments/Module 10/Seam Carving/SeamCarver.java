@@ -27,7 +27,7 @@ public class SeamCarver {
 			throw new IndexOutOfBoundsException();
 		if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1)
 			return 1000;
-		return gradient(pic.get(x - 1, y), pic.get(x + 1, y)) + gradient(pic.get(x, y - 1), pic.get(x, y + 1));
+		return Math.sqrt(gradient(pic.get(x - 1, y), pic.get(x + 1, y)) + gradient(pic.get(x, y - 1), pic.get(x, y + 1)));
 	}
 
 	// sequence of indices for horizontal seam
@@ -93,7 +93,7 @@ public class SeamCarver {
 		double r = x.getRed() - y.getRed();
 		double g = x.getGreen() - y.getGreen();
 		double b = x.getBlue() - y.getBlue();
-		return Math.sqrt(r * r + g * g + b * b);
+		return r * r + g * g + b * b;
 	}
 	private void computeEnergy(int w, int h, int flag) {
 		energy = new double[w * h];
