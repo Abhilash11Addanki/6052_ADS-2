@@ -1,4 +1,3 @@
-
 public class SeamCarver {
 	private Picture pic;
 	private double[] energy;
@@ -114,7 +113,7 @@ public class SeamCarver {
 			energy[i] += energy[pathTo[i]]; i++;
 			for (int c = 1; c < w - 1; c++, i++) {
 				if (energy[i - w - 1] <= energy[i - w]) {
-					if (energy[i - w - 1] <= energy[i - w + 1]) pathTo[i] = i - w - 1;
+					if (energy[i - w - 1] <= energy[i - w + 1]) pathTo[i] = i - w;
 					else pathTo[i] = i - w + 1;
 				} else {
 					if (energy[i - w] <= energy[i - w + 1]) pathTo[i] = i - w;
