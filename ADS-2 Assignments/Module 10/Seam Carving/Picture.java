@@ -114,8 +114,9 @@ public final class Picture implements ActionListener {
      * @throws IllegalArgumentException if {@code picture} is {@code null}
      */
     public Picture(Picture picture) {
-        if (picture == null) throw new IllegalArgumentException("picture is null");
-
+        if (picture == null) {
+            System.out.println("picture is null");
+        }
         width  = picture.width();
         height = picture.height();
         image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
