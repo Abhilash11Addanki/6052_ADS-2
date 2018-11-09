@@ -25,7 +25,7 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:107: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:116:20: Parameter picture should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:117: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:117: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:117: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:124: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:125: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\Picture.java:136:20: Parameter filename should be final. [FinalParameters]
