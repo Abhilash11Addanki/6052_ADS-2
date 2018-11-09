@@ -1,8 +1,8 @@
+
 public class SeamCarver {
 	private Picture pic;
 	private double[] energy;
 	private int[] pathTo;
-
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
 		pic = new Picture(picture);
