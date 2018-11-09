@@ -1,10 +1,13 @@
+import java.awt.Color;
 public class SeamCarver {
 	private Picture pic;
-	private double[] energy;
-	private int[] pathTo;
+	int width;
+	int height;
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
 		pic = new Picture(picture);
+		width = width();
+		height = height();
 	}
 	// current picture
 	public Picture picture() {
@@ -31,119 +34,139 @@ public class SeamCarver {
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		int w = height(), h = width();
-		computeEnergy(w, h, 1);
-		return computePath(w, h);
+		int[][] edgeTo = new int[height()][width()];
+		double[][] distTo = new double[height()][width()];
+		reset(distTo);
+		for (int row = 0; row < height(); row++) {
+			distTo[row][0] = 1000;
+		}
+		for (int col = 0; col < width() - 1; col++) {
+			for (int row = 0; row < height(); row++) {
+				relaxH(row, col, edgeTo, distTo);
+			}
+		}
+		double minDist = Double.MAX_VALUE;
+		int minRow = 0;
+		for (int row = 0; row < height(); row++) {
+			if (minDist > distTo[row][width() - 1]) {
+				minDist = distTo[row][width() - 1];
+				minRow = row;
+			}
+		}
+		int[] indices = new int[width()];
+		for (int col = width() - 1, row = minRow; col >= 0; col--) {
+			indices[col] = row;
+			row -= edgeTo[row][col];
+		}
+		return indices;
 	}
-
+    private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
+        int nextCol = col + 1;
+        for (int i = -1; i <= 1; i++) {
+            int nextRow = row + i;
+            if (nextRow < 0 || nextRow >= height()) continue;
+            if(i == 0) {
+            	if(distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
+	                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+	                edgeTo[nextRow][nextCol] = i;
+            	}
+            }
+            if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+                edgeTo[nextRow][nextCol] = i;
+            }
+        }
+    }
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		int w = width(), h = height();
-		computeEnergy(w, h, 0);
-		return computePath(w, h);
+		double[][] energy = new double[height()][width()];
+		int[][] edgeTo = new int[height()][width()];
+		double[][] distTo = new double[height()][width()];
+		reset(distTo);
+		int[] indices = new int[height()];
+		if(width() == 1 || height() == 1) {
+			return indices;
+		}
+		for(int i = 0; i < width(); i++) {
+			distTo[0][i] = 1000.0;
+		}
+		// this is for relaxation.
+		for (int i = 0; i < height() - 1; i++) {
+			for(int j = 0; j < width(); j++) {
+				relaxV(i, j, edgeTo, distTo);
+			}
+		}
+		// calculating from last row
+		// column wise
+        double minDist = Double.MAX_VALUE;
+        int minCol = 0;
+        for (int col = 0; col < width(); col++) {
+            if (minDist > distTo[height() - 1][col]) {
+                minDist = distTo[height() - 1][col];
+                minCol = col;
+            }
+        }
+        //indices values of shortest path.
+        for (int row = height() - 1, col = minCol; row >= 0; row--) {
+            indices[row] = col;
+            col -= edgeTo[row][col];
+        }
+        indices[0] = indices[1];
+        return indices;
 	}
 
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-		Picture p = new Picture(width(), height() - 1);
-		//Picture seamPic = new Picture(pic);
-		int prerow = seam[0];
-		for (int c = 0; c < width(); c++) {
-			if (Math.abs(seam[c] - prerow) > 1)
-				throw new IllegalArgumentException("Non-valid seam");
-			if (seam[c] < 0 || seam[c] >= height())
-				throw new IndexOutOfBoundsException();
-			//seamPic.set(c, a[c], java.awt.Color.red);
-			prerow = seam[c];
-			for (int r = 0; r < height() - 1; r++)
-				if (r < seam[c])
-					p.set(c, r, pic.get(c, r));
-				else
-					p.set(c, r, pic.get(c, r + 1));
+	for(int col = 0; col < width(); col++) {
+		for(int row = seam[col]; row < height() - 1; row++) {
+			this.pic.set(col, row, this.pic.get(col, row + 1));
 		}
-		pic = p;
-		energy = null;
-		pathTo = null;
 	}
-
+	height--;
+	}
+	private void reset(double[][] distTo) {
+		/**
+		 *reset all the values to maxvalue.
+		 */
+		for(int i = 0; i < distTo.length; i++) {
+			for(int j = 0; j < distTo[i].length; j++) {
+				distTo[i][j] = Double.MAX_VALUE;
+			}
+		}
+	}
+	private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
+		int nextRow = row + 1;
+        for (int i = -1; i <= 1; i++) {
+            int nextCol = col + i;
+            if (nextCol < 0 || nextCol >= width()) {
+            	continue;
+            }
+            //spl case for bottom element.
+            if(i == 0) {
+            	if(distTo[nextRow][nextCol] >= distTo[row][col] + energy(nextCol, nextRow)) {
+            	distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+                edgeTo[nextRow][nextCol] = i;
+            	}
+            }
+            if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+                edgeTo[nextRow][nextCol] = i;
+            }
+    	}
+	}
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
-		Picture p = new Picture(width() - 1, height());
-		//Picture seamPic = new Picture(pic);
-		int precol = seam[0];
-		for (int r = 0; r < height(); r++) {
-			if (Math.abs(seam[r] - precol) > 1)
-				throw new IllegalArgumentException("Non-valid seam");
-			if (seam[r] < 0 || seam[r] >= width())
-				throw new IndexOutOfBoundsException();
-			//seamPic.set(a[r], r, java.awt.Color.red);
-			precol = seam[r];
-			for (int c = 0; c < width() - 1; c++)
-				if (c < seam[r])
-					p.set(c, r, pic.get(c, r));
-				else
-					p.set(c, r, pic.get(c + 1, r));
+	for(int row = 0; row < height(); row++) {
+		for(int col = seam[row]; col < width() - 1; col++) {
+		this.pic.set(col, row, this.pic.get(col + 1, row));
 		}
-		pic = p;
-		energy = null;
-		pathTo = null;
 	}
-	private double gradient(java.awt.Color x, java.awt.Color y) {
+	width--;
+	}
+	private double gradient(Color x, Color y) {
 		double r = x.getRed() - y.getRed();
 		double g = x.getGreen() - y.getGreen();
 		double b = x.getBlue() - y.getBlue();
 		return r * r + g * g + b * b;
-	}
-	private void computeEnergy(int w, int h, int flag) {
-		energy = new double[w * h];
-		for (int r = 0; r < h; r++) {
-			for (int c = 0; c < w; c++) {
-				energy[r * w + c] = energy(c, r, flag);
-			}
-		}
-	}
-
-	private int[] computePath(int w, int h) {
-		pathTo = new int[w * h];
-		for (int i = 0; i < w; i++)
-			pathTo[i] = -1;
-		for (int r = 1, i = w; r < h; r++) {
-			if (energy[i - w] <= energy[i - w + 1]) pathTo[i] = i - w;
-			else pathTo[i] = i - w + 1;
-			energy[i] += energy[pathTo[i]]; i++;
-			for (int c = 1; c < w - 1; c++, i++) {
-				if (energy[i - w - 1] <= energy[i - w]) {
-					if (energy[i - w - 1] <= energy[i - w + 1]) pathTo[i] = i - w;
-					else pathTo[i] = i - w + 1;
-				} else {
-					if (energy[i - w] <= energy[i - w + 1]) pathTo[i] = i - w;
-					else pathTo[i] = i - w + 1;
-				}
-				energy[i] += energy[pathTo[i]];
-			}
-			if (energy[i - w - 1] <= energy[i - w]) pathTo[i] = i - w - 1;
-			else pathTo[i] = i - w;
-			energy[i] += energy[pathTo[i]]; i++;
-		}
-
-		int pathEnd = w * (h - 1);
-		double minE = energy[w * (h - 1)];
-		for (int i = w * (h - 1); i < w * h; i++) {
-			if (minE > energy[i]) {
-				minE = energy[i];
-				pathEnd = i;
-			}
-		}
-
-		int[] path = new int[h];
-		for (int p = pathEnd; p >= 0; p = pathTo[p])
-			path[p / w] = p % w;
-		return path;
-	}
-	private double energy(int x, int y, int flag) {
-		if (flag == 1)
-			return energy(y, x);
-		else
-			return energy(x, y);
 	}
 }
