@@ -74,8 +74,7 @@ public final class Solution {
                 DijkstraSP dsp2 = new DijkstraSP(graph, via);
 
                 if (dsp2.hasPathTo(des)) {
-                    System.out.println(dsp1.distTo(via) +
-                        dsp2.distTo(des));
+                    System.out.println(dsp1.distTo(via) + dsp2.distTo(des));
                     int temp = src;
                     System.out.print(temp);
                     int oth = 1;
@@ -111,3 +110,5 @@ public final class Solution {
 
     }
 }
+
+

@@ -7,14 +7,8 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 12 Week Exam\ADS-2_Exam-2\IndexMinPQ.java:265:23: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 12 Week Exam\ADS-2_Exam-2\IndexMinPQ.java:277:23: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 12 Week Exam\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 12 Week Exam\ADS-2_Exam-2\Solution.java:77:57: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
