@@ -6,16 +6,14 @@ public class Solution {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
-		Scanner scan = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
-		int cities = scan.nextInt();
-		scan.nextLine();
-		int roadLines = scan.nextInt();
-		scan.nextLine();
-		EdgeWeightedGraph graph = new EdgeWeightedGraph(cities);
+		int vertices = Integer.parseInt(sc.nextLine());
+		int edges = Integer.parseInt(sc.nextLine());
+		EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
 
-		for(int i = 0; i < roadLines; i++) {
-			String[] paths = scan.nextLine().split(" ");
+		for(int i = 0; i < edges; i++) {
+			String[] paths = sc.nextLine().split(" ");
 			int cityA = Integer.parseInt(paths[0]);
 			int cityB = Integer.parseInt(paths[1]);
 			int distance = Integer.parseInt(paths[2]);
@@ -24,7 +22,7 @@ public class Solution {
 
 		}
 
-		String caseToGo = scan.nextLine();
+		String caseToGo = sc.nextLine();
 
 		switch (caseToGo) {
 		case "Graph":
