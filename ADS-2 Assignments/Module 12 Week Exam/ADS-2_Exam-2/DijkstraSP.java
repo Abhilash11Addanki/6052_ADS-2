@@ -19,8 +19,7 @@ class DijkstraSP {
      * Computes a shortest-paths tree from the
      * source vertex {@code s} to every
      * other vertex in the edge-weighted digraph {@code G}.
-     *By the analysis the the time constant of the following method
-     *is O(E).
+     *Time complexity for this method is O(E).
      *As the for loop iterates upto the total no.of edges present in it.
      * @param      graph  The graph
      * @param      s      the source vertex
@@ -61,8 +60,7 @@ class DijkstraSP {
 
     // relax edge e and update pq if changed
     /**.
-     *By the analysis the the time constant of the following method
-     *is O(1).
+     *Time complexity for this method is O(1).
      *The statment of the method executes only once when the method calls.
      *
      * @param      e     Edge object e

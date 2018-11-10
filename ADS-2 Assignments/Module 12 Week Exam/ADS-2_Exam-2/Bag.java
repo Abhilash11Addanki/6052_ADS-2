@@ -39,10 +39,9 @@ public class Bag<Item> implements Iterable<Item> {
 
   /**
     * Is the BAG empty?
-    *By the analysis the the time constant of the following method
-    *is O(1).
     *The statment of the method executes only once when the method calls.
     * @return     True if empty, False otherwise.
+    * Time complexity for this method is O(1).
     */
   public boolean isEmpty() {
     return first == null;
@@ -50,11 +49,10 @@ public class Bag<Item> implements Iterable<Item> {
 
   /**
     * Return the number of items in the bag.
-    *By the analysis the the time constant of the following method
-    *is O(1).
     *The statment of the method executes only once when the method calls.
     *
     * @return    integer value
+    * Time complexity for this method is O(1).
     */
   public int size() {
     return n;
@@ -62,10 +60,9 @@ public class Bag<Item> implements Iterable<Item> {
 
   /**
     *Add the item to the bag.
-    *By the analysis the the time constant of the following method
-    *is O(1).
     *The statment of the method executes only once when the method calls.
     * @param      item  The item.
+    * Time complexity for this method is O(1).
     */
   public void add(final Item item) {
     Node oldfirst = first;
@@ -76,9 +73,9 @@ public class Bag<Item> implements Iterable<Item> {
   }
 
   /**
-   **By the analysis the the time constant of the following method
-    *is O(N).As the iterator class iterator upto the values in the
-    *bag.
+   **Time complexity for this method is O(N).
+   *As the iterator class iterator upto the values in the
+     bag.
    * @return     items.
    */
   public Iterator<Item> iterator() {
@@ -98,6 +95,7 @@ public class Bag<Item> implements Iterable<Item> {
      * Determines if it has next.
      *
      * @return     True if has next, False otherwise.
+     * Time complexity for this method is O(1).
      */
     public boolean hasNext() {
       return current != null;
