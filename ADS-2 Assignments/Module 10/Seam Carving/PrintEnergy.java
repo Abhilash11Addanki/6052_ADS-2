@@ -1,12 +1,12 @@
 /**
  * Class for print energy.
  */
-public class PrintEnergy {
-	/**
-	 * Constructs the object.
-	 */
-	private PrintEnergy() {
-	}
+public final class PrintEnergy {
+    /**
+     * Constructs the object.
+     */
+    private PrintEnergy() {
+    }
     /**
      * main method that drives the program.
      * @param      args  The arguments
@@ -14,11 +14,11 @@ public class PrintEnergy {
     public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("image is %d pixels wide by %d pixels high.\n",
-            picture.width(), picture.height());
-        
+                      picture.width(), picture.height());
+
         SeamCarver sc = new SeamCarver(picture);
-        
-        StdOut.printf("Printing energy calculated for each pixel.\n");        
+
+        StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
             for (int col = 0; col < sc.width(); col++) {
@@ -28,3 +28,4 @@ public class PrintEnergy {
         }
     }
 }
+
