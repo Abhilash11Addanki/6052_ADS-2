@@ -2,6 +2,11 @@
  * Class for print energy.
  */
 public class PrintEnergy {
+	/**
+	 * Constructs the object.
+	 */
+	private PrintEnergy() {
+	}
     /**
      * main method that drives the program.
      * @param      args  The arguments
