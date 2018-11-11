@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.lang.Math;
 /**
  * Class for seam carver.
  */
@@ -17,11 +16,15 @@ public class SeamCarver {
      */
     private int height;
     /**
+     * thousand number.
+     */
+    private double thousand = 1000.0;
+    /**
      *the constructor to initialize.
      *
      * @param      pic   The picture
      */
-    public SeamCarver(final Picture pic) {
+    SeamCarver(final Picture pic) {
         this.picture = pic;
         width = picture.width();
         height = picture.height();
@@ -43,7 +46,7 @@ public class SeamCarver {
         return width;
     }
     /**
-     *height of current picture
+     *height of current picture.
      *
      * @return height of image.
      */
@@ -51,37 +54,39 @@ public class SeamCarver {
         return height;
     }
     /**
-     *energy of pixel at column x and row y
+     *energy of pixel at column x and row y.
      *
      * @param      x  x coordinate
      * @param      y   y coordinate
      *
      * @return energy of pixel.
      */
-    public double energy(int x, int y) {
+    public double energy(final int x, final int y) {
         //handle exceptions
-        if(x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
-            return 1000.0;
+        if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
+            return thousand;
         }
         double xCoordinate = 0.0;
         double yCoordinate = 0.0;
-        Color object = picture.get(x,y);
+        Color object = picture.get(x, y);
         Color leftObj = picture.get(x, y - 1);
         Color rightObj = picture.get(x, y + 1);
         double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
         double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
         double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2) + Math.pow(xGreen, 2);
+        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
+        + Math.pow(xGreen, 2);
         Color topObj = picture.get(x - 1, y);
         Color bottomObj = picture.get(x + 1, y);
         double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
         double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
         double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2) + Math.pow(yGreen, 2);
+        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
+        + Math.pow(yGreen, 2);
         double sum = Math.sqrt((xCoordinate + yCoordinate));
         return sum;
     }
-    /**sequence of indices for horizontal seam
+    /**sequence of indices for horizontal seam.
      *
      *time complexity is O(w*h)
      *w is the width and h is the height
@@ -92,7 +97,7 @@ public class SeamCarver {
         double[][] distTo = new double[height][width];
         reset(distTo);
         for (int row = 0; row < height; row++) {
-            distTo[row][0] = 1000;
+            distTo[row][0] = thousand;
         }
         // this is for relaxation.
         for (int col = 0; col < width - 1; col++) {
@@ -116,19 +121,34 @@ public class SeamCarver {
         }
         return indices;
     }
-    private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
+    /**
+     * relaxH method.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
+    private void relaxH(final int row,
+        final int col, final int[][] edgeTo, final double[][] distTo) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;
-            if (nextRow < 0 || nextRow >= height) continue;
-            if(i == 0) {
-                if(distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+            if (nextRow < 0 || nextRow >= height) {
+                continue;
+            }
+            if (i == 0) {
+                if (distTo[nextRow][nextCol] >= distTo[row][col]
+                    + energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col]
+                + energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]
+                + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+            + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
@@ -147,15 +167,15 @@ public class SeamCarver {
         double[][] distTo = new double[height][width];
         reset(distTo);
         int[] indices = new int[height];
-        if(width == 1 || height == 1) {
+        if (width == 1 || height == 1) {
             return indices;
         }
-        for(int i = 0; i < width; i++) {
-            distTo[0][i] = 1000.0;
+        for (int i = 0; i < width; i++) {
+            distTo[0][i] = thousand;
         }
         // this is for relaxation.
         for (int i = 0; i < height - 1; i++) {
-            for(int j = 0; j < width; j++) {
+            for (int j = 0; j < width; j++) {
                 relaxV(i, j, edgeTo, distTo);
             }
         }
@@ -170,7 +190,7 @@ public class SeamCarver {
             }
         }
         //indices values of shortest path.
-        for (int row = height -1, col = minCol; row >= 0; row--) {
+        for (int row = height - 1, col = minCol; row >= 0; row--) {
             indices[row] = col;
             col -= edgeTo[row][col];
         }
@@ -178,22 +198,31 @@ public class SeamCarver {
         return indices;
     }
     /**
-     *time complexity is O(W * H)
+     *time complexity is O(W * H).
      *W is the width of image
      *H is the height of image
      * @param      distTo  The distance to
      */
-    private void reset(double[][] distTo) {
+    private void reset(final double[][] distTo) {
         /**
          *reset all the values to maxvalue.
          */
-        for(int i = 0; i < distTo.length; i++) {
-            for(int j = 0; j < distTo[i].length; j++) {
+        for (int i = 0; i < distTo.length; i++) {
+            for (int j = 0; j < distTo[i].length; j++) {
                 distTo[i][j] = Double.MAX_VALUE;
             }
         }
     }
-    private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
+    /**
+     * relaxV method.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
+    private void relaxV(final int row, final int col,
+        final int[][] edgeTo, final double[][] distTo) {
         int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
@@ -201,38 +230,46 @@ public class SeamCarver {
                 continue;
             }
             //spl case for bottom element.
-            if(i == 0) {
-                if(distTo[nextRow][nextCol] >= distTo[row][col]
-                    + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
-                edgeTo[nextRow][nextCol] = i;
+            if (i == 0) {
+                if (distTo[nextRow][nextCol] >= distTo[row][col]
+                        + energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col]
+                + energy(nextCol, nextRow);
+                    edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]
+                + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+            + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
     }
-    // remove horizontal seam from current picture
-    //time complexity is O(width * height)
-    public void removeHorizontalSeam(int[] seam) {
+    /**
+     * Removes a horizontal seam.
+     * @param      seam  The seam
+     */
+    public void removeHorizontalSeam(final int[] seam) {
         //handle exceptions
-    for(int col = 0; col < width; col++) {
-        for(int row = seam[col]; row < height - 1; row++) {
-            this.picture.set(col, row, this.picture.get(col, row + 1));
+        for (int col = 0; col < width; col++) {
+            for (int row = seam[col]; row < height - 1; row++) {
+                this.picture.set(col, row, this.picture.get(col, row + 1));
+            }
         }
+        height--;
     }
-    height--;
-    }
-    // remove vertical seam from current picture
-    //time complexity is O(width * height)
-    public void removeVerticalSeam(int[] seam) {
-    for(int row = 0; row < height; row++) {
-        for(int col = seam[row]; col < width - 1; col++) {
-        this.picture.set(col, row, this.picture.get(col + 1, row));
+    /**
+     * Removes a vertical seam.
+     * @param      seam  The seam
+     */
+    public void removeVerticalSeam(final int[] seam) {
+        for (int row = 0; row < height; row++) {
+            for (int col = seam[row]; col < width - 1; col++) {
+                this.picture.set(col, row, this.picture.get(col + 1, row));
+            }
         }
-    }
-    width--;
+        width--;
     }
 }
+
