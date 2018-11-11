@@ -18,7 +18,7 @@ public class SeamCarver {
     /**
      * thousand number.
      */
-    private double thousand = 1000.0;
+    private final double thousand = 1000.0;
     /**
      *the constructor to initialize.
      *

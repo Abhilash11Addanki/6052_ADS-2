@@ -9,21 +9,11 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\SeamCarver.java:21:31: '1000.0' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:15: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:17:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:17:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:19: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowEnergy.java:22: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 10\Seam Carving\ShowSeams.java:6: Line has trailing spaces. [RegexpSingleline]
