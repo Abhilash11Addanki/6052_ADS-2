@@ -9,6 +9,9 @@ class Solution {
 		for (int i = 0; i < n; i++) {
 			arr[i] = sc.nextLine();
 		}
+		for (int i = 0; i < arr.length; i++) {
+			l.sort(arr, arr[i].length());
+		}
 		System.out.println(Arrays.toString(arr));
 	}
 }
