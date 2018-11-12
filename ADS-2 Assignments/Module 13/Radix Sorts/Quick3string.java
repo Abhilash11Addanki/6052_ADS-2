@@ -9,6 +9,7 @@ public class Quick3string {
     /**
      * Rearranges the array of strings in ascending order.
      * @param a the array to be sorted
+     * Time complexity for this method is O(W*N*log N).
      */
     public void sort(final String[] a) {
         sort(a, 0, a.length - 1, 0);
@@ -19,6 +20,7 @@ public class Quick3string {
      * @param      s     String.
      * @param      d     int.
      * @return     int.
+     * Time complexity for this method is O(1).
      */
     private int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
@@ -33,6 +35,7 @@ public class Quick3string {
      * @param      lo    The lower
      * @param      hi    The higher
      * @param      d     index.
+     * Time complexity for this method is O(W*N*log N).
      */
     private void sort(final String[] a, final int lo,
         final int hi, final int d) {
@@ -67,6 +70,7 @@ public class Quick3string {
      * @param      lo    The lower
      * @param      hi    The higher
      * @param      d     index.
+     * Time complexity for this method is O(N^2).
      */
     private void insertion(final String[] a, final int lo,
         final int hi, final int d) {
@@ -81,6 +85,7 @@ public class Quick3string {
      * @param      a     String array.
      * @param      i     index.
      * @param      j     index.
+     * Time complexity for this method is O(1).
      */
     private void exch(final String[] a, final int i,
         final int j) {
@@ -94,6 +99,7 @@ public class Quick3string {
      * @param      w     String.
      * @param      d     index.
      * @return     true or false.
+     * Time complexity for this method is O(v) or O(w).
      */
     private boolean less(final String v, final String w,
         final int d) {
@@ -112,6 +118,7 @@ public class Quick3string {
      * Determines if sorted.
      * @param      a     String array.
      * @return     True if sorted, False otherwise.
+     * Time complexity for this method is O(a).
      */
     private boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {

@@ -12,6 +12,7 @@ final class Solution {
     /**
      * main method that drives the program.
      * @param      args  The arguments
+     * Time complexity for this method is O(W*N*log N).
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
