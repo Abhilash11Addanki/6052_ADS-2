@@ -5,11 +5,11 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		LSD l = new LSD();
 		int n = Integer.parseInt(sc.nextLine());
-		int[] arr = new int[n];
+		String[] arr = new String[n];
 		for (int i = 0; i < n; i++) {
-			arr[i] = Integer.parseInt(sc.nextLine());
+			arr[i] = sc.nextLine();
+			l.sort(arr, arr.length);
 		}
-		l.sort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 }
