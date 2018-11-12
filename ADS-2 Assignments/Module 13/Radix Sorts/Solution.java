@@ -21,6 +21,7 @@ final class Solution {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextLine();
         }
+        q.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
