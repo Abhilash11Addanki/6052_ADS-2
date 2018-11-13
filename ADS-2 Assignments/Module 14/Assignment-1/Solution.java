@@ -20,11 +20,11 @@ public class Solution {
 
 	public static String[] loadWords() {
 		File file = new File("Files/dictionary-algs4.txt");
-		String[] arr = new String[10];
+		String[] arr = new String[0];
 		try {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
-				System.out.println(scan.nextLine());
+				arr = scan.nextLine().split("\n");
 			}
 		} catch (Exception e) {
 			System.out.println("Exception!");
