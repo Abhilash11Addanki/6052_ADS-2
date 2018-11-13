@@ -15,7 +15,7 @@ public class TST<Value> {
      * Class for node.
      * @param      <Value>  The value
      */
-    private static class Node<Value> {
+    private class Node<Value> {
         /**
          * character.
          */
@@ -149,7 +149,7 @@ public class TST<Value> {
         }
         if (c < temp.c) {
             temp.left  = put(temp.left,  key, val, d);
-        } else if (c > x.c) {
+        } else if (c > temp.c) {
             temp.right = put(temp.right, key, val, d);
         } else if (d < key.length() - 1) {
             temp.mid = put(temp.mid,   key, val, d + 1);
