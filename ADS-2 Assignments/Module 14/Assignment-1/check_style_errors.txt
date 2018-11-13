@@ -152,9 +152,8 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:5:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:24:43: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\TST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\TST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
