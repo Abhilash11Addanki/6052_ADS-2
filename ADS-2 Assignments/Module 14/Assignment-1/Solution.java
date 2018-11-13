@@ -19,14 +19,16 @@ public class Solution {
 	}
 
 	public static String[] loadWords() {
-		File file = new File("/Files/dictionary-algs4.txt");
-		String[] words = new String[0];
+		File file = new File("Files/dictionary-algs4.txt");
+		String[] arr = new String[10];
 		try {
 			Scanner scan = new Scanner(file);
-			words = scan.nextLine().split("\n");
+			while (scan.hasNextLine()) {
+				System.out.println(scan.nextLine());
+			}
 		} catch (Exception e) {
 			System.out.println("Exception!");
 		}
-		return words;
+		return arr;
 	}
 }
