@@ -22,10 +22,11 @@ public class Solution {
 	public static String[] loadWords() {
 		File file = new File("Files/dictionary-algs4.txt");
 		String[] arr = new String[0];
+		int i = 0;
 		try {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
-				System.out.println(scan.nextLine());
+				arr[i] = scan.nextLine();
 			}
 		} catch (Exception e) {
 			System.out.println("Fuck");
