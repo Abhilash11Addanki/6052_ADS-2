@@ -39,6 +39,7 @@ public class TST<Value> {
      * in this symbol table.
      * @return the number of key-value pairs
      * in this symbol table
+     * Time complexity for this method is O(1).
      */
     public int size() {
         return n;
@@ -52,6 +53,7 @@ public class TST<Value> {
      *     {@code false} otherwise
      * @throws IllegalArgumentException if
      * {@code key} is {@code null}
+     * Time complexity for this method is O(L + logN)
      */
     public boolean contains(final String key) {
         if (key == null) {
@@ -68,6 +70,7 @@ public class TST<Value> {
      * if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity for this method is O(L + logN)
      */
     public Value get(final String key) {
         if (key == null) {
@@ -90,6 +93,7 @@ public class TST<Value> {
      * @param      d     integer.
      *
      * @return     Node.
+     * Time complexity for this method is O(L + logN)
      */
     private Node<Value> get(final Node<Value> x, final String key,
                             final int d) {
@@ -119,6 +123,7 @@ public class TST<Value> {
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity for this method is O(L + logN)
      */
     public void put(final String key, final Value val) {
         if (key == null) {
@@ -138,6 +143,7 @@ public class TST<Value> {
      * @param      d     integer.
      *
      * @return     Node.
+     * Time complexity for this method is O(L + logN)
      */
     private Node<Value> put(final Node<Value> x, final String key,
                             final Value val, final int d) {
@@ -217,6 +223,7 @@ public class TST<Value> {
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      * @throws IllegalArgumentException if {@code prefix} is {@code null}
+     * Time complexity for this method is O(L + logN)
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         if (prefix == null) {
@@ -240,6 +247,7 @@ public class TST<Value> {
      * @param      x       Node.
      * @param      prefix  The prefix
      * @param      queue   The queue
+     * Time complexity for this method is O(L + logN)
      */
     private void collect(final Node<Value> x,
     final StringBuilder prefix, final Queue<String> queue) {
@@ -278,6 +286,7 @@ public class TST<Value> {
      * @param      i        integer.
      * @param      pattern  The pattern
      * @param      queue    The queue
+     * Time complexity for this method is O(L + logN)
      */
     private void collect(final Node<Value> x, final StringBuilder prefix,
     final int i, final String pattern, final Queue<String> queue) {

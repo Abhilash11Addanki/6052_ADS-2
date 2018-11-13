@@ -11,6 +11,7 @@ public final class Solution {
     /**
      * main method that drives the program.
      * @param      args  The arguments
+     * Time complexity for this method is O(words * w.length())
      */
     public static void main(final String[] args) {
         TST<Integer> t = new TST();
