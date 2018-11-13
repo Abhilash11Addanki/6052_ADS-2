@@ -21,7 +21,7 @@ public class Solution {
 
 	public static String[] loadWords() {
 		File file = new File("Files/dictionary-algs4.txt");
-		String[] arr = new String[0];
+		String[] arr = new String[1000];
 		int i = 0;
 		try {
 			Scanner scan = new Scanner(file);
