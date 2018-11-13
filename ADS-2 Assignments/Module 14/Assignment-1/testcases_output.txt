@@ -8,7 +8,7 @@ ABASE
 ABASES
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -25,7 +25,7 @@ ABSTRACTIONS
 ABSURD
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -66,7 +66,7 @@ ACCURATELY
 ACCUSTOMED
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -163,7 +163,7 @@ ADVOCATING
 ADY
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -212,7 +212,7 @@ SUBTYPE
 SUBVERT
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -761,6 +761,6 @@ REXAMPLE
 REY
 
 Your Output: 
-Exception!!!!
+Exception!
 ----------------------------------------
 
