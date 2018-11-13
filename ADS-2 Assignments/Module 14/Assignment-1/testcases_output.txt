@@ -8,7 +8,11 @@ ABASE
 ABASES
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -25,7 +29,11 @@ ABSTRACTIONS
 ABSURD
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -66,7 +74,11 @@ ACCURATELY
 ACCUSTOMED
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -163,7 +175,11 @@ ADVOCATING
 ADY
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -212,7 +228,11 @@ SUBTYPE
 SUBVERT
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -761,6 +781,10 @@ REXAMPLE
 REY
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at TST$Node.access$100(TST.java:18)
+	at TST.put(TST.java:152)
+	at TST.put(TST.java:130)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 
