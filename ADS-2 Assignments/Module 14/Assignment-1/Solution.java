@@ -26,7 +26,7 @@ public class Solution {
 		try {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
-				arr[i] = scan.nextLine();
+				arr = scan.nextLine().split("\n");
 			}
 		} catch (Exception e) {
 			System.out.println("Fuck");
