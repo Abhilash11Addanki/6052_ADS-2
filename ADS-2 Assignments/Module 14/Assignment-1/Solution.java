@@ -20,7 +20,7 @@ public class Solution {
 
 	public static String[] loadWords() {
 		File file = new File("Files/dictionary-algs4.txt");
-		String[] arr = new String[0];
+		String[] arr = new String[1000];
 		try {
 			Scanner scan = new Scanner(file);
 			while (scan.hasNextLine()) {
