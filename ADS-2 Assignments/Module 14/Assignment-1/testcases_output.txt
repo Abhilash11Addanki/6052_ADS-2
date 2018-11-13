@@ -8,7 +8,7 @@ ABASE
 ABASES
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -25,7 +25,7 @@ ABSTRACTIONS
 ABSURD
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -66,7 +66,7 @@ ACCURATELY
 ACCUSTOMED
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -163,7 +163,7 @@ ADVOCATING
 ADY
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -212,7 +212,7 @@ SUBTYPE
 SUBVERT
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -761,6 +761,6 @@ REXAMPLE
 REY
 
 Your Output: 
-\Files\dictionary-algs4.txt (The system cannot find the path specified)
+Exception!!!!
 ----------------------------------------
 

@@ -27,7 +27,7 @@ public class Solution {
 				words = scan.nextLine().split("\n");
 			}
 		} catch(Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("Exception!!!!");
 		}
 		return words;
 	}
