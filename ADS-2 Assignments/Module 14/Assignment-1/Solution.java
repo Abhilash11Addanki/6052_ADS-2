@@ -21,14 +21,15 @@ public class Solution {
 
 	public static String[] loadWords() {
 		File file = new File("Files/dictionary-algs4.txt");
-		String[] res = new String[0];
+		String[] arr = new String[0];
 		try {
 			Scanner scan = new Scanner(file);
-			String[] words = scan.nextLine().split("\n");
-			res = Arrays.copyOf(words, words.length);
-		} catch(Exception e) {
-			System.out.println(e.getMessage());
+			while (scan.hasNextLine()) {
+				System.out.println(scan.nextLine());
+			}
+		} catch (Exception e) {
+			System.out.println("Fuck");
 		}
-		return res;
+		return arr;
 	}
 }
