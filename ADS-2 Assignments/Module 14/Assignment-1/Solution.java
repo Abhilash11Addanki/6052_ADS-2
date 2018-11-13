@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.io.File;
+import java.util.Arrays;
 public class Solution {
 	public static void main(String[] args) {
 		TST<Integer> t = new TST();
@@ -29,6 +30,7 @@ public class Solution {
 		} catch (Exception e) {
 			System.out.println("Exception!");
 		}
+		System.out.println(Arrays.toString(arr));
 		return arr;
 	}
 }
