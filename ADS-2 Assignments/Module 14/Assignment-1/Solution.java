@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.io.File;
-import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -40,3 +38,4 @@ public final class Solution {
         return words;
     }
 }
+

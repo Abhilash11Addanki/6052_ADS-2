@@ -3,11 +3,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:2:8: Unused import - java.io.File. [UnusedImports]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\Solution.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\TST.java:245: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 14\Assignment-1\TST.java:283: Line is longer than 80 characters (found 88). [LineLength]
