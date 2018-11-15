@@ -639,10 +639,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 46 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
