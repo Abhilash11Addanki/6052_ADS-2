@@ -1,18 +1,33 @@
-public class BoggleSolver
-{
+/**
+ * Class for boggle solver.
+ */
+public class BoggleSolver {
+    /**
+     * dictionary of type TrieSET.
+     */
     private TrieSET dict;
-
-    // Initializes the data structure using the given array of strings as the dictionary.
-    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-    public BoggleSolver(String[] dictionary) {
+    /**
+     * Constructs the object.
+     * Initializes the data structure using the given
+     array of strings as the dictionary.
+     (You can assume each word in the dictionary contains
+     only the uppercase letters A through Z.)
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
         dict = new TrieSET();
         for (String s : dictionary) {
             dict.add(s);
         }
     }
-
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    /**
+     * Gets all valid words.
+     * Returns the set of all valid words in the given
+     * Boggle board, as an Iterable.
+     * @param      board  The board
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         SET<String> validwords = new SET<String>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
@@ -22,8 +37,18 @@ public class BoggleSolver
         }
         return validwords;
     }
-    private void collect(BoggleBoard board, int row, int col,
-        boolean[][] marked, String prefix, SET<String> set) {
+    /**
+     * helper method for getAllValidWords method.
+     * @param      board   The board
+     * @param      row     The row
+     * @param      col     The col
+     * @param      marked  The marked
+     * @param      prefix  The prefix
+     * @param      set     The set
+     */
+    private void collect(final BoggleBoard board, final int row, final int col,
+                         final boolean[][] marked, final String prefix,
+                         final SET<String> set) {
         if (marked[row][col]) {
             return;
         }
@@ -52,7 +77,8 @@ public class BoggleSolver
                     continue;
                 }
 
-                if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
+                if ((row + i >= 0) && (row + i < board.rows())
+                    && (col + j >= 0) && (col + j < board.cols())) {
                     collect(board, row + i, col + j, marked, word, set);
                 }
             }
@@ -60,30 +86,41 @@ public class BoggleSolver
 
         marked[row][col] = false;
     }
-
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
-    public int scoreOf(String word) {
+    /**
+     * Returns the score of the given word if it is in the dictionary,
+     zero otherwise.
+     (You can assume the word contains only the uppercase letters A through Z.)
+     * @param      word  The word
+     * @return     score of type integer.
+     */
+    public int scoreOf(final String word) {
+        final int three = 3;
+        final int four = 4;
+        final int five = 5;
+        final int six = 6;
+        final int seven = 7;
+        final int eleven = 11;
         if (dict.contains(word)) {
             switch (word.length()) {
             case 0:
             case 1:
             case 2:
                 return 0;
-            case 3:
-            case 4:
+            case three:
+            case four:
                 return 1;
-            case 5:
+            case five:
                 return 2;
-            case 6:
-                return 3;
-            case 7:
-                return 5;
+            case six:
+                return three;
+            case seven:
+                return five;
             default:
-                return 11;
+                return eleven;
             }
         } else {
             return 0;
         }
     }
 }
+
