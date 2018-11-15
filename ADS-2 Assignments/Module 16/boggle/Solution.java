@@ -27,7 +27,7 @@ public class Solution {
 			BoggleSolver solver = new BoggleSolver(dictionary);
 
 			String boardName = StdIn.readLine();
-			if (boardName == null) {
+			if (boardName.equals("")) {
 				System.out.println("board is null");
 				break;
 			}
