@@ -1,35 +1,32 @@
 public class BoggleSolver
 {
-    private TrieSET dictionary;
+    private TrieSET dict;
 
     // Initializes the data structure using the given array of strings as the dictionary.
     // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
     public BoggleSolver(String[] dictionary) {
-        this.dictionary = new TrieSET();
+        dict = new TrieSET();
         for (String s : dictionary) {
-            this.dictionary.add(s);
+            dict.add(s);
         }
     }
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board) {
-        SET<String> validWords = new SET<String>();
-
+        SET<String> validwords = new SET<String>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
                 boolean[][] marked = new boolean[board.rows()][board.cols()];
-                collect(board, i, j, marked, "", validWords);
+                collect(board, i, j, marked, "", validwords);
             }
         }
-
-        return validWords;
+        return validwords;
     }
-
-    private void collect(BoggleBoard board, int row, int col, boolean[][] marked, String prefix, SET<String> set) {
+    private void collect(BoggleBoard board, int row, int col,
+        boolean[][] marked, String prefix, SET<String> set) {
         if (marked[row][col]) {
             return;
         }
-
         char letter = board.getLetter(row, col);
         String word = prefix;
 
@@ -39,11 +36,11 @@ public class BoggleSolver
             word += letter;
         }
 
-        if (!dictionary.hasPrefix(word)) {
+        if (!dict.hasPrefix(word)) {
             return;
         }
 
-        if (word.length() > 2 && dictionary.contains(word)) {
+        if (word.length() > 2 && dict.contains(word)) {
             set.add(word);
         }
 
@@ -67,7 +64,7 @@ public class BoggleSolver
     // Returns the score of the given word if it is in the dictionary, zero otherwise.
     // (You can assume the word contains only the uppercase letters A through Z.)
     public int scoreOf(String word) {
-        if (dictionary.contains(word)) {
+        if (dict.contains(word)) {
             switch (word.length()) {
             case 0:
             case 1:
