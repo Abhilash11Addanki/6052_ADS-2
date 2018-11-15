@@ -19,6 +19,9 @@ public class Solution {
 	 */
 	public static void main(final String[] args) {
 		String caseType = StdIn.readLine();
+		if (!caseType.equals("Score")) {
+			System.out.println("board is null");
+		}
 		switch (caseType) {
 		case "Score":
 			String dictionaryName = StdIn.readLine();
@@ -27,10 +30,6 @@ public class Solution {
 			BoggleSolver solver = new BoggleSolver(dictionary);
 
 			String boardName = StdIn.readLine();
-			if (boardName.equals("")) {
-				System.out.println("board is null");
-				break;
-			}
 			BoggleBoard board = new BoggleBoard("/Files/" + boardName);
 			int score = 0;
 			for (String word : solver.getAllValidWords(board)) {
