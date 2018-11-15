@@ -21,6 +21,7 @@ public class Solution {
 		String caseType = StdIn.readLine();
 		if (!caseType.equals("Score")) {
 			System.out.println("board is null");
+			return;
 		}
 		switch (caseType) {
 		case "Score":
