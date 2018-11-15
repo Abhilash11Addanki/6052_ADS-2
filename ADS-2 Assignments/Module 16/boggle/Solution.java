@@ -27,6 +27,10 @@ public class Solution {
 			BoggleSolver solver = new BoggleSolver(dictionary);
 
 			String boardName = StdIn.readLine();
+			if (boardName.equals(null)) {
+				System.out.println("board is null");
+				break;
+			}
 			BoggleBoard board = new BoggleBoard("/Files/" + boardName);
 			int score = 0;
 			for (String word : solver.getAllValidWords(board)) {
