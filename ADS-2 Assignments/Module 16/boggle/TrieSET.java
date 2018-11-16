@@ -37,7 +37,7 @@ public class TrieSET implements Iterable<String> {
     private static final int R = 26;        // extended ASCII
 
     private Node root;      // root of trie
-    private int N;          // number of keys in trie
+    private int n;          // number of keys in trie
 
     // R-way trie node
     private static class Node {
@@ -83,7 +83,7 @@ public class TrieSET implements Iterable<String> {
     private Node add(Node x, String key, int d) {
         if (x == null) x = new Node();
         if (d == key.length()) {
-            if (!x.isString) N++;
+            if (!x.isString) n++;
             x.isString = true;
         }
         else {
@@ -98,7 +98,7 @@ public class TrieSET implements Iterable<String> {
      * @return the number of strings in the set
      */
     public int size() {
-        return N;
+        return n;
     }
 
     /**
@@ -216,7 +216,7 @@ public class TrieSET implements Iterable<String> {
     private Node delete(Node x, String key, int d) {
         if (x == null) return null;
         if (d == key.length()) {
-            if (x.isString) N--;
+            if (x.isString) n--;
             x.isString = false;
         }
         else {

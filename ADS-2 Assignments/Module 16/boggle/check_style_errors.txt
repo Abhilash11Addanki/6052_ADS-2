@@ -1011,7 +1011,6 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:37:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:39:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:40:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:40:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:43: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:44:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:45:9: Missing a Javadoc comment. [JavadocVariable]
@@ -1086,4 +1085,4 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:235:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 16\boggle\TrieSET.java:235:30: Parameter query should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 77 errors.
+Checkstyle ends with 76 errors.

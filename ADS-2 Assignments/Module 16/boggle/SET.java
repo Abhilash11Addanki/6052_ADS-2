@@ -33,7 +33,7 @@ import java.util.TreeSet;
  */
 
 public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
-    private TreeSet<Key> set;
+    private final TreeSet<Key> set;
 
     /**
      * Initializes an empty set.

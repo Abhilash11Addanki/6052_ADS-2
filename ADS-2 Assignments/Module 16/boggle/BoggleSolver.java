@@ -5,7 +5,7 @@ public class BoggleSolver {
     /**
      * dictionary of type TrieSET.
      */
-    private TrieSET dict;
+    private final TrieSET dict;
     /**
      * Constructs the object.
      * Initializes the data structure using the given
@@ -94,29 +94,29 @@ public class BoggleSolver {
      * @return     score of type integer.
      */
     public int scoreOf(final String word) {
-        final int three = 3;
-        final int four = 4;
-        final int five = 5;
-        final int six = 6;
-        final int seven = 7;
-        final int eleven = 11;
+        final int th = 3;
+        final int fo = 4;
+        final int fi = 5;
+        final int si = 6;
+        final int se = 7;
+        final int ele = 11;
         if (dict.contains(word)) {
             switch (word.length()) {
             case 0:
             case 1:
             case 2:
                 return 0;
-            case three:
-            case four:
+            case th:
+            case fo:
                 return 1;
-            case five:
+            case fi:
                 return 2;
-            case six:
-                return three;
-            case seven:
-                return five;
+            case si:
+                return th;
+            case se:
+                return fi;
             default:
-                return eleven;
+                return ele;
             }
         } else {
             return 0;
