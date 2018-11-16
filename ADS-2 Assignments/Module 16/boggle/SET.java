@@ -229,7 +229,7 @@ public class Set<Key extends Comparable<Key>> implements Iterable<Key> {
         if (other == this) return true;
         if (other == null) return false;
         if (other.getClass() != this.getClass()) return false;
-        Set<Key> that = (Set<Key>) other;
+        Set<Key> that = (Set) other;
         return this.set.equals(that.set);
     }
 
