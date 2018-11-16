@@ -28,7 +28,7 @@ public class BoggleSolver {
      * @return     All valid words.
      */
     public Iterable<String> getAllValidWords(final BoggleBoard board) {
-        SET<String> validwords = new SET<String>();
+        Set<String> validwords = new Set<String>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
                 boolean[][] marked = new boolean[board.rows()][board.cols()];
@@ -48,7 +48,7 @@ public class BoggleSolver {
      */
     private void collect(final BoggleBoard board, final int row, final int col,
                          final boolean[][] marked, final String prefix,
-                         final SET<String> set) {
+                         final Set<String> set) {
         if (marked[row][col]) {
             return;
         }

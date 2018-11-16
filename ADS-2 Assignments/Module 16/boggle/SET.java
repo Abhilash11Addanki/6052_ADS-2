@@ -32,13 +32,13 @@ import java.util.TreeSet;
  *  @param <Key> the generic type of a key in this set
  */
 
-public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
+public class Set<Key extends Comparable<Key>> implements Iterable<Key> {
     private final TreeSet<Key> set;
 
     /**
      * Initializes an empty set.
      */
-    public SET() {
+    public Set() {
         set = new TreeSet<Key>();
     }
 
@@ -47,7 +47,7 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
      *
      * @param x the set to copy
      */
-    public SET(SET<Key> x) {
+    public Set(Set<Key> x) {
         set = new TreeSet<Key>(x.set);
     }
 
@@ -177,9 +177,9 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
      * @return the union of this set and that set
      * @throws IllegalArgumentException if {@code that} is {@code null}
      */
-    public SET<Key> union(SET<Key> that) {
+    public Set<Key> union(Set<Key> that) {
         if (that == null) throw new IllegalArgumentException("called union() with a null argument");
-        SET<Key> c = new SET<Key>();
+        Set<Key> c = new Set<Key>();
         for (Key x : this) {
             c.add(x);
         }
@@ -196,9 +196,9 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
      * @return the intersection of this set and that set
      * @throws IllegalArgumentException if {@code that} is {@code null}
      */
-    public SET<Key> intersects(SET<Key> that) {
+    public Set<Key> intersects(Set<Key> that) {
         if (that == null) throw new IllegalArgumentException("called intersects() with a null argument");
-        SET<Key> c = new SET<Key>();
+        Set<Key> c = new Set<Key>();
         if (this.size() < that.size()) {
             for (Key x : this) {
                 if (that.contains(x)) c.add(x);
@@ -229,7 +229,7 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
         if (other == this) return true;
         if (other == null) return false;
         if (other.getClass() != this.getClass()) return false;
-        SET that = (SET) other;
+        Set<Key> that = (Set<Key>) other;
         return this.set.equals(that.set);
     }
 

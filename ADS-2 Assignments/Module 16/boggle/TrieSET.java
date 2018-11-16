@@ -126,13 +126,13 @@ public class TrieSET implements Iterable<String> {
      *     as an iterable
      */
     public Iterable<String> keysWithPrefix(String prefix) {
-        Queue<String> results = new Queue<String>();
+        Queues<String> results = new Queues<String>();
         Node x = get(root, prefix, 0);
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
 
-    private void collect(Node x, StringBuilder prefix, Queue<String> results) {
+    private void collect(Node x, StringBuilder prefix, Queues<String> results) {
         if (x == null) return;
         if (x.isString) results.enqueue(prefix.toString());
         for (char c = 'A'; c < 'A' + R; c++) {
@@ -150,13 +150,13 @@ public class TrieSET implements Iterable<String> {
      *     as an iterable, where . is treated as a wildcard character.
      */  
     public Iterable<String> keysThatMatch(String pattern) {
-        Queue<String> results = new Queue<String>();
+        Queues<String> results = new Queues<String>();
         StringBuilder prefix = new StringBuilder();
         collect(root, prefix, pattern, results);
         return results;
     }
         
-    private void collect(Node x, StringBuilder prefix, String pattern, Queue<String> results) {
+    private void collect(Node x, StringBuilder prefix, String pattern, Queues<String> results) {
         if (x == null) return;
         int d = prefix.length();
         if (d == pattern.length() && x.isString)
