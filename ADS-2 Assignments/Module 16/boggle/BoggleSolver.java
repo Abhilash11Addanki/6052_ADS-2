@@ -3,7 +3,7 @@
  */
 public class BoggleSolver {
     /**
-     * dictionary of type TrieSET.
+     * dictionary of type TrieST.
      */
     private final TrieSET dict;
     /**

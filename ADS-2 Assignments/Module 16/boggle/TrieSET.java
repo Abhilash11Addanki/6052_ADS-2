@@ -1,19 +1,7 @@
-/*************************************************************************
- *  Compilation:  javac TrieSET.java
- *  Execution:    java TrieSET < words.txt
- *  Dependencies: StdIn.java
- *
- *  An set for extended ASCII strings, implemented  using a 256-way trie.
- *
- *  Sample client reads in a list of words from standard input and
- *  prints out each word, removing any duplicates.
- *
- *************************************************************************/
-
 import java.util.Iterator;
 
 /**
- *  The <tt>TrieSET</tt> class represents an ordered set of strings over
+ *  The {@code TrieSET} class represents an ordered set of strings over
  *  the extended ASCII alphabet.
  *  It supports the usual <em>add</em>, <em>contains</em>, and <em>delete</em>
  *  methods. It also provides character-based methods for finding the string
@@ -27,14 +15,14 @@ import java.util.Iterator;
  *  of the key (in the worst case). Construction takes constant time.
  *  <p>
  *  For additional documentation, see
- *  <a href="http://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
+ *  <a href="https://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
  *  <i>Algorithms in Java, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
 public class TrieSET implements Iterable<String> {
-    private static final int R = 26;        // extended ASCII
+    private static final int R = 256;        // extended ASCII
 
     private Node root;      // root of trie
     private int n;          // number of keys in trie
@@ -54,11 +42,12 @@ public class TrieSET implements Iterable<String> {
     /**
      * Does the set contain the given key?
      * @param key the key
-     * @return <tt>true</tt> if the set contains <tt>key</tt> and
-     *     <tt>false</tt> otherwise
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @return {@code true} if the set contains {@code key} and
+     *     {@code false} otherwise
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(String key) {
+        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         Node x = get(root, key, 0);
         if (x == null) return false;
         return x.isString;
@@ -67,16 +56,17 @@ public class TrieSET implements Iterable<String> {
     private Node get(Node x, String key, int d) {
         if (x == null) return null;
         if (d == key.length()) return x;
-        char c = Character.toUpperCase(key.charAt(d));
-        return get(x.next[c - 'A'], key, d+1);
+        char c = key.charAt(d);
+        return get(x.next[c], key, d+1);
     }
 
     /**
      * Adds the key to the set if it is not already present.
      * @param key the key to add
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void add(String key) {
+        if (key == null) throw new IllegalArgumentException("argument to add() is null");
         root = add(root, key, 0);
     }
 
@@ -87,8 +77,8 @@ public class TrieSET implements Iterable<String> {
             x.isString = true;
         }
         else {
-            char c = Character.toUpperCase(key.charAt(d));
-            x.next[c - 'A'] = add(x.next[c - 'A'], key, d+1);
+            char c = key.charAt(d);
+            x.next[c] = add(x.next[c], key, d+1);
         }
         return x;
     }
@@ -103,7 +93,7 @@ public class TrieSET implements Iterable<String> {
 
     /**
      * Is the set empty?
-     * @return <tt>true</tt> if the set is empty, and <tt>false</tt> otherwise
+     * @return {@code true} if the set is empty, and {@code false} otherwise
      */
     public boolean isEmpty() {
         return size() == 0;
@@ -111,8 +101,8 @@ public class TrieSET implements Iterable<String> {
 
     /**
      * Returns all of the keys in the set, as an iterator.
-     * To iterate over all of the keys in a set named <tt>set</tt>, use the
-     * foreach notation: <tt>for (Key key : set)</tt>.
+     * To iterate over all of the keys in a set named {@code set}, use the
+     * foreach notation: {@code for (Key key : set)}.
      * @return an iterator to all of the keys in the set
      */
     public Iterator<String> iterator() {
@@ -120,9 +110,9 @@ public class TrieSET implements Iterable<String> {
     }
 
     /**
-     * Returns all of the keys in the set that start with <tt>prefix</tt>.
+     * Returns all of the keys in the set that start with {@code prefix}.
      * @param prefix the prefix
-     * @return all of the keys in the set that start with <tt>prefix</tt>,
+     * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      */
     public Iterable<String> keysWithPrefix(String prefix) {
@@ -135,18 +125,18 @@ public class TrieSET implements Iterable<String> {
     private void collect(Node x, StringBuilder prefix, Queues<String> results) {
         if (x == null) return;
         if (x.isString) results.enqueue(prefix.toString());
-        for (char c = 'A'; c < 'A' + R; c++) {
+        for (char c = 0; c < R; c++) {
             prefix.append(c);
-            collect(x.next[c - 'A'], prefix, results);
+            collect(x.next[c], prefix, results);
             prefix.deleteCharAt(prefix.length() - 1);
         }
     }
 
     /**
-     * Returns all of the keys in the set that match <tt>pattern</tt>,
+     * Returns all of the keys in the set that match {@code pattern},
      * where . symbol is treated as a wildcard character.
      * @param pattern the pattern
-     * @return all of the keys in the set that match <tt>pattern</tt>,
+     * @return all of the keys in the set that match {@code pattern},
      *     as an iterable, where . is treated as a wildcard character.
      */  
     public Iterable<String> keysThatMatch(String pattern) {
@@ -163,30 +153,31 @@ public class TrieSET implements Iterable<String> {
             results.enqueue(prefix.toString());
         if (d == pattern.length())
             return;
-        char c = Character.toUpperCase(pattern.charAt(d));
+        char c = pattern.charAt(d);
         if (c == '.') {
-            for (char ch = 'A'; ch < 'A' + R; ch++) {
+            for (char ch = 0; ch < R; ch++) {
                 prefix.append(ch);
-                collect(x.next[ch - 'A'], prefix, pattern, results);
+                collect(x.next[ch], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }
         else {
             prefix.append(c);
-            collect(x.next[c - 'A'], prefix, pattern, results);
+            collect(x.next[c], prefix, pattern, results);
             prefix.deleteCharAt(prefix.length() - 1);
         }
     }
 
     /**
-     * Returns the string in the set that is the longest prefix of <tt>query</tt>,
-     * or <tt>null</tt>, if no such string.
+     * Returns the string in the set that is the longest prefix of {@code query},
+     * or {@code null}, if no such string.
      * @param query the query string
-     * @throws NullPointerException if <tt>query</tt> is <tt>null</tt>
-     * @return the string in the set that is the longest prefix of <tt>query</tt>,
-     *     or <tt>null</tt> if no such string
+     * @return the string in the set that is the longest prefix of {@code query},
+     *     or {@code null} if no such string
+     * @throws IllegalArgumentException if {@code query} is {@code null}
      */
     public String longestPrefixOf(String query) {
+        if (query == null) throw new IllegalArgumentException("argument to longestPrefixOf() is null");
         int length = longestPrefixOf(root, query, 0, -1);
         if (length == -1) return null;
         return query.substring(0, length);
@@ -200,16 +191,17 @@ public class TrieSET implements Iterable<String> {
         if (x == null) return length;
         if (x.isString) length = d;
         if (d == query.length()) return length;
-        char c = Character.toUpperCase(query.charAt(d));
-        return longestPrefixOf(x.next[c - 'A'], query, d+1, length);
+        char c = query.charAt(d);
+        return longestPrefixOf(x.next[c], query, d+1, length);
     }
 
     /**
      * Removes the key from the set if the key is present.
      * @param key the key
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(String key) {
+        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
         root = delete(root, key, 0);
     }
 
@@ -221,13 +213,13 @@ public class TrieSET implements Iterable<String> {
         }
         else {
             char c = key.charAt(d);
-            x.next[c - 'A'] = delete(x.next[c - 'A'], key, d+1);
+            x.next[c] = delete(x.next[c], key, d+1);
         }
 
         // remove subtrie rooted at x if it is completely empty
         if (x.isString) return x;
-        for (int c = 'A'; c < 'A' + R; c++)
-            if (x.next[c - 'A'] != null)
+        for (int c = 0; c < R; c++)
+            if (x.next[c] != null)
                 return x;
         return null;
     }
