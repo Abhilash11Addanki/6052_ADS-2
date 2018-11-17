@@ -102,13 +102,13 @@ public class Solution {
 
 class T9 {
 	TST<Integer> tst;
-	BinarySearchST<String, Integer> st1;
-	Nwords nw;
-	MaxPQ<Nwords> m;
+	BinarySearchST<String, Integer> st;
+	TopK t;
+	MaxPQ<TopK> pq;
 
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		st1 = st;
+		this.st = st;
 		tst = new TST();
 		for (String s : st.keys()) {
 			tst.put(s, st.get(s));
@@ -129,19 +129,19 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		m = new MaxPQ<Nwords>();
+		pq = new MaxPQ<TopK>();
 		Queue<String> queue = new Queue<String>();
-		for (String str: words) {
-			nw = new Nwords(str, st1.get(str));
-			m.insert(nw);
+		for (String s : words) {
+			t = new TopK(s, st.get(s));
+			pq.insert(t);
 		}
-		String[] nsort = new String[k];
+		String[] temp = new String[k];
 		for(int i = 0; i < k; i++) {
-			Nwords n = m.delMax();
-			nsort[i] = n.getWord();
+			TopK n = pq.delMax();
+			temp[i] = n.getWord();
 		}
-		Arrays.sort(nsort);
-		for (String s: nsort) {
+		Arrays.sort(temp);
+		for (String s: temp) {
             queue.enqueue(s);
 		}
 		return queue;

@@ -339,21 +339,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 72 errors.
 Starting audit...
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:4:16: Parameter sword1 should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:4:31: Parameter freq1 should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:8:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:11:30: Parameter that should be final. [FinalParameters]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:18:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Nwords.java:21:19: 'if' is not followed by whitespace. [WhitespaceAround]
-Audit done.
-Checkstyle ends with 12 errors.
-Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
@@ -409,14 +394,15 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:104:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:104:22: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:105:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:105:41: Variable 'st1' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:105:41: Variable 'st' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:106:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:106:16: Variable 'nw' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:106:14: Variable 't' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:107:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:107:23: Variable 'm' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:107:21: Variable 'pq' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:109:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:109:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:109:19: Parameter st should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:109:51: 'st' hides a field. [HiddenField]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:119:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:119:45: Parameter prefix should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:124:9: Missing a Javadoc comment. [JavadocMethod]
@@ -429,7 +415,22 @@ Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:152:36: Parameter t9Signature should be final. [FinalParameters]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\Solution.java:152:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 39 errors.
+Starting audit...
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:4:14: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:4:24: Parameter f should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:8:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:11:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:11:30: Parameter that should be final. [FinalParameters]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:18:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TopK.java:21:19: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\abhil\OneDrive\Desktop\6052_ADS-2\ADS-2 Assignments\Module 18 Week Exam\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
