@@ -138,7 +138,6 @@ class T9 {
         map.put('9', "wxyz");
 		ArrayList<String> al1 = new ArrayList<String>();
         ArrayList<String> al2 = new ArrayList<String>();
-        ArrayList<String> res = new ArrayList<String>();
         al1.add("");
         for (int i = 0; i < t9Signature.length(); i++) {
             for (String str : al1) {
@@ -149,6 +148,7 @@ class T9 {
             al1 = al2;
             al2 = new ArrayList<String>();
         }
+        ArrayList<String> res = new ArrayList<String>();
         for(int i = 0; i < al1.size(); i++) {
         	if(tst.contains(al1.get(i))) {
         		res.add(al1.get(i));
