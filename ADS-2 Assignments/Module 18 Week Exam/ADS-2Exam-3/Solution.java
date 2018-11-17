@@ -108,6 +108,7 @@ class T9 {
 	BinarySearchST<String, Integer> st;
 	TopK t;
 	MaxPQ<TopK> pq;
+	HashMap<Character, String> map;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		this.st = st;
@@ -125,7 +126,8 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		HashMap<Character, String> map = new HashMap<Character, String>();
+		map = new HashMap<Character, String>();
+		//Mapping the alphabets to numbers.
 	 	map.put('2', "abc");
         map.put('3', "def");
         map.put('4', "ghi");
