@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class Solution {
 
 	// Don't modify this method.
@@ -101,6 +102,10 @@ public class Solution {
 
 class T9 {
 	TST<Integer> tst;
+	BinarySearchST<String, Integer> st1;
+	Nwords nw;
+	MaxPQ<Nwords> m;
+
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST();
@@ -123,7 +128,22 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		m = new MaxPQ<Nwords>();
+		Queue<String> queue = new Queue<String>();
+		for (String str: words) {
+			nw = new Nwords(str, st1.get(str));
+			m.insert(nw);
+		}
+		String[] nsort = new String[k];
+		for(int i = 0; i < k; i++) {
+			Nwords n = m.delMax();
+			nsort[i] = n.getWord();
+		}
+		Arrays.sort(nsort);
+		for (String s: nsort) {
+            queue.enqueue(s);
+		}
+		return queue;
 	}
 
 	// final output
