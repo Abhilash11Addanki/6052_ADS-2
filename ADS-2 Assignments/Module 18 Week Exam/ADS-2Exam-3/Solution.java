@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
+
 public class Solution {
 
 	// Don't modify this method.
@@ -105,7 +108,6 @@ class T9 {
 	BinarySearchST<String, Integer> st;
 	TopK t;
 	MaxPQ<TopK> pq;
-
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		this.st = st;
@@ -123,7 +125,37 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		HashMap<String, String> map = new HashMap<String, String>();
+	 	map.put("2", "abc");
+        map.put("3", "def");
+        map.put("4", "ghi");
+        map.put("5", "jkl");
+        map.put("6", "mno");
+        map.put("7", "pqrs");
+        map.put("8", "tuv");
+        map.put("9", "wxyz");
+		ArrayList<String> res = new ArrayList<String>();
+        ArrayList<String> preres = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<String>();
+        res.add("");
+        if(t9Signature.length() == 1) {
+        	return null;
+        }
+        for (int i = 0; i < t9Signature.length(); i++) {
+            for (String str : res) {
+                String letters = map.get(t9Signature.charAt(i));
+                for (int j = 0; j < letters.length(); j++)
+                    preres.add(str + letters.charAt(j));
+            }
+            res = preres;
+            preres = new ArrayList<String>();
+        }
+        for(int i = 0; i < res.size(); i++) {
+        	if(tst.contains(res.get(i))) {
+        		result.add(res.get(i));
+        	}
+        }
+		return result;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
