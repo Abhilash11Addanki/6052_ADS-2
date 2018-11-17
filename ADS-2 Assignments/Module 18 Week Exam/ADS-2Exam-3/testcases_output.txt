@@ -158,7 +158,7 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at T9.potentialWords(Solution.java:147)
+	at T9.potentialWords(Solution.java:148)
 	at Solution.main(Solution.java:40)
 ----------------------------------------
 
@@ -226,8 +226,8 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at T9.potentialWords(Solution.java:147)
-	at T9.t9(Solution.java:185)
+	at T9.potentialWords(Solution.java:148)
+	at T9.t9(Solution.java:186)
 	at Solution.main(Solution.java:72)
 ----------------------------------------
 
