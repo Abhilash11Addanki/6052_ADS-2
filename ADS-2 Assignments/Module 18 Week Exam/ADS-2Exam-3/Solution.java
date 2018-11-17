@@ -136,28 +136,25 @@ class T9 {
         map.put('7', "pqrs");
         map.put('8', "tuv");
         map.put('9', "wxyz");
-		ArrayList<String> res = new ArrayList<String>();
-        ArrayList<String> preres = new ArrayList<String>();
-        ArrayList<String> result = new ArrayList<String>();
-        res.add("");
-        if(t9Signature.length() == 1) {
-        	return null;
-        }
+		ArrayList<String> al1 = new ArrayList<String>();
+        ArrayList<String> al2 = new ArrayList<String>();
+        ArrayList<String> res = new ArrayList<String>();
+        al1.add("");
         for (int i = 0; i < t9Signature.length(); i++) {
-            for (String str : res) {
-                String letters = map.get(t9Signature.charAt(i));
-                for (int j = 0; j < letters.length(); j++)
-                    preres.add(str + letters.charAt(j));
+            for (String str : al1) {
+                String alpha = map.get(t9Signature.charAt(i));
+                for (int j = 0; j < alpha.length(); j++)
+                    al2.add(str + alpha.charAt(j));
             }
-            res = preres;
-            preres = new ArrayList<String>();
+            al1 = al2;
+            al2 = new ArrayList<String>();
         }
-        for(int i = 0; i < res.size(); i++) {
-        	if(tst.contains(res.get(i))) {
-        		result.add(res.get(i));
+        for(int i = 0; i < al1.size(); i++) {
+        	if(tst.contains(al1.get(i))) {
+        		res.add(al1.get(i));
         	}
         }
-		return result;
+		return res;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
