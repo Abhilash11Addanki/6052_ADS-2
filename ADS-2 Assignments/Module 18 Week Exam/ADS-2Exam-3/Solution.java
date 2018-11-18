@@ -143,8 +143,10 @@ class T9 {
         for (String s : arr) {
             for (String str : al1) {
                 String alpha = map.get(s);
-                for (int j = 0; j < alpha.length(); j++)
-                    al2.add(str + alpha.charAt(j));
+                String[] alphaarr = alpha.split("");
+                for (String st : alphaarr) {
+                    al2.add(str + st);
+                }
             }
             al1 = al2;
             al2 = new ArrayList<String>();
