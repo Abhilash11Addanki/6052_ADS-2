@@ -108,7 +108,7 @@ class T9 {
 	BinarySearchST<String, Integer> st;
 	TopK t;
 	MaxPQ<TopK> pq;
-	HashMap<Character, String> map;
+	HashMap<String, String> map;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		this.st = st;
@@ -126,22 +126,23 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		map = new HashMap<Character, String>();
+		map = new HashMap<String, String>();
 		//Mapping the alphabets to numbers.
-	 	map.put('2', "abc");
-        map.put('3', "def");
-        map.put('4', "ghi");
-        map.put('5', "jkl");
-        map.put('6', "mno");
-        map.put('7', "pqrs");
-        map.put('8', "tuv");
-        map.put('9', "wxyz");
+	 	map.put("2", "abc");
+        map.put("3", "def");
+        map.put("4", "ghi");
+        map.put("5", "jkl");
+        map.put("6", "mno");
+        map.put("7", "pqrs");
+        map.put("8", "tuv");
+        map.put("9", "wxyz");
+        String[] arr = t9Signature.split("");
 		ArrayList<String> al1 = new ArrayList<String>();
         ArrayList<String> al2 = new ArrayList<String>();
         al1.add("");
-        for (int i = 0; i < t9Signature.length(); i++) {
+        for (String s : arr) {
             for (String str : al1) {
-                String alpha = map.get(t9Signature.charAt(i));
+                String alpha = map.get(s);
                 for (int j = 0; j < alpha.length(); j++)
                     al2.add(str + alpha.charAt(j));
             }
