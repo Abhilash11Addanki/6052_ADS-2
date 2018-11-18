@@ -13,6 +13,8 @@ public class BoggleSolver {
      (You can assume each word in the dictionary contains
      only the uppercase letters A through Z.)
      * @param      dictionary  The dictionary
+     * Time complexity for this method is O(l) where l
+       is dictionary length.
      */
     public BoggleSolver(final String[] dictionary) {
         dict = new TrieSET();
@@ -26,6 +28,7 @@ public class BoggleSolver {
      * Boggle board, as an Iterable.
      * @param      board  The board
      * @return     All valid words.
+     * Time complexity for this method is O(rows * cols).
      */
     public Iterable<String> getAllValidWords(final BoggleBoard board) {
         Set<String> validwords = new Set<String>();
@@ -45,6 +48,7 @@ public class BoggleSolver {
      * @param      marked  The marked
      * @param      prefix  The prefix
      * @param      set     The set
+     * Time complexity for this method is O(V + E).
      */
     private void collect(final BoggleBoard board, final int row, final int col,
                          final boolean[][] marked, final String prefix,
@@ -92,6 +96,8 @@ public class BoggleSolver {
      (You can assume the word contains only the uppercase letters A through Z.)
      * @param      word  The word
      * @return     score of type integer.
+     * Time complexity for this method is O(L) where L is word
+     length.
      */
     public int scoreOf(final String word) {
         final int th = 3;
