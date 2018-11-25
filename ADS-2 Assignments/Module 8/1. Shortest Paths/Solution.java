@@ -13,6 +13,7 @@ final class Solution {
      *the main method is to read the user.
      * input.
      *time complexity is O(E + V)
+     *Time complexity for Dijsktra SP is O(E + V).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
